@@ -1,0 +1,108 @@
+jQuery(document).ready(function(){
+   jQuery('.current').parent().addClass('active');
+	// jQuery(document).on('click','.fullSearch', function(){
+
+	// });
+
+	jQuery('#portfolio .product_area').eq(0).css({'margin-top':'0px'});
+	jQuery('.fullSearch').bind('click',function(){
+		jQuery('.fullSecreenSearch').fadeIn();
+	});
+	jQuery('.close').bind('click',function(){
+		jQuery(this).parent().fadeOut();
+	});
+	jQuery('.formInput').focusin(function() {
+		jQuery('.fullSecreenSearch').addClass('focusIned');
+	});
+	jQuery('.formInput').focusout(function() {
+		jQuery('.fullSecreenSearch').removeClass('focusIned');
+	});
+
+	jQuery('.responsiveMenu a').bind('click',function(){
+		jQuery('ul.navs').slideToggle();
+	});
+
+
+	jQuery('.TagHolder a').bind('click', function(e){
+		e.preventDefault();
+		jQuery(this).addClass('currrent').siblings().removeClass('currrent');
+	});
+
+
+
+	//14-12
+
+	jQuery('.main_items > li > a').bind('click',function(){
+
+		//15-12
+		//jQuery('.main_items li > a').addClass('forArrow');
+
+		if(jQuery(this).parent().siblings().hasClass('opened')){
+			jQuery(this).parent().siblings().removeClass('opened');
+			jQuery(this).parent().siblings().find('ul').slideUp();
+			jQuery(this).parent().siblings().find('i').addClass('fa-angle-down');
+			jQuery(this).parent().siblings().find('i').removeClass('fa-angle-up');
+			jQuery(this).parent().find('.sub_items').find('i').removeClass('fa-angle-down').removeClass('fa-angle-up');
+		}
+		jQuery(this).parent().toggleClass('opened');
+		jQuery(this).parent().find('ul').slideToggle();
+		jQuery(this).parent().find('i').toggleClass('fa-angle-down');
+		jQuery(this).parent().find('i').toggleClass('fa-angle-up');
+		jQuery(this).parent().find('.sub_items').find('i').removeClass('fa-angle-down').removeClass('fa-angle-up');
+	});
+
+
+	//15-12
+	jQuery('.filterSection ul li label').bind('click',function(){
+		jQuery(this).addClass('ActiveFilter').parent().parent().siblings().find('.ActiveFilter').removeClass('ActiveFilter');
+		//alert(jQuery(this).parent().find('input').val());
+		console.log('Custom filter selected : '+jQuery(this).parent().find('input').val());
+	});
+	jQuery('.ratingArea ul li').bind('click',function(){
+		jQuery('.ratingArea ul li').removeClass('doneRating');
+		var ind = jQuery(this).index();
+		jQuery('span.ratingPoint').text(10-ind);
+		jQuery(this).addClass('doneRating');
+	 	jQuery(".ratingArea ul li:gt("+ ind +")").addClass('doneRating');
+	 	//alert(ind);
+	});
+
+
+
+	//scroll
+	var docHeight = jQuery(document).height();
+
+
+	var lastScrollTop = 0;
+	jQuery(window).scroll(function(event){
+	   var st = jQuery(this).scrollTop();
+	   if (st > lastScrollTop){
+	       // downscroll code
+	       console.log('scrolling Down');
+	       jQuery('header').addClass('smaller');
+	   } else {
+	      // upscroll code
+	      console.log('scrolling up');
+	      jQuery('header').removeClass('smaller');
+	   }
+	   lastScrollTop = st;
+	});
+
+	
+
+	var cl = 0;
+
+	jQuery('.btnHolder .btn.btn_readMore').bind('click',function(arguments) {
+		jQuery(this).parent().parent().siblings().find('.readMoreContent').slideUp();
+		cl = cl+1;
+		if(cl<=1){
+			jQuery('.btnHolder .btn.btn_readMore').html('Read Less <i class="fa fa-angle-double-up" aria-hidden="true"></i>');
+		}else if(cl == 2){
+			jQuery('.btnHolder .btn.btn_readMore').html('Read More <i class="fa fa-angle-double-down" aria-hidden="true"></i>');
+			cl = 0;
+		}
+		jQuery(this).parent().prev('.readMoreContent').slideToggle();
+	});
+		
+
+});

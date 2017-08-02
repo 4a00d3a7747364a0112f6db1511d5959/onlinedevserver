@@ -1,0 +1,200 @@
+<?php
+/**
+ * The header for our theme
+ *
+ * This is the template that displays all of the <head> section and everything up until <div id="content">
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package WordPress
+ * @subpackage Twenty_Seventeen
+ * @since 1.0
+ * @version 1.0
+ */
+
+?><?php /*?><!DOCTYPE html>
+<html <?php language_attributes(); ?> class="no-js no-svg">
+<head>
+<meta charset="<?php bloginfo( 'charset' ); ?>">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+
+<?php wp_head(); ?>
+</head>
+
+<body <?php body_class(); ?>>
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentyseventeen' ); ?></a>
+
+	<header id="masthead" class="site-header" role="banner">
+
+		<?php get_template_part( 'template-parts/header/header', 'image' ); ?>
+
+		<?php if ( has_nav_menu( 'top' ) ) : ?>
+			<div class="navigation-top">
+				<div class="wrap">
+					<?php get_template_part( 'template-parts/navigation/navigation', 'top' ); ?>
+				</div><!-- .wrap -->
+			</div><!-- .navigation-top -->
+		<?php endif; ?>
+
+	</header><!-- #masthead -->
+
+	<?php
+	// If a regular post or page, and not the front page, show the featured image.
+	if ( has_post_thumbnail() && ( is_single() || ( is_page() && ! twentyseventeen_is_frontpage() ) ) ) :
+		echo '<div class="single-featured-image-header">';
+		the_post_thumbnail( 'twentyseventeen-featured-image' );
+		echo '</div><!-- .single-featured-image-header -->';
+	endif;
+	?>
+
+	<div class="site-content-contain">
+		<div id="content" class="site-content"><?php */?>
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/custom.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/responsive.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+<?php wp_head(); ?>
+</head>
+<body>
+<div class="fullSecreenSearch">
+  <div class="close"><i class="fa fa-close"></i></div>
+  <div class="formArea">
+    <form>
+      <ul>
+        <li>
+          <input type="text" class="formInput">
+        </li>
+        <li>
+          <input type="submit" class="formSubmit" value="Search">
+        </li>
+      </ul>
+    </form>
+  </div>
+</div>
+<div class="mobile-get-started-div"> <a class="btn mobile-btn-get-started" href="javascript:void(0)"> <img src="<?php echo get_template_directory_uri(); ?>/images/get-started-img.png"> </a> </div>
+<!-- Header start -->
+<header id="main_header" class="steky-header  ">
+  <div class="headerWrap clearfix">
+    <div class="container clearfix">
+      <div class="logo_div"> <a href="<?php echo get_site_url(); ?>"> <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="Logo"> </a> 
+        <!-- logo area ends --> 
+      </div>
+      <div class="nav_section">
+        <div class="topHeader ">
+          <div class="ulset_wrapper clearfix">
+            <div class="ulSet">
+              <ul>
+                <li class="phone"><a href="javascript:void(0)"><img src="<?php echo get_template_directory_uri(); ?>/images/ic_phone.png"> 1-800-894-7105 </a></li>
+                <li class="seperator top_separator"></li>
+                <li class="user"><a href="javascript:void(0)"><img src="<?php echo get_template_directory_uri(); ?>/images/design_icon.png"> DESIGN STUDIO</a></li>
+                <li class="seperator top_separator"></li>
+                <li class="user"><a href="javascript:void(0)"><img src="<?php echo get_template_directory_uri(); ?>/images/ic_user.png"> TEAM STORE</a></li>
+              </ul>
+            </div>
+            <div class="ulSet HeaderSocial">
+              <ul>
+                <li><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="javascript:void(0)"><i class="fa fa-instagram"></i></a></li>
+              </ul>
+            </div>
+            <!-- ends ul set --> 
+          </div>
+        </div>
+        <div class="main_nav_area clearfix">
+          <nav class="mainNav">
+            <div class="responsiveMenu"> <a href="javascript:void(0)"> <i class="fa fa-bars"></i> </a> </div>
+         <?php /*?><ul class="navs">
+              <li class="active"><a  href="javascript:void(0)">Products</a></li>
+              <li><a href="javascript:void(0)">Custom Design</a></li>
+              <li><a href="javascript:void(0)">Ordering</a></li>
+              <li><a href="javascript:void(0)">Technology</a></li>
+              <li><a href="javascript:void(0)">Resources</a></li>
+              <li class="seperator"><img src="<?php echo get_template_directory_uri(); ?>/images/seperator.png" alt="seperator"></li>
+            </ul><?php */
+		
+			?>
+            	<?php if ( has_nav_menu( 'top' ) ) : 
+				clean_custom_menu('top');
+				endif; ?>
+                
+          </nav>
+          <div class="searchAndBtn"> <a href="javascript:void(0)" class="fullSearch"><i class="fa fa-search"></i></a> <a href="javascript:void(0)" class="btn btn-get-started"><span>get started</span></a> </div>
+        </div>
+      </div>
+      <div class="mobile-top-section clearfix">
+        <div class="nav_section">
+          <div class="topHeader ">
+            <div class="ulset_wrapper clearfix">
+              <div class="ulSet">
+                <ul>
+                  <li class="phone"><a href="javascript:void(0)"><img src="<?php echo get_template_directory_uri(); ?>/images/ic_phone.png"> 1-800-894-7105 </a></li>
+                  <li class="seperator">|</li>
+                  <li class="user"><a href="javascript:void(0)"><img src="<?php echo get_template_directory_uri(); ?>/images/ic_user.png"> TEAM STORE</a></li>
+                </ul>
+              </div>
+              <div class="ulSet HeaderSocial">
+                <ul>
+                  <li><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="javascript:void(0)"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+              </div>
+              <!-- ends ul set --> 
+            </div>
+          </div>
+          <div class="logo_div"> <a href="javascript:void(0)"> <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="Logo"> </a> </div>
+          <div class="main_nav_area clearfix">
+            <nav class="mainNav">
+              <div class="responsiveMenu"> <a href="javascript:void(0)"> <i class="fa fa-bars"></i> </a> </div>
+              <ul class="navs">
+                <li class="active"><a  href="javascript:void(0)">Products</a></li>
+                <li><a href="javascript:void(0)">Custom Design</a></li>
+                <li><a href="javascript:void(0)">Ordering</a></li>
+                <li><a href="javascript:void(0)">Technology</a></li>
+                <li><a href="javascript:void(0)">Resources</a></li>
+                <li class="seperator"><img src="<?php echo get_template_directory_uri(); ?>/images/seperator.png" alt="seperator"></li>
+              </ul>
+            </nav>
+            <div class="searchAndBtn"> <a href="javascript:void(0)" class="fullSearch"><i class="fa fa-search"></i></a> <a href="javascript:void(0)" class="btn btn-get-started"><span>get started</span></a> </div>
+          </div>
+          <!-- breadcrumb ---> 
+          <!--<div class="breadcrumb-area">
+				  	<ol class="breadcrumb">
+					  <li class="breadcrumb-item"><a href="#">Home</a></li>
+					  <li class="breadcrumb-item"><a href="#">Products </a></li>
+					  <li class="breadcrumb-item"><a href="#">Cycling</a></li>
+					  <li class="breadcrumb-item"><a href="#">Jerseys</a></li>
+					  <li class="breadcrumb-item active">Jerseys Comparison </li>
+					</ol>
+				  </div>--> 
+          <!-- breadcrumb ends ---> 
+          
+        </div>
+      </div>
+      
+      <!-- nav area ends --> 
+    </div>
+    <div class="logoArea">
+      <div class="logoInner clearfix"></div>
+      <div class="logoInner2 clearfix"></div>
+      <div class="logoInner3 clearfix"></div>
+      <div class="logoInner4 clearfix"></div>
+    </div>
+    <div class="navArea">
+      <div class="bottomHeader clearfix"></div>
+    </div>
+  </div>
+</header>
+<!-- Header Ends -->
+<section class="slider"> 
+  <!-- <img src="<?php echo get_template_directory_uri(); ?>/images/slider1.jpg" alt=""> --> 
+</section>

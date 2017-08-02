@@ -1,0 +1,26 @@
+<?php
+/**
+ * Template Name: Compare Template
+ */
+ 
+ get_header();
+ //global $product; global $woocommerce;
+?>
+<?php
+while (have_posts()) : the_post();
+
+?>
+<?php
+endwhile;
+?>
+
+ 
+
+<section class="compare-chart">
+	<div class="container">
+	<?php the_content();?>
+	</div>
+</section>
+<?php
+get_footer();
+?>

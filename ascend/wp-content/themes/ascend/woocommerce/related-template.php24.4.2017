@@ -1,0 +1,120 @@
+<?php
+
+/* Author: Shourya Chowdhury
+ * Date: 20-03-17
+ * Version: 1.0
+ * Description: Getting the related product of the page via owl carasoul
+ * 
+ * 
+ * 
+ * */
+?>
+
+
+
+
+
+<section id="related-product" class="related-product-div">
+   <div class="container clearfix"> 
+   
+    <div class="inner-page-heading product-details-heading">
+      <h2 class="partical_bothside"><span></span>Related Products</h2>
+    </div>
+    
+      <div class="product-details-related-div">
+        <div id="owl-demo-2" class="owl-carousel owl-theme">
+			
+			
+			
+			<?php
+
+  global $post;
+  // get categories
+  $terms = wp_get_post_terms( get_the_ID(), 'product_cat' );
+  foreach ( $terms as $term ) $cats_array[] = $term->term_id;
+  $query_args = array( 'post__not_in' => array( get_the_ID() ), 'posts_per_page' => 5, 'no_found_rows' => 1, 'post_status' => 'publish', 'post_type' => 'product', 'tax_query' => array( 
+    array(
+      'taxonomy' => 'product_cat',
+      'field' => 'id',
+      'terms' => $cats_array
+    )));
+  $r = new WP_Query($query_args);
+		
+  if ($r->have_posts()) {
+    ?>
+  
+      <?php while ($r->have_posts()) : $r->the_post(); global $product; global $woocommerce; ?>
+       <article class="thumbnail item" itemscope itemtype="<?php echo woocommerce_get_product_schema(); ?>" id="product-<?php echo get_the_ID(); ?>" <?php $r->post_class(); ?>>
+                <div class="product-details_related-star">
+                 <ul> 
+                  <li> <i class="fa fa-star" aria-hidden="true"></i> </li>
+                  <li> <i class="fa fa-star" aria-hidden="true"></i> </li>
+                  <li> <i class="fa fa-star" aria-hidden="true"></i> </li>
+                  <li> <i class="fa fa-star" aria-hidden="true"></i> </li>
+                  <li> <i class="fa fa-star" aria-hidden="true"></i> </li>
+                 </ul>
+                </div>
+				<a class="blog-thumb-img" href="javascript:void(0)" title="">
+					<?php  $pid = get_the_ID();?>
+					<?php if (has_post_thumbnail()) 
+					{
+					
+					
+					the_post_thumbnail('shop_thumbnail');
+					} else 
+					{
+						
+						echo '<img src="'. woocommerce_placeholder_img_src() .'" alt="Placeholder" width="'.$woocommerce->get_image_size('shop_thumbnail_image_width').'" height="'.$woocommerce->get_image_size('shop_thumbnail_image_height').'" />';
+						} ?>
+					
+					
+					
+				</a>
+				<div class="product-details_related-contant">
+                  <h5> <a href="javascript:void(0)"><?php the_title();?></a> </h5>
+                </div>
+                <div class="product_price_tag clearfix">
+                  <div class="product_price_left">
+                    <span><?php echo $product->get_price_html(); ?></span>
+                  </div>
+                  <div class="product_price_right">
+                    <ul>
+					<li class="yith-wcwl-add-button show">
+					<a href="<?php the_permalink(); ?>?add_to_wishlist=<?php echo $pid; ?>" rel="nofollow" data-product-id="<?php echo $pid; ?>" data-product-type="simple" class="add_to_wishlist">
+					<i class="fa fa-heart" aria-hidden="true"></i></a>
+					<img src="http://onlinedevserver.biz/dev/ascend/wp-content/plugins/yith-woocommerce-wishlist/assets/images/wpspin_light.gif" class="ajax-loading" alt="loading" width="16" height="16" style="visibility:hidden">
+					</li>
+
+                     <li>
+                     <a title="option not available" href="javascript:void(0)"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
+                     
+                     
+                     </li>
+                     <li>  <a href="http://onlinedevserver.biz/dev/ascend?action=yith-woocompare-add-product&amp;id=<?php echo $pid; ?>" class="compare" data-product_id="<?php echo $pid; ?>" rel="nofollow"><i class="fa fa-tags" aria-hidden="true"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+			</article>
+			
+      <?php endwhile; ?>
+    
+    <?php
+    // Reset the global $the_post as this query will have stomped on it
+    wp_reset_query();
+  }
+
+?>
+			
+			
+
+			
+                       
+		</div><!-- #owl-demo-2 -->	
+        <div class="customNavigation">
+            <span class="pager-left"><a class="btn btn-link prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a></span>
+            <span class="pager-right"><a class="btn btn-link next"><i class="fa fa-angle-right" aria-hidden="true"></i></a></span>
+        </div>
+      </div>   
+   </div> 
+  
+  </section>

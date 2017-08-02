@@ -1,0 +1,159 @@
+<?php
+/**
+ * The header for our theme
+ *
+ * This is the template that displays all of the <head> section and everything up until <div id="content">
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package WordPress
+ * @subpackage Ascend_Theme
+ * @since 1.0
+ * @version 1.0
+ */
+
+?>
+
+<!DOCTYPE html>
+<html <?php language_attributes(); ?> class="no-js no-svg">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/custom.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/responsive.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/owl.carousel.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/font-awesome.min.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/flexslider.css">
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+<link rel="stylesheet" href="http://onlinedevserver.biz/dev/ascend/wp-content/plugins/woocommerce/assets/css/woocommerce.css" />
+
+<?php wp_head(); ?>
+</head>
+<body <?php body_class(); ?>>
+<div id="wrapper">
+<div class="fullSecreenSearch">
+  <div class="close"><i class="fa fa-close"></i></div>
+  <div class="formArea">
+    <form>
+      <ul>
+        <li>
+          <input type="text" class="formInput">
+        </li>
+        <li>
+          <input type="submit" class="formSubmit" value="Search">
+        </li>
+      </ul>
+    </form>
+  </div>
+</div>
+<div class="mobile-get-started-div"> <a class="btn mobile-btn-get-started" href="javascript:void(0)"> <img src="<?php echo get_template_directory_uri(); ?>/images/get-started-img.png"> </a> </div>
+<!-- Header start -->
+<header id="main_header" class="steky-header  ">
+  <div class="headerWrap clearfix">
+    <div class="container clearfix">
+      <div class="logo_div"> 
+      <?php the_custom_logo(); ?>
+        <!-- logo area ends --> 
+      </div>
+      <div class="nav_section">
+        <div class="topHeader ">
+          <div class="ulset_wrapper clearfix">
+            <div class="ulSet">
+              <?php echo get_option('webq_top_head');?>
+            </div>
+            <div class="ulSet HeaderSocial">
+              <ul>
+                <li><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="javascript:void(0)"><i class="fa fa-instagram"></i></a></li>
+              </ul>
+            </div>
+            <!-- ends ul set --> 
+          </div>
+        </div>
+        <div class="main_nav_area clearfix">
+          <nav class="mainNav">
+            <div class="responsiveMenu"> <a href="javascript:void(0)"> <i class="fa fa-bars"></i> </a> </div>
+         
+            	<?php if ( has_nav_menu( 'top' ) ) : 
+				clean_custom_menu('top');
+				endif; ?>
+                
+          </nav>
+          <div class="searchAndBtn"> <a href="javascript:void(0)" class="fullSearch"><i class="fa fa-search"></i></a> <a href="javascript:void(0)" class="btn btn-get-started"><span>get started</span></a> </div>
+        </div>
+       <?php if(!is_front_page()) {?>
+
+
+         <section class="custom-breadcumb">
+          <div class="bred-cumb">
+            <?php
+        echo do_shortcode( '[breadcrumb]' ); 
+        if(is_product_category())
+        {?>
+			<div class="woo-bread">
+		<?php	
+        echo woocommerce_breadcrumb();?>
+        </div>
+        <?php }?>
+        
+            </div>
+      </section>
+    <?php }?>
+    
+    <?php //echo do_shortcode( '[breadcrumb]' ); ?>
+      </div>
+      <div class="mobile-top-section clearfix">
+        <div class="nav_section">
+          <div class="topHeader ">
+            <div class="ulset_wrapper clearfix">
+              <div class="ulSet">
+                <?php echo get_option('webq_top_head_responsive');?>
+              </div>
+              <div class="ulSet HeaderSocial">
+                <ul>
+                  <li><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="javascript:void(0)"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+              </div>
+              <!-- ends ul set --> 
+            </div>
+          </div>
+          <div class="logo_div"> <?php the_custom_logo(); ?></div>
+          <div class="main_nav_area clearfix">
+            <nav class="mainNav">
+              <div class="responsiveMenu"> <a href="javascript:void(0)"> <i class="fa fa-bars"></i> </a> </div>
+             <?php if ( has_nav_menu( 'top' ) ) : 
+				clean_custom_menu('top');
+				endif; ?>
+            </nav>
+            <div class="searchAndBtn"> <a href="javascript:void(0)" class="fullSearch"><i class="fa fa-search"></i></a> <a href="javascript:void(0)" class="btn btn-get-started"><span>get started</span></a> </div>
+          </div>
+         
+          
+        </div>
+      </div>
+      
+      <!-- nav area ends --> 
+    </div>
+    <div class="logoArea">
+      <div class="logoInner clearfix"></div>
+      <div class="logoInner2 clearfix"></div>
+      <div class="logoInner3 clearfix"></div> 
+      <div class="logoInner4 clearfix"></div>
+    </div>
+    <div class="navArea">
+      <div class="bottomHeader clearfix"></div>
+
+    </div>
+  </div>
+
+</header>
+
+
+<!-- Header Ends -->
+
+

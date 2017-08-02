@@ -1,0 +1,67 @@
+/*
+Theme Name: Ascend
+Theme URI: https://uniterrene.com/theme
+Author: Shourya Chowdhury
+Author URI: https://uniterrene.com/
+Description: Ascend based on twenty_sventeen
+Version: 1.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: ascend
+* Tags: theme-options
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 Normalize
+2.0 Accessibility
+3.0 Alignments
+4.0 Clearings
+5.0 Typography
+6.0 Forms
+7.0 Formatting
+8.0 Lists
+9.0 Tables
+10.0 Links
+11.0 Featured Image Hover
+12.0 Navigation
+13.0 Layout
+   13.1 Header
+   13.2 Front Page
+   13.3 Regular Content
+   13.4 Posts
+   13.5 Pages
+   13.6 Footer
+14.0 Comments
+15.0 Widgets
+16.0 Media
+   16.1 Galleries
+17.0 Customizer
+18.0 SVGs Fallbacks
+19.0 Media Queries
+20.0 Print
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+1.0 Normalize
+Styles based on Normalize v5.0.0 @link https://github.com/necolas/normalize.css
+--------------------------------------------------------------*/
+ .aligncenter
+ {
+ 
+ }
+.active
+{
+  color:#fff;
+  background-color:#1b75bc !important;
+}
+#show_loader{
+	display:none;
+	height: 70px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    z-index: 99;
+}
+
