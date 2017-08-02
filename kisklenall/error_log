@@ -1,0 +1,1 @@
+[03-Apr-2017 09:58:49 UTC] PHP Fatal error:  Call to undefined function woocommerce_template_loop_add_to_quote() in /home/unitetoh/public_html/onlinedevserver.biz/dev/kisklenall/wp-content/themes/metrostore/sparklethemes/hooks/woocommerce.php on line 69
