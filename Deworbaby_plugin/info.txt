@@ -1,0 +1,1 @@
+you have to unzip this plug in and paste in :deworbaaby\wp-content\plugins\yith-woocommerce-social-login\includes\hybridauth\vendor\facebook\graph-sdk\src
