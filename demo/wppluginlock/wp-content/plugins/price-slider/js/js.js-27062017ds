@@ -1,0 +1,43 @@
+jQuery(document).ready(function() {
+   /* Example 6 */   
+   
+   var percentage = 3;
+    var fixprice=395;
+	var price      = 280000;				 
+				jQuery("#priceSliderVal").text(commaSeparateNumber(price));				
+				jQuery("#pricesave").text(commaSeparateNumber(priceCalcSave(percentage,fixprice,price)));	
+				
+   
+			jQuery("#price").slider();
+			jQuery("#pricecommission").slider();
+				jQuery("#pricecommission").on('slide', function(slideComi) {
+				 var percentage = slideComi.value;
+				 var fixprice=jQuery("#fixedprice").val();
+				 var price      = jQuery("#price").val();				 
+				jQuery("#priceSliderVal").text(commaSeparateNumber(price));				
+				jQuery("#pricesave").text(commaSeparateNumber(priceCalcSave(percentage,fixprice,price)));					
+				});
+			jQuery("#price").on('slide', function(slideEvt) {
+				 var percentage = jQuery("#pricecommission").val();	
+				 var fixprice=jQuery("#fixedprice").val();
+				 var price      = slideEvt.value;				 
+				jQuery("#priceSliderVal").text(commaSeparateNumber(price));				
+				jQuery("#pricesave").text(commaSeparateNumber(priceCalcSave(percentage,fixprice,price)));	
+				});				
+			});
+			
+			function priceCalcSave(percentage,fixprice,price){			
+				 var calcPrice  = parseFloat( price * percentage / 100 );
+				 var pricesave=parseFloat(calcPrice-fixprice);
+					if(pricesave<0){
+						pricesave=0;
+					}
+				return pricesave;
+				}
+			
+function commaSeparateNumber(val){
+    while (/(\d+)(\d{3})/.test(val.toString())){
+      val = val.toString().replace(/(\d+)(\d{3})/, '$1'+','+'$2');
+    }
+    return val;
+  }

@@ -1,0 +1,21 @@
+/*
+Theme Name:     Track
+Description:    Twenty Sixteen Child Theme
+Author:         admin
+Template:       twentysixteen
+
+(optional values you can add: Theme URI, Author URI, Version, License, License URI, Tags, Text Domain)
+*/
+.page-id-145 .content-area {
+    float: left;
+    margin-right: 0 !important;
+    width: 100% !important;
+}
+.paypal-block {
+	display: none !important;
+}
+body div#ui-datepicker-div[style] {
+z-index: 9999 !important;
+position: absolute !important;
+padding-right: 0 !important;
+}

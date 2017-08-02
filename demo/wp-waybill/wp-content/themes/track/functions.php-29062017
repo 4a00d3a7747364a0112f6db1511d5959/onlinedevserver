@@ -1,0 +1,140 @@
+<?php
+
+/*--Recommended way to include parent theme styles.
+
+(Please see http://codex.wordpress.org/Child_Themes#How_to_Create_a_Child_Theme)
+
+--*/  
+
+add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
+function theme_enqueue_styles() {
+
+    wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
+    wp_enqueue_style( 'child-style',
+        get_stylesheet_directory_uri() . '/style.css',
+        array('parent-style')
+    );
+    //wp_enqueue_script( 'pati', get_stylesheet_directory_uri() . '/pati.js', array('jquery'), true);
+}
+
+
+
+/*--Your code goes below--*/
+
+function sb_custom_mail_action () {
+
+    //code to execute on cron run
+
+    $to = 'subrat@uniterrene.com';
+
+	$subject = 'Testing Cron Job Mails';
+
+	$body = 'Aloo Potol er Torkari!!!';
+
+	$headers = array('Content-Type: text/html; charset=UTF-8','From: Subrat Kumar Barik <kelma@baba.com>');
+
+	 
+
+	wp_mail( $to, $subject, $body, $headers );
+
+} 
+//add_action('init', 'sb_custom_mail_action'); 
+
+//gravity form
+add_filter("gform_pre_render", "populate_welcome");
+function populate_welcome($form)
+{
+    //only get data form form id 31
+    if ($form["id"] == 1)
+    {
+        //check what page you are on
+        $current_page = GFFormDisplay::get_current_page($form["id"]);
+        if ($current_page == 2){
+            //set the field on page 2 to the first/last name from page 1
+            //get the name
+            $first = rgpost("input_1");
+            $email = rgpost("input_2");
+            $phone = rgpost("input_11");
+            $bed = rgpost("input_6");
+            $bath = rgpost("input_7");
+            $prop = rgpost("input_8");
+            $loc = rgpost("input_9");
+            $date = rgpost("input_10");
+
+            if( $bed == "1" && $bath == "1" ){
+                $cal = "$250";
+            }elseif ( $bed == "2" && $bath == "1" ) {
+                $cal = "$290";
+            }elseif ( $bed == "2" && $bath == "2" ) {
+                $cal = "$350";
+            }elseif ( $bed == "3" && $bath == "1" ) {
+                $cal = "$350";
+            }elseif ( $bed == "3" && $bath == "2" ) {
+                $cal = "$400";
+            }elseif ( $bed == "3" && $bath == "3" ) {
+                $cal = "$450";
+            }elseif ( $bed == "4" && $bath == "1" ) {
+                $cal = "$400";
+            }elseif ( $bed == "4" && $bath == "2" ) {
+                $cal = "$450";
+            }elseif ( $bed == "4" && $bath == "3" ) {
+                $cal = "$500";
+            }elseif ( $bed == "5" && $bath == "1" ) {
+                $cal = "$450";
+            }elseif ( $bed == "5" && $bath == "2" ) {
+                $cal = "$500";
+            }elseif ( $bed == "5" && $bath == "3" ) {
+                $cal = "$550";
+            }else{
+                $cal = " ";
+            }
+            //$last = rgpost("input_1_6"); //last name field when using the normal name format broken into two fields
+            foreach($form["fields"] as &$field){
+                //html field (id 3) on second page which will display name from first page
+                if ($field["id"] == 13){
+                    //$field["content"] = "Welcome, " . $first . " " . $last;
+
+                    $field["content"] = "Hi ".$first."<br>Thank you for submitting your details with Simply Bond Cleaning. Based on the information you have provided us:<br>Bedrooms: ".$bed."<br>Bathrooms: ".$bath."<br>Property Type: ".$prop."<br>Location: ".$loc."<br>Your Complete Bond Clean will cost ".$cal."<br>No hidden fees or charges just excellent quality service!";
+                }
+            }
+        }
+
+        if ($current_page == 3){
+
+            $first = rgpost("input_1");
+            $email = rgpost("input_2");
+            $phone = rgpost("input_11");
+            $bed = rgpost("input_6");
+            $bath = rgpost("input_7");
+            $prop = rgpost("input_8");
+            $loc = rgpost("input_9");
+            $date = rgpost("input_10");
+
+            foreach($form["fields"] as &$field){
+                //html field (id 3) on second page which will display name from first page
+                if ($field["id"] == 15){
+                    //$field["content"] = "Welcome, " . $first . " " . $last;
+
+                    $field["content"] = "CONFIRM YOUR DETAILS<br>Name: ".$first."<br>Phone: ".$phone."<br>Email: ".$email."<br>Suburb: ".$loc."<br>";
+                }
+            }
+        }
+
+        if ($current_page == 4){
+
+            foreach($form["fields"] as &$field){
+                //html field (id 3) on second page which will display name from first page
+                if ($field["id"] == 21){
+                    //$field["content"] = "Welcome, " . $first . " " . $last;
+
+                    $field["content"] = "THANK YOU<br>We have successfully received your instructions for your Bond Clean. Your nearest Simply Bond Cleaning team member will contact you to confirm you booking date and time.<br>We require an initial $50 deposit to book our services. You can pay your deposit online now via the Pay Now button or over the phone with your credit card.<br>If you are meeting us onsite, the balance of your payment can be made on the day of your Bond Clean with cash, EFTPOS or credit card.";
+                    //$field["content"].=do_shortcode('[wp_cart_button name="Booking Services" price="50"]');
+                }
+            }
+
+        }
+
+    }
+    //return altered form so changes are displayed
+    return $form;
+}
