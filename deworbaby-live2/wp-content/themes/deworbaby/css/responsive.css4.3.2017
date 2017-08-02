@@ -1,0 +1,1094 @@
+/* CSS Document */
+
+
+
+@media (min-width:320px) {
+
+.container {
+
+	width: 90%;
+
+}
+
+}
+
+@media (min-width:480px) {
+
+.container {
+
+	width: 90%;
+
+}
+
+}
+
+ @media (min-width:768px) {
+
+.container {
+
+	width: 90%;
+
+}
+
+}
+
+ @media (min-width:991px) {
+
+.container {
+
+	width: 950px;
+
+}
+
+}
+
+ @media (min-width:1200px) {
+
+.container {
+
+	width: 1180px;
+
+}
+
+}
+
+ @media (min-width:1300px) {
+
+ 	.container {
+
+	width: 1280px;
+
+}
+
+}
+
+ @media (min-width:1366px) {
+
+.container {
+
+	width: 1280px;
+
+}
+
+}
+
+ @media (max-width:1365px) {
+
+body, html {
+
+	font-size: 16px;
+
+}
+
+.mainCapInner h1{
+
+	white-space: inherit;
+
+}
+
+}
+
+ @media (max-width:1280px) {
+
+}
+
+ @media (max-width:1200px) {
+
+ 	.sub_sec_2 .imgHolder{
+
+ 		width: 40%;
+
+ 	}
+
+ 	.sub_sec_2 .description{
+
+ 		width: 60%;
+
+ 	}
+
+ 	.tabsBar{
+
+ 		padding:30px 0;
+
+ 	}
+
+ 	.tabsContent{
+
+ 		padding: 0;
+
+ 	}
+
+ 	.tabs li:first-child::after{
+
+ 		width: 340px;
+
+ 	}
+
+.rightImagePart{
+
+	width: 54%;
+
+	top: -17px
+
+}
+
+.aboutLists li{
+
+	min-height: auto
+
+}
+
+.aboutLists li .liWrap{
+
+	min-height: 164px
+
+}
+
+.social_btn li a{
+
+	min-width: 176px
+
+}
+#faq ul li a{
+	padding: 10px 20px;
+}
+#faq ul li{
+	margin:5px 2px;
+}
+}
+
+@media (max-width:991px) {
+
+	body,html{
+
+		font-size: 14px
+
+	}
+
+	.mainCapInner h1 span{
+
+		font-size: 2rem;
+
+	}
+
+	.mainCapInner h1 {
+
+		font-size: 2.4rem;
+
+	}
+
+.caption{
+
+	    margin-top: -160px;
+
+}	
+
+.maincaptionHolder{
+
+	width: 90%
+
+}
+
+.view_btn{
+
+	margin-top: 20px
+
+}
+
+.page_subscribe .caption .maincaptionHolder .mainCapInner h1{
+
+	font-size: 2.5rem;
+
+}
+
+.page_subscribe .caption .maincaptionHolder .mainCapInner p{
+
+	width: 100%;
+
+	font-size: 1rem;
+
+	line-height: 1rem;
+
+}
+
+.tabsBar.social_Login li a{
+
+	width: auto !important;
+
+	padding: 10px 30px;
+
+}
+
+
+
+.bamboo_diapers .rightPart{
+
+	padding-left: 0
+
+}
+
+.leftContent .forLeft, .forRight{
+
+	float: none;
+
+}
+
+.leftContent .forLeft, .forRight{
+
+	width: 100%
+
+}
+
+.nbs-flexisel-inner{
+
+	height: 302px
+
+}
+
+.proImg{
+
+	height: auto;
+
+}
+
+.rightImagePart {
+
+    width: 48%;
+
+    top: -10px;
+
+}
+
+.freeTrial h3{
+
+	font-size: 58px;
+
+}
+
+.freeTrial h3 span{
+
+	font-size: 32px
+
+}
+
+.social_btn li a{
+
+	width: 100%;
+
+	min-width: auto
+
+}
+
+.social_btn li{
+
+	margin:5px 0;
+
+	width: 100%
+
+}
+#faq ul li a figure{
+	display: none;
+}
+#faq ul li a{
+	font-size: 16px;
+}
+#faq .container{
+	padding: 0
+}
+.sliderSec.inner h1{
+	padding: 0
+}
+}
+
+
+
+ @media (max-width:767px) {
+
+body, html {
+
+	font-size: 12px;
+
+}
+
+.f_left, .f_right {
+
+	float: none;
+
+}
+
+.responsiveMenu{
+
+	display: block;
+
+}
+
+nav ul{
+
+	display: none;
+
+	position: fixed;
+
+	top: 0;
+
+	background: rgba(65,71,109, .9);	
+
+	left: 0;
+
+	right: 0;
+
+	bottom: 0;
+
+	z-index: 99999;
+
+	padding-top: 10%;
+
+}
+
+nav ul li a{
+
+	font-size: 30px;
+
+}
+
+nav ul li{
+
+	display: block !important;
+
+	text-align: center;
+
+}
+
+.rightSide{
+
+	float: none;
+
+	background: transparent;
+
+}
+
+.mainCapInner h1{
+
+	white-space: inherit;
+
+}
+
+.leftPart, .rightPart{
+
+	width: 100%;
+
+	
+
+}
+
+.bamboo_diapers .leftPart{
+
+	padding-bottom: 20px;
+
+}
+
+.rightImagePart img{
+
+	width: 100%;
+
+}
+
+.rightImagePart{
+
+	width: 50%;
+
+	top:0;
+
+	bottom: 0;
+
+	right: -20px;
+
+	padding:0;
+
+	text-align: center;
+
+	background: transparent;
+
+}
+
+.freeTrial{
+
+	padding: 5%;
+
+	margin: 0;
+
+}
+
+.freeTrial h3{
+
+	font-size: 3rem;
+
+	margin-bottom: 10px;
+
+	line-height: 36px;
+
+}
+
+.freeTrial h3 span{
+
+	font-size: 4rem;
+
+}
+
+.about p{
+
+	width: 100%;
+
+}
+
+.socialNAv li{
+
+	padding: 8px;
+
+}
+
+/*.bamboo_diapers .leftPart h4{
+
+	font-size: 3rem;
+
+}*/
+
+.collection .rightPart h2{
+
+	font-size: 3rem;
+
+}
+
+.instagram h2{
+
+	font-size: 2rem;
+
+}
+
+
+
+.about h2{
+
+	font-size: 3rem;
+
+}
+
+.caption{
+
+	margin-top: -124px;
+
+}
+
+.mainCapInner{
+
+	padding: 20px 0
+
+}
+
+.mainContentWrap{
+
+	width: 90%;
+
+}
+
+.bamboo_diapers .leftPart{
+
+	width: 100%;
+
+	float: none;
+
+}
+
+.bamboo_diapers .rightPart{
+
+	float: none;
+
+	width: 100%;
+
+	margin-top: 40px
+
+}
+
+.leftContent .forLeft, .forRight{
+
+	float: left;
+
+}
+
+.leftContent .forLeft, .forRight{
+
+	width: 50%
+
+}
+
+.collection .rightPart{
+
+	padding-left:0;
+
+}
+
+.form_area{
+
+	width: 90%
+
+}
+#privacy_section h5{
+	font-size: 1.613rem;
+}
+#privacy_section h4{
+	font-size: 1.725rem;
+}
+}
+
+ @media (max-width:640px) {
+
+body, html {
+
+	font-size: 10px;
+
+}
+
+.aboutLists li{
+
+	width: 100%;
+
+	margin-top: 10px;
+
+}
+
+li.social{
+
+	margin: 10px 0 0 0;
+
+}
+
+.socialNAv li{
+
+	width: auto;
+
+	margin-top: 0;	
+
+}
+
+.fooWrap li{
+
+	margin: 0 15px;
+
+}
+
+.caption{
+
+	margin-top: -100px;
+
+}
+
+.sub_sec_2{
+
+	background: url(../images/subscribe_bg.png) top center no-repeat;
+
+}
+
+.sub_sec_2 .imgHolder{
+
+	width: 100%;
+
+	text-align: center;
+
+}
+
+.sub_sec_2 .description{
+
+	height: auto !important;
+
+	width: 100%;
+
+}
+
+.sub_sec_2 .description .descrip_table_display .descrip_table_cell_dis p{
+
+	width: 100%;
+
+	font-size: 1.5rem;
+
+	line-height: 2rem;
+
+}
+
+.sub_sec_2 .description .descrip_table_display .descrip_table_cell_dis h2{
+
+	font-size: 3.5rem;
+
+}
+
+.sub_sec_2 .description .descrip_table_display .descrip_table_cell_dis h2 span{
+
+	font-size: 2.7rem;
+
+}
+
+.sub_sec_3{
+
+	background: #ebeffa !important;
+
+}
+
+.tabsBar.social_Login li{
+
+	width: 100%;
+
+	margin-bottom: 10px;
+
+}
+
+.formAreas ul.birthday li{
+
+	width: 100%;
+
+	margin-bottom: 10px;
+
+}
+
+.formAreas ul.genders li{
+
+	font-size: 15px;
+
+}
+
+
+
+.fooWrap li a{
+
+	font-size: 16px
+
+}
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product{
+	width: 48%;	
+	margin: 0;
+	margin-bottom: 10px;
+}
+.woocommerce ul.products{
+	text-align: left;
+}
+
+#privacy_section h5{
+	font-size: 1.913rem;
+}
+#privacy_section h4{
+	font-size: 2.5rem;
+}
+
+}
+
+ @media (max-width: 550px) {
+ 	.woocommerce ul.products li.product, .woocommerce-page ul.products li.product{
+	width: 100%;
+	margin: 0px;
+	margin-bottom: 10px;
+}
+.woocommerce ul.products li.product .price {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+}
+.woocommerce ul.products li.product h3{
+	font-size: 2rem;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.woocommerce div.product form.cart div.quantity{
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.woocommerce div.product form.cart .button {
+	display: block;
+	margin-left: 0;
+}
+.sizechart-link{
+	display: block;
+	margin-left: 0;
+	margin-top: 10px;
+}
+#privacy_section .container {
+    padding: 0px;
+}
+.woocommerce table.shop_table_responsive tr td, .woocommerce-page table.shop_table_responsive tr td{
+	font-size: 12px;
+}
+ .woocommerce table.shop_table th{
+	font-size: 12px !important;
+}
+.woocommerce table.shop_table td{
+	font-size: 12px !important;
+}
+.woocommerce .order_details li{
+	font-size: 1em;
+}
+.checkout_coupon{
+	width: 100% !important;
+}
+.login{
+	width: 100% !important;
+}
+
+}
+
+ @media (max-width:480px) {
+
+body, html {
+
+	font-size: 8px;
+
+}
+
+.mainCapInner{
+
+	padding: 19px 6px;
+
+}
+
+.logoArea img{
+
+	width: 70%;
+
+}
+
+.topHeader .btn{
+
+	width: 113px;
+
+	padding: 16px 0px 17px;
+
+	font-size: 12px;
+
+	text-align: right;
+
+}
+
+.btn{
+
+	width: 143px;	
+
+	font-size: 10px;
+
+}
+
+.leftContent .forLeft{
+
+	width: 100%;
+
+}
+
+.leftContent  a{
+
+	font-size: 15px;
+
+}
+
+.leftContent .forRight{
+
+	width: 100%;
+
+}
+
+.bamboo_diapers{
+
+	padding: 40px 0;
+
+}
+
+.rightImagePart{
+
+	right: 0;
+
+	top: 40px;
+
+}
+
+.fooWrap li{
+
+	width: 49%;
+
+	margin: 0 !important;
+
+}
+
+.fooWrap li a{
+
+	font-size: 14px;
+
+}
+
+.collection .rightPart h2{
+
+	text-align: center;
+
+}
+
+.collection .rightPart h2:after{
+
+	left: 0;
+
+	right: 0;
+
+	margin: 10px auto;
+
+}
+
+.collection .rightPart p{
+
+	text-align: justify;
+
+}
+
+.freeTrial .show_now{
+
+	float: left;
+
+}
+
+.show_now{
+
+	float: none;
+
+	margin: 0 auto;
+
+}
+
+.caption{
+
+	margin-top: -80px;
+
+}
+
+.view_btn{
+
+	padding: 10px 20px;
+
+	margin-top: 10px;
+
+	font-size: 16px
+
+}
+
+.page_subscribe .caption .maincaptionHolder .mainCapInner p{
+
+	display: none;
+
+}
+
+.signIn .formHolder{
+
+	width: 90%;
+
+}
+
+.sub_sec_3 .descrip_table_cell_dis{
+
+	padding-left: 0;
+
+}
+
+.formAreas ul li{
+
+	font-size: 13px;
+
+}
+
+.bamboo_diapers .leftPart h4{
+
+	font-size: 14px
+
+}
+
+.leftContent li .text_box{
+
+	font-size: 16px
+
+}
+
+p{
+
+	font-size: 16px
+
+}
+
+.collection .rightPart{
+
+	text-align: center;
+
+}
+
+.rightImagePart{
+
+	top: 30px;
+
+	width: 40%;
+
+}
+
+.aboutLists li .liWrap{
+
+	min-height: 120px
+
+}
+
+.aboutLists li .liWrap a{
+
+	font-size: 16px
+
+}
+
+.fooWrap li{
+
+	width: auto;
+
+	padding: 0 10px
+
+}
+
+.actual_form_area{
+
+	width: 100%
+
+}
+
+.forgot_area .remember, .forgot_area .forgot{
+
+	padding: 0 5px;
+
+	font-size: 15px
+
+}
+
+.forgot_area .forgot a{
+
+	font-size: 15px
+
+}
+.show_now span{
+	font-size: 14px;
+}
+.sliderSec.inner h1{
+	font-size: 3.588rem;
+}
+#faq h4{
+	font-size: 2.925rem;
+}
+
+#faq h5{
+	font-size: 2.5rem;
+}
+#faq h6{
+	font-size: 2.1rem;
+}
+.sliderSec.inner{
+	min-height: 60px;
+}
+.sliderSec.inner h1{
+	line-height: 60px
+}
+}
+
+ @media (max-width:390px) {
+
+body, html {
+
+	font-size: 7px;
+
+}
+
+.maincaptionHolder{
+
+	border:none;
+
+}
+
+.view_btn{
+
+	margin-top: 0
+
+}
+
+.mainCapInner{
+
+	padding: 10px 6px
+
+}
+
+.caption{
+
+	margin-top: -72px;
+
+}
+
+.rightImagePart{
+
+	display: none;
+
+}
+
+.freeTrial h3{
+
+	text-align: center;
+
+	font-size: 5rem;
+
+	display: inherit;
+
+}
+
+.freeTrial h3 span{
+
+	font-size: 5rem
+
+}
+
+.freeTrial{
+
+	text-align: center;
+
+}
+
+.freeTrial .show_now{
+
+	float: none;
+
+}
+
+.fooWrap li a{
+
+	line-height: 30px
+
+}
+
+.signin_btn button{
+
+	width: 152px;
+
+	font-size: 16px
+
+}
+
+.forgot_area .remember, .forgot_area .forgot{
+
+	width: 100%;
+
+	margin:10px 0;
+
+}
+#faq ul li a{
+	font-size: 14px;
+	padding: 10px
+}
+.fooWrap li a{
+	font-size: 13px;
+}
+.fooWrap li{
+	padding: 0 5px
+}
+}
+
+ @media (max-width:330px) {
+
+}
+

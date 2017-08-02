@@ -1,0 +1,259 @@
+03-15-2017 @ 10:00:34 - customers request: Array
+(
+    [email] => subrat@uniterrene.com
+    [description] => Subrat Barik
+)
+
+03-15-2017 @ 10:00:35 - Error: Stripe no longer supports API requests made with TLS 1.0. Please initiate HTTPS connections with TLS 1.2 or later. You can learn more about this at https://stripe.com/blog/upgrading-tls.
+03-16-2017 @ 06:50:15 - Info: Begin processing payment for order 235 for the amount of 110
+03-16-2017 @ 06:50:15 - charges request: Array
+(
+    [currency] => usd
+    [amount] => 11000
+    [description] => Dewor Baby - Order 235
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_19xsR4IEGsEwwRIx3lYrIltR
+)
+
+03-16-2017 @ 06:50:16 - Error: Stripe no longer supports API requests made with TLS 1.0. Please initiate HTTPS connections with TLS 1.2 or later. You can learn more about this at https://stripe.com/blog/upgrading-tls.
+03-16-2017 @ 12:47:32 - Info: Begin processing payment for order 263 for the amount of 110
+03-16-2017 @ 12:47:32 - charges request: Array
+(
+    [currency] => usd
+    [amount] => 11000
+    [description] => Dewor Baby - Order 263
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_19xy0qIEGsEwwRIx2UNPiC0t
+)
+
+03-16-2017 @ 12:47:33 - Error: Stripe no longer supports API requests made with TLS 1.0. Please initiate HTTPS connections with TLS 1.2 or later. You can learn more about this at https://stripe.com/blog/upgrading-tls.
+03-17-2017 @ 11:13:55 - Info: Begin processing payment for order 306 for the amount of 110
+03-17-2017 @ 11:13:55 - charges request: Array
+(
+    [currency] => usd
+    [amount] => 11000
+    [description] => Dewor Baby - Order 306
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_19yJ1nIEGsEwwRIxzcpq58Lw
+)
+
+03-17-2017 @ 11:13:56 - Error: Stripe no longer supports API requests made with TLS 1.0. Please initiate HTTPS connections with TLS 1.2 or later. You can learn more about this at https://stripe.com/blog/upgrading-tls.
+03-17-2017 @ 12:45:04 - customers request: Array
+(
+    [email] => subrat@uniterrene.com
+    [description] => Subrat Barik
+)
+
+03-17-2017 @ 12:45:05 - Error: Stripe no longer supports API requests made with TLS 1.0. Please initiate HTTPS connections with TLS 1.2 or later. You can learn more about this at https://stripe.com/blog/upgrading-tls.
+03-17-2017 @ 13:11:58 - customers request: Array
+(
+    [email] => akash@uniterrene.com
+    [description] => akash dutta
+)
+
+03-17-2017 @ 13:11:59 - Error: Stripe no longer supports API requests made with TLS 1.0. Please initiate HTTPS connections with TLS 1.2 or later. You can learn more about this at https://stripe.com/blog/upgrading-tls.
+03-17-2017 @ 17:57:20 - Info: Begin processing payment for order 325 for the amount of 110
+03-17-2017 @ 17:57:20 - charges request: Array
+(
+    [currency] => usd
+    [amount] => 11000
+    [description] => Dewor Baby - Order 325
+    [capture] => true
+    [expand[]] => balance_transaction
+    [source] => tok_19yPKBIEGsEwwRIxqLbNxLNx
+)
+
+03-17-2017 @ 17:57:20 - Error: Stripe no longer supports API requests made with TLS 1.0. Please initiate HTTPS connections with TLS 1.2 or later. You can learn more about this at https://stripe.com/blog/upgrading-tls.
+03-18-2017 @ 08:25:24 - customers request: Array
+(
+    [email] => subrat@uniterrene.com
+    [description] => Subrat Barik
+)
+
+03-18-2017 @ 08:25:24 - Error: Stripe no longer supports API requests made with TLS 1.0. Please initiate HTTPS connections with TLS 1.2 or later. You can learn more about this at https://stripe.com/blog/upgrading-tls.
+03-18-2017 @ 11:06:20 - customers request: Array
+(
+    [email] => subrat@uniterrene.com
+    [description] => Subrat Barik
+)
+
+03-18-2017 @ 11:06:20 - Error: Stripe no longer supports API requests made with TLS 1.0. Please initiate HTTPS connections with TLS 1.2 or later. You can learn more about this at https://stripe.com/blog/upgrading-tls.
+03-18-2017 @ 12:15:01 - customers request: Array
+(
+    [email] => subrat@uniterrene.com
+    [description] => Subrat Barik
+)
+
+03-18-2017 @ 12:15:02 - Error: Stripe no longer supports API requests made with TLS 1.0. Please initiate HTTPS connections with TLS 1.2 or later. You can learn more about this at https://stripe.com/blog/upgrading-tls.
+03-18-2017 @ 12:18:47 - customers request: Array
+(
+    [email] => subrat@uniterrene.com
+    [description] => Subrat Barik
+)
+
+03-18-2017 @ 12:18:47 - Error: Stripe no longer supports API requests made with TLS 1.0. Please initiate HTTPS connections with TLS 1.2 or later. You can learn more about this at https://stripe.com/blog/upgrading-tls.
+03-18-2017 @ 12:24:24 - customers request: Array
+(
+    [email] => subrat@uniterrene.com
+    [description] => Subrat Barik
+)
+
+03-18-2017 @ 12:24:24 - Error: Stripe no longer supports API requests made with TLS 1.0. Please initiate HTTPS connections with TLS 1.2 or later. You can learn more about this at https://stripe.com/blog/upgrading-tls.
+03-18-2017 @ 13:01:55 - Error: Please enter your card details to make a payment. Developers: Please make sure that you are including jQuery and there are no JavaScript errors on the page.
+03-22-2017 @ 08:00:31 - Your domain has been verified with Apple Pay!
+03-25-2017 @ 21:06:00 - Info: Begin processing payment for order 412 for the amount of 48.47
+03-25-2017 @ 21:06:00 - charges request: Array
+(
+    [currency] => usd
+    [amount] => 4847
+    [description] => Dewor Baby - Order 412
+    [capture] => true
+    [expand[]] => balance_transaction
+    [metadata] => Array
+        (
+            [Customer Name] => Sebnem Cerezci
+            [Customer Email] => sebnem.goksel@deworbaby.com
+        )
+
+    [source] => tok_1A1M5BLccxBg3BFyiFmclvZq
+)
+
+03-25-2017 @ 21:06:02 - Processing response: stdClass Object
+(
+    [id] => ch_1A1M5FLccxBg3BFyBQQ92cXw
+    [object] => charge
+    [amount] => 4847
+    [amount_refunded] => 0
+    [application] => 
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_1A1M5GLccxBg3BFyUvzBmqqH
+            [object] => balance_transaction
+            [amount] => 4847
+            [available_on] => 1491004800
+            [created] => 1490475961
+            [currency] => usd
+            [description] => Dewor Baby - Order 412
+            [fee] => 171
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 171
+                            [application] => 
+                            [currency] => usd
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 4676
+            [source] => ch_1A1M5FLccxBg3BFyBQQ92cXw
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_1A1M5FLccxBg3BFyBQQ92cXw
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1490475961
+    [currency] => usd
+    [customer] => 
+    [description] => Dewor Baby - Order 412
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 1
+    [metadata] => stdClass Object
+        (
+            [Customer Name] => Sebnem Cerezci
+            [Customer Email] => sebnem.goksel@deworbaby.com
+        )
+
+    [on_behalf_of] => 
+    [order] => 
+    [outcome] => stdClass Object
+        (
+            [network_status] => approved_by_network
+            [reason] => 
+            [risk_level] => normal
+            [seller_message] => Payment complete.
+            [type] => authorized
+        )
+
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_1A1M5FLccxBg3BFyBQQ92cXw/refunds
+        )
+
+    [review] => 
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_1A1M5ALccxBg3BFyNfHi7FKI
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 3
+            [exp_year] => 2020
+            [fingerprint] => zVRlMt7sMAdzXvNA
+            [funding] => credit
+            [last4] => 2017
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => sebnem.goksel@deworbaby.com
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+    [transfer_group] => 
+)
+
+03-25-2017 @ 21:06:02 - Success: Stripe charge complete (Charge ID: ch_1A1M5FLccxBg3BFyBQQ92cXw)

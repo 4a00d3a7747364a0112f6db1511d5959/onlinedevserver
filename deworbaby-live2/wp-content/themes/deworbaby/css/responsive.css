@@ -1,0 +1,1813 @@
+/* CSS Document */
+
+
+
+@media (min-width:320px) {
+
+.container {
+
+	width: 90%;
+
+}
+p{
+	font-size: 17px !important;
+}
+
+}
+
+@media (min-width:480px) {
+
+.container {
+
+	width: 90%;
+
+}
+
+}
+
+ @media (min-width:768px) {
+
+.container {
+
+	width: 90%;
+
+}
+
+}
+
+ @media (min-width:991px) {
+
+.container {
+
+	width: 950px;
+
+}
+
+}
+
+ @media (min-width:1200px) {
+
+.container {
+
+	width: 1180px;
+
+}
+
+}
+
+ @media (min-width:1300px) {
+
+ 	.container {
+
+	width: 1280px;
+
+}
+
+}
+
+ @media (min-width:1366px) {
+
+.container {
+
+	width: 1280px;
+
+}
+
+}
+
+ @media (max-width:1365px) {
+
+body, html {
+
+	font-size: 16px;
+
+}
+
+.mainCapInner h1{
+
+	white-space: inherit;
+
+}
+
+}
+
+ @media (max-width:1280px) {
+
+ 	p.short {
+	    margin: 10px auto;
+	    text-align: justify;
+	}
+
+}
+
+ @media (max-width:1200px) {
+ 	.deworbaby_commitement .content{
+ 		background: rgba(255,255,255, .5);
+	    border: 1px solid #ddd;
+	    padding: 20px;
+ 	}
+
+ 	.sub_sec_2 .imgHolder{
+
+ 		width: 40%;
+
+ 	}
+
+ 	.sub_sec_2 .description{
+
+ 		width: 60%;
+
+ 	}
+
+ 	.tabsBar{
+
+ 		padding:30px 0;
+
+ 	}
+
+ 	.tabsContent{
+
+ 		padding: 0;
+
+ 	}
+
+ 	.tabs li:first-child::after{
+
+ 		width: 340px;
+
+ 	}
+
+.rightImagePart{
+
+	width: 54%;
+
+	top: -17px
+
+}
+
+.aboutLists li{
+
+	min-height: auto
+
+}
+
+.aboutLists li .liWrap{
+
+	min-height: 164px
+
+}
+
+.social_btn li a{
+
+	min-width: 176px
+
+}
+#faq ul li a{
+	padding: 10px 20px;
+}
+#faq ul li{
+	margin:5px 2px;
+}
+.ywsl-social.ywsl-facebook, .ywsl-social.ywsl-google{
+	min-width: 175px;
+	padding: 10px 20px
+}
+.actual_form_area p{
+	width: 100%;
+}
+.deworbaby_mission .content p{
+	text-align: justify;
+}
+.deworbaby_mission .content {    
+    width: 50%;
+    padding: 40px 20px;
+    background: rgba(255,255,255, .5);   
+    border: 1px solid #ddd;
+}
+
+
+}
+
+@media (max-width:991px) {
+
+	.deworbaby_commitement .content p{
+		text-align: justify !important;
+	}
+
+	body,html{
+
+		font-size: 14px
+
+	}
+
+	.mainCapInner h1 span{
+
+		font-size: 2rem;
+
+	}
+
+	.mainCapInner h1 {
+
+		font-size: 2.4rem;
+
+	}
+
+.caption{
+
+	    margin-top: -160px;
+
+}	
+
+.maincaptionHolder{
+
+	width: 90%
+
+}
+
+.view_btn{
+
+	margin-top: 20px
+
+}
+
+.page_subscribe .caption .maincaptionHolder .mainCapInner h1{
+
+	font-size: 2.5rem;
+
+}
+
+.page_subscribe .caption .maincaptionHolder .mainCapInner p{
+
+	width: 100%;
+
+	font-size: 1rem;
+
+	/*line-height: 1rem;*/
+
+}
+
+.tabsBar.social_Login li a{
+
+	width: auto !important;
+
+	padding: 10px 30px;
+
+}
+
+
+
+.bamboo_diapers .rightPart{
+
+	padding-left: 0
+
+}
+
+.leftContent .forLeft, .forRight{
+
+	float: none;
+
+}
+
+.leftContent .forLeft, .forRight{
+
+	width: 100%
+
+}
+
+.nbs-flexisel-inner{
+
+	height:auto
+
+}
+
+.proImg{
+
+	height: auto;
+
+}
+
+.rightImagePart {
+
+    width: 48%;
+
+    top: -10px;
+
+}
+
+.freeTrial h3{
+
+	font-size: 58px;
+
+}
+
+.freeTrial h3 span{
+
+	font-size: 32px
+
+}
+
+.social_btn li a{
+
+	width: 100%;
+
+	min-width: auto
+
+}
+
+.social_btn li{
+
+	margin:5px 0;
+
+	width: 100%
+
+}
+#faq ul li a figure{
+	display: none;
+}
+#faq ul li a{
+	font-size: 16px;
+}
+#faq .container{
+	padding: 0
+}
+.sliderSec.inner h1{
+	padding: 0
+}
+.signIn{
+	padding: 0
+}
+.form_area{
+	width: 100%
+}
+.wholesale_section .form_area{
+	background: rgba(255,255,255,.8)
+}
+.wholesale_section{
+	width: 100%;
+	margin: 0 auto;
+	float: none;
+}
+.wholesale_form_area{
+	background-position: center center; 
+}
+a.bars{
+	display: inline-block !important;
+	padding-top:5px;
+}
+#main_header .right_part > ul:nth-of-type(1){
+	display: none;
+}
+#main_header .right_part ul:nth-of-type(2) li a{
+	padding: 44px 10px
+}
+.cartAmmount{
+	top: 24px
+}
+nav.responsive{
+	width: 100%;
+	height: 100%;
+	background: rgba(65, 71, 109, .95);
+	position: fixed;
+	left: 0;
+	z-index: 999999999999;
+	top: 0
+}
+nav.responsive .close{
+	display: block;
+}
+nav.responsive > ul:nth-of-type(1){
+	display: block !important;
+	padding-top: 60px !important;
+	width: 65%;
+	margin: 0 auto !important
+}
+nav.responsive ul:nth-of-type(1) li{
+	display: block !important;
+}
+nav.responsive ul:nth-of-type(1) li:nth-of-type(3){
+	display: none !important;
+}
+nav.responsive ul:nth-of-type(1) li:nth-of-type(4){
+	display: none !important;
+}
+nav.responsive ul:nth-of-type(1) li:nth-of-type(6){
+	display: none !important;
+}
+nav.responsive ul:nth-of-type(1) li a{
+	padding: 10px 0 !important;
+	color: #fff !important
+}
+#main_header nav.responsive ul.child{
+	position: relative;
+	width: 100%;
+	display: none !important;
+}
+nav.responsive ul:nth-of-type(1) li.has:hover ul.child{
+	display: block !important;
+}
+.circle {
+    width: 15px;
+    height: 15px;
+}
+.circle:after {
+    width: 15px;
+    height: 15px;    
+    left: -3px;
+    top: -3px;
+    border: 1px solid #caaa55;
+}
+
+.popbox.crl1 .content {
+    right: inherit;
+    top: 43px;
+    z-index: 999;
+    bottom: inherit;
+    background: rgba(255,255,255, .8);
+}
+.popbox.crl2 .content {
+    right: inherit;
+    top: 60px;
+    z-index: 99;
+    left: -230px;
+    background: rgba(255,255,255, .8);
+}
+.popbox.crl3 .content {
+    right: -300px;
+    z-index: 999;
+    top: 47px;
+    background: #fff;
+}
+.popbox.crl6 .content {
+    left: -230px;
+    top: -160px;
+    background: #fff;
+}
+.popbox.crl6 .content  .closeContent{
+	left: initial;
+    right: 0;
+}
+.popbox.crl4 .content {
+    top: 50px;
+    left: initial;
+    right: -180px;
+    z-index: 999;
+    background: #fff;
+}
+.popbox.crl1:after{
+	display: none !important ;
+}
+.popbox.crl2:after{
+	display: none !important ;
+}
+.popbox.crl3:after{
+	display: none !important ;
+}
+.popbox.crl4:after{
+	display: none !important ;
+}
+.popbox.crl5:after{
+	display: none !important ;
+}
+.popbox.crl6:after{
+	display: none !important ;
+}
+.pro_img .sectionHeading {
+    position: inherit;
+    left: 0;
+    width: 100%;   
+}
+.popbox.crl5 .content {
+    background: #fff;
+}
+
+/* ranit  */
+.right_part.clearfix.responsive{
+ overflow: auto !important;
+}
+
+.right_part.clearfix.responsive > ul{
+ overflow: auto !important;
+}
+
+li.listNo_4{
+ background: transparent !important;
+}
+nav.responsive li.listNo_4 ul{
+ background: transparent !important;
+ width: 100% !important;
+    position: inherit !important;
+    padding: 0  !important;
+    display: block !important;
+}
+
+nav.responsive li.listNo_4 ul a{
+     text-transform: uppercase  !important;
+     text-align: center !important;
+}
+nav.responsive li#navds ul{
+ width: 100%;
+    background: transparent;
+    position: inherit !important;
+    padding: 0  !important;
+    display: none;
+}
+nav.responsive li#navds ul a{
+  text-transform: uppercase  !important;
+     text-align: center !important;
+}
+
+#main_header .right_part{
+	text-align: center;
+	/*width: auto;
+	position: inherit;*/
+	margin-right: 70px;
+}
+a.bars{
+	right:0;
+}
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product{
+	min-height: 338px;
+}
+}
+
+
+
+ @media (max-width:767px) {
+
+.deworbaby .container {
+	padding: 20px 0;
+}
+
+body, html {
+
+	font-size: 12px;
+
+}
+
+.f_left, .f_right {
+
+	float: none;
+
+}
+
+.responsiveMenu{
+
+	display: block;
+
+}
+
+/*nav ul{
+
+	display: none;
+
+	position: fixed;
+
+	top: 0;
+
+	background: rgba(65,71,109, .9);	
+
+	left: 0;
+
+	right: 0;
+
+	bottom: 0;
+
+	z-index: 99999;
+
+	padding-top: 10%;
+
+}
+
+nav ul li a{
+
+	font-size: 30px;
+
+}
+
+nav ul li{
+
+	display: block !important;
+
+	text-align: center;
+
+}*/
+
+.rightSide{
+
+	float: none;
+
+	background: transparent;
+
+}
+
+.mainCapInner h1{
+
+	white-space: inherit;
+
+}
+
+.leftPart, .rightPart{
+
+	width: 100%;
+
+	
+
+}
+
+.bamboo_diapers .leftPart{
+
+	padding-bottom: 20px;
+	padding-top: 0
+
+}
+
+.rightImagePart img{
+
+	width: 100%;
+
+}
+
+.rightImagePart{
+
+	width: 50%;
+
+	top:0;
+
+	bottom: 0;
+
+	right: -20px;
+
+	padding:0;
+
+	text-align: center;
+
+	background: transparent;
+
+}
+
+.freeTrial{
+
+	padding: 5%;
+
+	margin: 0;
+
+}
+
+.freeTrial h3{
+
+	font-size: 3rem;
+
+	margin-bottom: 10px;
+
+	line-height: 36px;
+
+}
+
+.freeTrial h3 span{
+
+	font-size: 4rem;
+
+}
+
+.about p{
+
+	width: 100%;
+	margin-top: 10px;
+	text-align: justify;
+}
+
+.socialNAv li{
+
+	padding: 8px;
+
+}
+
+/*.bamboo_diapers .leftPart h4{
+
+	font-size: 3rem;
+
+}*/
+
+.collection .rightPart h2{
+
+	font-size: 3rem;
+
+}
+
+.instagram h2{
+
+	font-size: 2rem;
+
+}
+
+
+
+.about h2{
+
+	font-size: 3rem;
+
+}
+
+.caption{
+
+	margin-top: -124px;
+
+}
+
+.mainCapInner{
+
+	padding: 20px 0
+
+}
+
+.mainContentWrap{
+
+	width: 90%;
+
+}
+
+.bamboo_diapers .leftPart{
+
+	width: 100%;
+	float: none;
+    text-align: center;
+}
+.bamboo_diapers .leftPart h2 {
+	text-align: center;
+}
+.bamboo_diapers .leftPart h4{
+	display: inline-block;
+}
+.bamboo_diapers .leftPart h4::after{
+	left: 0;
+right: 0;
+margin: auto
+}
+.leftContent li{
+	text-align:left;
+}
+.leftContent{
+	text-align: center;
+}
+.leftContent .forLeft, .leftContent .forRight{
+	display: inline-block;
+	float: none;
+	width: auto;
+}
+
+.bamboo_diapers .rightPart{
+
+	float: none;
+
+	width: 100%;
+
+	/*margin-top: 40px*/
+
+}
+
+/*.leftContent .forLeft, .forRight{
+
+	float: left;
+
+}
+*/
+.leftContent .forLeft, .forRight{
+
+	width: 50%
+
+}
+
+.collection .rightPart{
+
+	padding-left:0;
+	text-align: center
+
+}
+.collection .rightPart p{
+	text-align:center;
+}
+.collection .show_now{
+	float: none;
+}
+
+/*.form_area{
+
+	width: 90%
+
+}*/
+#privacy_section h5{
+	font-size: 1.613rem;
+}
+#privacy_section h4{
+	font-size: 1.725rem;
+}
+.woocommerce-message, .woocommerce table.shop_table_responsive tr td, .woocommerce-page table.shop_table_responsive tr td{
+	font-size: 15px;
+}
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button{
+	display: block;
+	text-align: center;
+	margin-bottom: 1em;
+	font-size: 2.25em;
+	padding: .5em;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+.woocommerce form.login.custom {
+	width: 100%
+}
+.woocommerce-info{
+	font-size: 15px;
+}
+.woocommerce-info a{
+	font-size: 15px
+}
+.woocommerce-checkout #payment ul.payment_methods li label{
+font-size: 15px	
+}
+.woocommerce .checkout table.shop_table th{
+	font-size: 18px !important
+}
+.woocommerce-checkout #payment div.payment_box{
+	width: 100%
+}
+.ywsl-social.ywsl-facebook, .ywsl-social.ywsl-google{
+	min-width: 130px;
+	padding: 10px 20px
+}
+.deworbaby .container .content {
+    width: 50%;
+    padding: 50px 0px 50px 40px;
+}
+.deworbaby .container .content p{
+	text-align:justify;
+}
+
+#feature ul.feature_top_list li{
+	margin:26px;
+}
+
+#feature ul.feature_top_list li p{
+	text-align: center;
+}
+.bamboo_diapers .rightPart .videoPart img{
+	width: 100%
+}
+.bamboo_diapers .leftContent p{
+	text-align: center;
+}
+.about p{
+	text-align: center;
+}
+.aboutLists > ul > li{
+	width: 62%;
+	margin:10px auto;
+}
+
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product{
+	width: 42%;
+	margin:20px;
+}
+.woocommerce ul.products li.product:nth-child(2n), .woocommerce-page ul.products li.product:nth-child(2n){
+	float: none;
+}
+
+.page_subscribe .caption .maincaptionHolder .mainCapInner{
+	padding:5px 10px;
+}
+.archive .slider .slide img{
+	width: 120%;
+	max-width: 200%;
+}
+/*.home .slider .slide img{
+	width: 100%;
+	max-width: 100%;
+}
+*/
+}
+ @media (max-width:661px) {
+	.deworbaby .container .content{
+		background: rgba(255,255,255, .5);
+    	padding: 20px;
+	}
+
+	.bamboo_diapers.inner{
+		padding: 30px 0;
+	}
+	.deworbaby_mission .content{
+		width: 100%;
+	    padding: 10px;
+	    margin-top: 38%;
+	}
+	.deworbaby_mission{
+		background: url(../images/mission_pic.jpg) no-repeat center center !important;
+	}
+
+	.deworbaby_commitement .content {
+		width: 100%;
+	    background: rgba(255,255,255, .5);
+	    border: 1px solid #ddd;
+	    padding: 20px;
+	    margin: 50px 0;
+	}
+	.deworbaby_commitement .content h3{
+		text-align: center;
+	}
+	.deworbaby_commitement .content p{
+		text-align: center;
+	}
+	.deworbaby_commitement {
+	    background: #fff url(../images/commitment_pic.jpg) no-repeat center center !important;
+	    margin: 50px 0;
+	    background-size: cover !important;
+	}
+ }
+
+ @media (max-width:640px) {
+
+body, html {
+
+	font-size: 10px;
+
+}
+
+.aboutLists li{
+
+	width: 100%;
+
+	margin-top: 10px;
+
+}
+
+li.social{
+
+	margin: 10px 0 0 0;
+
+}
+
+.socialNAv li{
+
+	width: auto;
+
+	margin-top: 0;	
+
+}
+
+.fooWrap li{
+
+	margin: 0 15px;
+
+}
+
+.caption{
+
+	margin-top: -100px;
+
+}
+
+.sub_sec_2{
+
+	background: url(../images/subscribe_bg.png) top center no-repeat;
+
+}
+
+.sub_sec_2 .imgHolder{
+
+	width: 100%;
+
+	text-align: center;
+
+}
+
+.sub_sec_2 .description{
+
+	height: auto !important;
+
+	width: 100%;
+
+}
+
+.sub_sec_2 .description .descrip_table_display .descrip_table_cell_dis p{
+
+	width: 100%;
+
+	/*font-size: 1.5rem;
+
+	line-height: 2rem;*/
+
+}
+
+.sub_sec_2 .description .descrip_table_display .descrip_table_cell_dis h2{
+
+	font-size: 3.5rem;
+
+}
+
+.sub_sec_2 .description .descrip_table_display .descrip_table_cell_dis h2 span{
+
+	font-size: 2.7rem;
+
+}
+
+.sub_sec_3{
+
+	background: #ebeffa !important;
+
+}
+
+.tabsBar.social_Login li{
+
+	width: 100%;
+
+	margin-bottom: 10px;
+
+}
+
+.formAreas ul.birthday li{
+
+	width: 100%;
+
+	margin-bottom: 10px;
+
+}
+
+.formAreas ul.genders li{
+
+	font-size: 15px;
+
+}
+
+
+
+.fooWrap li a{
+
+	font-size: 16px
+
+}
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product{
+	width: 48%;	
+	margin: 0;
+	margin-bottom: 10px;
+}
+.woocommerce ul.products{
+	text-align: left;
+}
+
+#privacy_section h5{
+	font-size: 1.913rem;
+}
+#privacy_section h4{
+	font-size: 2.5rem;
+}
+.ywsl-social.ywsl-facebook, .ywsl-social.ywsl-google{
+	min-width: 110px;
+    padding: 10px 10px;
+}
+/* ranit 17-3-17 */
+.sliderSec.slider1 .caption {
+    margin-top: -70px;
+}
+.nature_bamboo .left_part {
+    width: 100%;    
+    padding: 20px;
+}
+.nature_bamboo .right_part {
+    width: 100%;
+     float: none; 
+    padding: 40px;
+    padding-right: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 80px;   
+    position: inherit;
+    display: inherit;
+}
+.nature_bamboo .right_part p{
+	font-size: 15px;
+	text-align: justify;
+
+}
+.popbox .content{
+	width: 420px;
+}
+.popbox.crl1 {
+    right: 21%;
+    top: 47%;
+}
+.popbox.crl2 {
+    right: 50%;
+    top: 50%;
+}
+.popbox.crl3 {
+    right: 55%;
+    top: 73%;
+}
+.popbox {
+    position: absolute;
+    right: 40%;
+    top: 60%;
+}
+.popbox.crl5 {
+    right: 11%;
+    top: 64%;
+}
+.popbox.crl6 {
+    right: inherit;
+    bottom: 4%;
+    top: inherit;
+    left: 41%;
+}
+
+.archive .slider .slide img{
+	width: 190%;
+	max-width: 200%;
+}
+/*.home .slider .slide img{
+	width: 100%;
+	max-width: 100%;
+}
+*/
+
+}
+
+ @media (max-width: 550px) {
+ 	.woocommerce ul.products li.product, .woocommerce-page ul.products li.product{
+	width: 100%;
+	margin: 0px;
+	margin-bottom: 10px;
+}
+.woocommerce ul.products li.product .price {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+}
+.woocommerce ul.products li.product h3{
+	font-size: 2rem;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.woocommerce div.product form.cart div.quantity{
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.woocommerce div.product form.cart .button {
+	display: block;
+	margin-left: 0;
+}
+.sizechart-link{
+	display: block;
+	margin-left: 0;
+	margin-top: 10px;
+}
+#privacy_section .container {
+    padding: 0px;
+}
+.woocommerce table.shop_table_responsive tr td, .woocommerce-page table.shop_table_responsive tr td{
+	font-size: 12px;
+}
+ .woocommerce table.shop_table th{
+	font-size: 12px !important;
+}
+.woocommerce table.shop_table td{
+	font-size: 12px !important;
+}
+.woocommerce .order_details li{
+	font-size: 1em;
+}
+.checkout_coupon{
+	width: 100% !important;
+}
+.login{
+	width: 100% !important;
+}
+.popbox .content p{
+	font-size: 14px;
+	text-align: center !important;
+}
+.popbox.crl3 .content{
+	right:-120px !important;
+}
+.popbox .content h5{
+	white-space: nowrap;
+}
+.popbox .content{
+	width: auto;
+	right: inherit !important;
+    top: inherit !important;
+    bottom: inherit;
+    left: inherit !important;
+}
+.popbox .content:after{
+	display: none;
+}
+.pro_img h5{
+	font-size: 2rem;
+}
+#feature h4{
+	font-size: 2rem;
+}
+#feature ul.feature_top_list li{
+	width: 100%;
+}
+ul.feature_list li a span.text{
+	font-size: 14px;
+	padding-top: 10px;
+    display: block 
+}
+.nature_bamboo .right_part{
+	padding: 15px;
+}
+#feature ul.feature_top_list li {
+    width: 48%;
+	margin: 10px 0;
+}
+.closeContent{
+	display: none !important;
+}
+#feature {
+    padding: 25px 0;
+}
+
+.deworbaby .container .content{
+	width: 100%;
+}
+
+
+
+
+}
+
+ @media (max-width:480px) {
+
+ .deworbaby_mission .content{
+ 	margin-top: 0;
+ }	
+ .deworbaby_mission{
+ 	padding-bottom: 50px;
+ }
+
+ .closeContent{
+ 	display: none !important;
+ }	
+
+body, html {
+
+	font-size: 8px;
+
+}
+
+.mainCapInner{
+
+	padding: 19px 6px;
+
+}
+
+.logoArea img{
+
+	width: 70%;
+
+}
+
+.topHeader .btn{
+	width: auto;
+	padding: 15px 8px 14px 8px;
+	font-size: 15px;
+	text-align: right;
+}
+
+.btn{
+
+	width: 143px;	
+
+	font-size: 10px;
+
+}
+
+.leftContent .forLeft{
+
+	width: 100%;
+
+}
+
+.leftContent  a{
+
+	font-size: 15px;
+
+}
+
+.leftContent .forRight{
+
+	width: 100%;
+
+}
+
+.bamboo_diapers{
+
+	padding: 40px 0;
+
+}
+
+.rightImagePart{
+
+	right: 0;
+
+	top: 40px;
+
+}
+
+.fooWrap li{
+
+	width: 49%;
+
+	margin: 0 !important;
+
+}
+
+.fooWrap li a{
+
+	font-size: 14px;
+
+}
+
+.collection .rightPart h2{
+
+	text-align: center;
+
+}
+
+.collection .rightPart h2:after{
+
+	left: 0;
+
+	right: 0;
+
+	margin: 10px auto;
+
+}
+
+.collection .rightPart p{
+
+	text-align: justify;
+
+}
+
+.freeTrial .show_now{
+
+	float: left;
+
+}
+
+.show_now{
+
+	float: none;
+
+	margin: 0 auto;
+
+}
+
+.caption{
+
+	margin-top: -80px;
+
+}
+
+.view_btn{
+
+	padding: 10px 20px;
+
+	margin-top: 10px;
+
+	font-size: 16px
+
+}
+
+.page_subscribe .caption .maincaptionHolder .mainCapInner p{
+
+	//display: none;
+
+
+
+}
+
+.signIn .formHolder{
+
+	width: 90%;
+
+}
+
+.sub_sec_3 .descrip_table_cell_dis{
+
+	padding-left: 0;
+
+}
+
+.formAreas ul li{
+
+	font-size: 13px;
+
+}
+
+.bamboo_diapers .leftPart h4{
+
+	font-size: 14px
+
+}
+
+.leftContent li .text_box{
+
+	font-size: 16px
+
+}
+
+p{
+
+	font-size: 16px;	
+
+}
+.bamboo_diapers .leftContent p{
+		text-align: justify;
+	}
+
+.collection .rightPart{
+
+	text-align: center;
+
+}
+
+.rightImagePart{
+
+	top: 30px;
+
+	width: 40%;
+
+}
+
+.aboutLists li .liWrap{
+
+	min-height: 120px
+
+}
+
+.aboutLists li .liWrap a{
+
+	font-size: 16px
+
+}
+
+.fooWrap li{
+
+	width: auto;
+
+	padding: 0 10px
+
+}
+
+.actual_form_area{
+
+	width: 100%
+
+}
+
+.forgot_area .remember, .forgot_area .forgot{
+
+	padding: 0 5px;
+
+	font-size: 15px
+
+}
+
+.forgot_area .forgot a{
+
+	font-size: 15px
+
+}
+.show_now span{
+	font-size: 14px;
+}
+.sliderSec.inner h1{
+	font-size: 3.588rem;
+}
+#faq h4{
+	font-size: 2.925rem;
+}
+
+#faq h5{
+	font-size: 2.5rem;
+}
+#faq h6{
+	font-size: 2.1rem;
+}
+.sliderSec.inner{
+	min-height: 60px;
+}
+.sliderSec.inner h1{
+	line-height: 60px
+}
+.form_inner{
+	padding: 10px;
+}
+.coupon #coupon_code{
+	width: 100%;
+	float: none;
+	margin-bottom: 12px
+}
+.woocommerce-page table.cart td.actions .coupon .input-text + .button{
+	width: 100% !important;
+	float: none;
+}
+.woocommerce table.cart td.actions .coupon + .button{
+	width: 100% !important;
+
+	float: none
+}
+.half{
+	width: 100%;
+	float: none;
+}
+.half:first-child{
+	padding-right: 0
+}
+.half:last-child{
+	padding-left: 0
+}
+#whole_sale_enquiry h4{
+	font-size: 2.65rem
+}
+#whole_sale_enquiry h5{
+	font-size: 2.25rem
+}
+/*.retail_box .text{
+	font-size: 18px
+}*/
+.retail_box .text{
+	font-size: 15px
+}
+.retail_box{
+	width: 100%;
+    display: block;
+    margin: 5px 0
+}
+.ywsl-social.ywsl-facebook, .ywsl-social.ywsl-google{
+	width: 100%;
+	margin: 10px 0;
+	display: block;
+	min-width: 100%
+}
+#main_header .left_part{
+	/*float: none;
+	width: 100%;*/
+}
+#main_header .left_part img{
+	max-width: 90% !important
+}
+#main_header .right_part {
+	/*width: 100%;
+	float: none;*/
+	text-align: center;
+	margin-top: 15px;
+}
+#main_header .right_part  ul li a{
+	padding: 20px 10px !important
+}
+a.bars{
+	/*right: 20px;*/
+    bottom: 45px;
+    top:auto;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+}
+.circle:after{
+    width: 10px;
+    height: 10px;
+}
+.popbox.crl1 {
+    right: 21%;
+    top: 65%;
+}
+.popbox.crl2 {
+    right: 50%;
+    top: 70%;
+}
+.popbox.crl3 {
+    right: 55%;
+    top: 82%;
+}
+.popbox {
+    position: absolute;
+    right: 40%;
+    top: 75%;
+}
+.popbox.crl5 {
+    right: 11%;
+    top: 77%;
+}
+.popbox.crl6 {
+    right: inherit;
+    bottom: 4%;
+    top: inherit;
+    left: 41%;
+}
+.deworbaby .container .content {
+    width: 75%;
+    padding: 20px;
+}
+
+#main_header .right_part ul{
+	margin-left: 0
+}
+
+.sliderSec.slider1 .maincaptionHolder {
+    width: 100%;
+    padding-top: 5px;
+}
+.mainCapInner{
+	padding: 6px !important;
+}
+.sliderSec.slider1 .mainCapInner h1{
+	font-size: 13px !important;
+}
+.sliderSec.slider1 .caption{
+	width: 70%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	margin-top: -35px;
+
+}
+.aboutLists > ul > li{
+	width: 100%;
+}
+.slider .slide img{
+	width: 100%;
+	max-width: 100%;
+}
+#privacy_section p{
+	text-align: justify;
+}
+#privacy_section{
+	padding: 20px 0
+}
+ul.pmsc_tabs li{
+	font-size: 11px !important
+}
+.woocommerce-checkout .phoen_checkout_butt_next{
+	font-size: 1.75em;
+}
+.woocommerce a.button{
+	font-size: 15px;
+}
+}
+
+ @media (max-width:390px) {
+
+
+
+body, html {
+
+	font-size: 7px;
+
+}
+
+.maincaptionHolder{
+
+    border: none;
+    margin: 0;
+    text-align: left;
+
+}
+
+.view_btn{
+
+	margin-top: 0
+
+}
+
+.mainCapInner{
+
+	padding: 10px 6px
+
+}
+
+.post-type-archive-product .caption{
+	
+	position: inherit !important;
+
+}
+.post-type-archive-product .slider .slide img{
+	width: 100% !important;
+}
+
+.rightImagePart{
+
+	display: none;
+
+}
+
+.freeTrial h3{
+
+	text-align: center;
+
+	font-size: 5rem;
+
+	display: inherit;
+
+}
+
+.freeTrial h3 span{
+
+	font-size: 5rem
+
+}
+
+.freeTrial{
+
+	text-align: center;
+
+}
+
+.freeTrial .show_now{
+
+	float: none;
+
+}
+
+.fooWrap li a{
+
+	line-height: 30px
+
+}
+
+.signin_btn button{
+
+	width: 152px;
+
+	font-size: 16px
+
+}
+
+.forgot_area .remember, .forgot_area .forgot{
+
+	width: 100%;
+
+	margin:10px 0;
+
+}
+#faq ul li a{
+	font-size: 14px;
+	padding: 10px
+}
+.fooWrap li a{
+	font-size: 13px;
+}
+.fooWrap li{
+	padding: 0 5px
+}
+.topHeader .btn{
+	padding: 13px 15px 12px 15px;
+}
+.topHeader li.cart a{
+	padding: 8px 12px 11px;
+}
+.woocommerce form.login.custom .lost_password{
+	text-align: left;
+	width: 100% !important;
+	position: inherit;
+	float: none;
+	top: auto;
+}
+p.short {
+    width: 90%;
+}
+.deworbaby .container .content {
+    width: 100%;
+    padding: 20px;
+}
+#feature ul.feature_top_list li {
+    width: 100%;
+}
+#main_header .left_part{
+	width: 40%
+}
+#main_header .right_part{
+	margin-right: 45px;
+}
+a.bars{
+	bottom: 34px;
+}
+#main_header .left_part img{
+	max-width: 100% !important;
+}
+
+.sliderSec.slider1 .caption h1{
+	text-align: center
+}
+}
+
+ @media (max-width:330px) {
+
+}
+

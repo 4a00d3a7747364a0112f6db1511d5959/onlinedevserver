@@ -1,0 +1,98 @@
+$(document).ready(e=>{	
+	var winWidth = $(window).width();
+	$.fn.__mainBody(winWidth);	
+	$('#sub_sec_2 .description').height($('.sub_sec_2 .contentArea').height());
+	$('.sub_sec_3 .description').height($('.sub_sec_3').height());
+	$('.subscrib_now').bind('click',e=>{ $.fn.__goForSubs(); });
+
+	var nav_height = $('.navigation').height();
+
+	var navPos=$('.navigation').offset().top;
+	var Top=$('#about').offset().top;
+	var pTop=$('#products').offset().top;
+
+$('.navigation ul li a').on('click', function(){
+    var ids=$(this).attr('href');
+    //console.log(ids);
+   // var splitId=ids.split("#");
+   // var splitIdName=splitId[1]
+    //console.log(splitIdName);
+   // var contentTop=$(ids).offset().top;
+   // console.log(contentTop);
+   
+ 		$('html, body').animate({
+     	scrollTop:(($(ids).offset().top) - (nav_height +10))
+     	
+     },800);
+ 	
+
+
+
+  });
+
+
+$(window).scroll(function(){
+
+	var winPos=$(window).scrollTop();
+
+	// if($('.navigation').hasClass('fixed') == true){
+	// 	//alert();
+	// 	$('html, body').animate({
+ //     	scrollTop:(1000)
+     	
+ //     },800);
+	// }
+	//console.log(winPos);
+
+	
+	//alert(navPos);
+	//console.log('navigaion top position' + navPos);
+	//var currentPos=navPos-winPos;
+	//console.log('current position' + currentPos);
+	if(winPos>=navPos){
+		$('.navigation').addClass('fixed');	
+		$('.navigation').css({'position':'relative','top': (winPos-navPos)+'px','z-index':'99'})
+		//$('#faq').css({'position':'relative'});
+		//$('.content').css({'position':'absolute','top':'100px','z-index':'-1'});	
+	}else{
+	$('.navigation').removeClass('fixed');	
+	}
+});
+
+// scroll to destination 
+
+
+  
+
+});
+
+
+
+
+
+$(document).on('click','.close', e =>{
+	$.fn.__closeMenu();
+});
+
+$.fn.__mainBody = function(e){
+	$('.responsiveMenu').bind('click', e =>{
+		$.fn.__toggleMenu();
+	});
+	if(e<= 768){
+		$('<div class="close"><i class="fa fa-times"></i></div>')
+		.appendTo('nav ul');	
+	}	
+}
+$.fn.__closeMenu = function(){
+	$('nav ul').fadeOut();
+}
+
+$.fn.__toggleMenu = function(){
+	$('nav ul').fadeToggle();
+}
+$.fn.__goForSubs = function(){
+	
+	 $("html, body").animate({ scrollTop: $('.signIn').offset().top }, 600);
+	//$(window).scrollTop();
+}
+
