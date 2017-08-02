@@ -1,0 +1,107 @@
+/*-----------------------------------------------------------------------------------*/
+
+/* 		Mian Js Start 
+
+/*-----------------------------------------------------------------------------------*/
+
+jQuery(document).ready(function($) {
+
+"use strict"
+
+/*-----------------------------------------------------------------------------------*/
+
+/* 	BANNER SLIDER
+
+/*-----------------------------------------------------------------------------------*/
+
+$('.flex-banner').flexslider({
+
+    animation: "fade",
+
+	slideshow: true,                //Boolean: Animate slider automatically
+
+    slideshowSpeed: 6000,           //Integer: Set the speed of the slideshow cycling, in milliseconds
+
+    animationSpeed: 500,            //Integer: Set the speed of animations, in milliseconds
+
+	autoPlay : true
+
+});
+
+/*-----------------------------------------------------------------------------------
+
+    Animated progress bars
+
+/*-----------------------------------------------------------------------------------*/
+
+$('.progress-bars').waypoint(function() {
+
+   $('.progress').each(function(){
+
+       $(this).find('.progress-bar').animate({
+
+             width:$(this).attr('data-percent')
+
+          },200);
+
+      });
+
+      }, { offset: '100%',
+
+           triggerOnce: true 
+
+});
+
+/*-----------------------------------------------------------------------------------*/
+
+/*    TESTIMONIALS
+
+/*-----------------------------------------------------------------------------------*/
+
+$(".testi-slides").owlCarousel({ 
+
+    items : 1,
+
+	autoplay:true,
+
+	autoplayTimeout:5000,
+
+	autoplayHoverPause:true,
+
+	singleItem	: true,
+
+    navigation : true, // Show next and prev buttons
+
+	pagination : true,
+
+	animateOut: 'fadeOut',
+
+	navigationText: ["<i class='fa fa-angle-up'></i>","<i class='fa fa-angle-down'></i>"]
+
+});
+
+/*-----------------------------------------------------------------------------------*/
+
+/* 	MENU
+
+/*-----------------------------------------------------------------------------------*/
+
+//$().ownmenu();
+
+/*-----------------------------------------------------------------------------------*/
+
+$(function(){
+    $(".dropdown").hover(            
+            function() {
+                $('.dropdown-menu', this).stop( true, true ).fadeIn("fast");
+                $(this).toggleClass('open');
+                $('span', this).toggleClass("caret caret-up");                
+            },
+            function() {
+                $('.dropdown-menu', this).stop( true, true ).fadeOut("fast");
+                $(this).toggleClass('open');
+                $('span', this).toggleClass("caret caret-up");                
+            });
+    });
+
+});

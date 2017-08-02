@@ -1,0 +1,450 @@
+<?php 
+/*
+* The template for displaying the front page
+*/
+
+get_header(); 
+
+global $church_options;
+
+?>
+
+
+<div id="banner">
+    <div class="flex-banner">
+      <ul class="slides">
+        <?php 
+          $banner_args = array( 'post_type' => 'banner_slider', 'posts_per_page' => 2, 'order' => 'DESC', 'orderby' => 'date' );
+          $banner_query = new WP_Query( $banner_args ); 
+
+          //if ( $banner_query->have_posts() ) { 
+            while ( $banner_query->have_posts() ) { $banner_query->the_post();
+        ?>
+        <li> 
+          <?php
+              if ( has_post_thumbnail() ) { 
+              the_post_thumbnail( 'full' );
+            }
+          ?> 
+         <div class="banner-overlay"> 
+          <div class="bnr-txt left-text">
+           <div class="bnr-txt-content-box">
+            <?php //the_content(); ?>
+
+            <?php //echo custom_content(21); ?>
+            <?php $content = get_the_content(); echo mb_strimwidth($content, 0, 150);?>
+            
+            <div class="events-coundown clearfix">
+              <?php the_excerpt(); ?>
+            </div>   
+           
+            <div class="banner-btn">
+             <a href="<?php the_permalink(); ?>" class="btn">VIEW EVENT<i class="fa fa-caret-right"></i></a> 
+            </div>
+           
+           </div>
+          </div> 
+         </div> 
+         <div class="banner-logo">
+          <?php if(!empty($church_options['banner_logo'])) { ?> <img src="<?php echo $church_options['banner_logo']['url']; ?>"> <?php } ?>
+         </div>
+        </li>
+        <?php } wp_reset_query(); ?>
+        <?php //} ?>
+        banner_logo
+      </ul>
+    </div>
+  </div>
+
+  
+  
+
+  <div class="content">
+    <section id="upcoming" class="upcoming-div">
+     <div class="container">
+      <ul class="row white-bg enevtii">
+        <li class="col-md-6 no-padding-l">
+          <div class="event-in">
+            <div class="up-com-event">
+             <div class="video-box">
+                <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+                    <?php the_content(); ?> 
+                <?php endwhile; endif; ?>
+             </div>
+            </div>
+          </div>
+        </li>
+        
+        <li class="col-md-6 amount">
+          <?php echo $church_options['god_empowerment']; ?>
+        </li>
+      </ul>
+    </div>
+    </section>
+  
+    <section id="welcome" class="welcome-div">
+      <div class="container">
+          <div class="about-us-wrapper clearfix">
+            <div class="col-md-5 col-sm-12 about-us no-padd">
+            <section class="heading heading-yellow t-center">
+            <div class="subtitle">
+            <h1>Welcome</h1>
+            </div>
+            <h2><span>WELCOME</span></h2>
+            <?php
+              $restoration = new WP_Query( 'page_id=64' );
+              while ($restoration -> have_posts()) : $restoration -> the_post();
+            ?>
+            <div class="heading-content grey-text">
+            <?php //the_excerpt(); ?>
+            </div>
+
+            </section>
+            <div class="about-us-text">
+            <?php echo custom_content(61).'[...]'; ?>
+            </div>
+
+            <a href="<?php echo esc_url( home_url( '/restoration-assembly' ) ); ?>" class="btn-donate black-btn btn-big">LEARN MORE <span> <i class="fa fa-long-arrow-right"></i> </span></a>
+            </div>
+
+            <div class="col-md-6 col-sm-12 col-md-offset-1 about-us-images">
+              <?php 
+                $image1 = get_field('first_restoration_image');
+                $image2 = get_field('second_restoration_image');
+              ?>
+              <?php if( !empty($image1) ){ ?>
+             <div class="about-us-img-top">
+              <img src="<?php echo $image1['url']; ?>" alt="" class="img-responsive">
+             </div> 
+             <?php } ?>
+             <?php if( !empty($image2) ){ ?>
+             <div class="about-us-img-bottom">
+              <img src="<?php echo $image2['url']; ?>" alt="" class="img-responsive">
+             </div> 
+             <?php } ?>
+            </div>
+            <?php 
+              endwhile;
+              wp_reset_postdata();  
+            ?>
+          </div>
+      </div>    
+    </section>
+    
+    <section class="don-counter">
+      <div class="overlay">
+        <div class="container">
+          <div class="row counters-div" id="counters">
+            <div class="counters-heading">
+            <h2> Join the </h2>
+            <h4> Family </h4>
+           </div>
+            <div class="col-md-6">
+              <ul class="row">
+                <li class="col-sm-6">
+                  <div class="row">
+                    <div class="col-sm-12">
+					 <div class="counter-box-icon">
+					  <?php echo $church_options['first_counter_icon']; ?>
+                     </div>
+                    </div> 
+                    <div class="col-sm-12">
+                     <div class="counter-box-content">
+                     <span class="animatedcounters" data-count="<?php echo do_shortcode('[scp code="twitter"]'); ?>" data-duration="1000"><?php echo do_shortcode('[scp code="twitter"]'); ?></span>
+                      <p><?php echo $church_options['first_counter_text']; ?></p>
+                     </div> 
+                    </div>
+                  </div>
+                </li>
+                
+                <li class="col-sm-6">
+                  <div class="row">
+                     <div class="col-sm-12">
+                      <div class="counter-box-icon">
+					   <?php echo $church_options['second_counter_icon']; ?>
+                      </div>
+                     </div> 
+                     <div class="col-sm-12"> 
+                     <div class="counter-box-content">
+                     <?php //echo do_shortcode('[animatedcounter count="'.$church_options['second_counter_stop_point'].'"]'); ?>
+                     <!--facebook likes-->
+                     <span class="animatedcounters" data-count="<?php echo do_shortcode('[likes]'); ?>" data-duration="1000"><?php echo do_shortcode('[likes]'); ?></span>
+                      <p><?php echo $church_options['second_counter_text']; ?></p>
+                     </div> 
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="col-md-6">
+              <ul class="row">
+                <li class="col-sm-6">
+                  <div class="row">
+                    <div class="col-sm-12">
+					 <div class="counter-box-icon">
+					  <?php echo $church_options['third_counter_icon']; ?>
+                     </div>
+                    </div> 
+                    <div class="col-sm-12"> 
+                     <div class="counter-box-content">
+                     <?php //echo do_shortcode('[animatedcounter count="'.$church_options['third_counter_stop_point'].'"]'); ?>
+                     <!--facebook fans or followers-->
+                     <span class="animatedcounters" data-count="<?php echo do_shortcode('[scp code="facebook"]'); ?>" data-duration="1000"><?php echo do_shortcode('[scp code="facebook"]'); ?></span>
+                     <p><?php echo $church_options['third_counter_text']; ?></p>
+                     </div> 
+                    </div>
+                  </div>
+                </li>
+                <li class="col-sm-6">
+                  <div class="row">
+                    <div class="col-sm-12">
+					 <div class="counter-box-icon">
+					  <?php echo $church_options['fourth_counter_icon']; ?>
+                     </div>
+                    </div> 
+                    <div class="col-sm-12">
+                     <div class="counter-box-content">
+                     <?php //echo do_shortcode('[animatedcounter count="'.$church_options['fourth_counter_stop_point'].'"]'); ?>
+                     <span class="animatedcounters" data-count="<?php echo do_shortcode('[youtube_video_count]'); ?>" data-duration="1000"><?php echo do_shortcode('[youtube_video_count]'); ?></span>
+                      <p><?php echo $church_options['fourth_counter_text']; ?></p>
+                     </div> 
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+            
+    <section class="cases">
+      <div class="container">
+        <ul class="row">
+          <?php
+            $ministry = new WP_Query( 'page_id=79' );
+            while ($ministry -> have_posts()) : $ministry -> the_post();
+          ?>
+          <li class="col-sm-4">
+              <div class="donate-icon">
+                <?php //the_field('ministry_resources_icon'); ?>
+                <?php
+					if ( has_post_thumbnail() ) { ?>
+						<img src="<?php echo the_post_thumbnail_url(); ?>" class="img-responsive"/>
+				<?php	} 
+				?>
+              </div>
+              <div class="donate-detail"> 
+                
+                <div class="donate-detail-heading">
+                  <h3> <?php the_title(); ?> </h3>
+                </div> 
+                <?php the_excerpt(); ?>
+              </div>
+              <a href="<?php echo esc_url( home_url('/ministry-resources') ); ?>" class="btn black-btn">Read More <span> <i class="fa fa-long-arrow-right"></i> </span></a>
+          </li>
+          <?php 
+            endwhile;
+            wp_reset_postdata();  
+          ?>
+
+          <?php
+            $live = new WP_Query( 'page_id=81' );
+            while ($live -> have_posts()) : $live -> the_post();
+          ?>
+          <li class="col-sm-4">
+              <div class="donate-icon">
+                <?php
+					if ( has_post_thumbnail() ) { ?>
+						<img src="<?php echo the_post_thumbnail_url(); ?>" class="img-responsive"/>
+				<?php	} 
+				?>
+              </div>
+              <div class="donate-detail">
+                <div class="donate-detail-heading">
+                  <h3> <?php the_title(); ?> </h3>
+                </div>
+                <?php the_excerpt(); ?>
+              </div>
+              <a href="<?php echo esc_url( home_url('/live-stream') ); ?>" class="btn black-btn">Read More <span> <i class="fa fa-long-arrow-right"></i> </span></a>
+          </li>
+          <?php 
+            endwhile;
+            wp_reset_postdata();  
+          ?>
+
+          <?php
+            $worship = new WP_Query( 'page_id=83' );
+            while ($worship -> have_posts()) : $worship -> the_post();
+          ?>
+          <li class="col-sm-4">
+              <div class="donate-icon">
+                <?php
+					if ( has_post_thumbnail() ) { ?>
+						<img src="<?php echo the_post_thumbnail_url(); ?>" class="img-responsive"/>
+				<?php	} 
+				?>
+              </div>
+              <div class="donate-detail">
+                <div class="donate-detail-heading">
+                  <h3> <?php the_title(); ?> </h3>
+                </div> 
+                <?php the_excerpt(); ?>
+              </div>              
+              <a href="<?php echo esc_url( home_url('/worship-with-us') ); ?>" class="btn black-btn">Read More <span> <i class="fa fa-long-arrow-right"></i> </span></a>
+          </li>
+          <?php 
+            endwhile;
+            wp_reset_postdata();  
+          ?>
+        </ul>
+      </div>
+    </section>
+       
+    <section class="testi">
+     <div class="container"> 
+    <div class="row">
+      <div class="col-md-4"> 
+       <div class="testimonies-images">
+        <img class="img-responsive" src="<?php echo $church_options['home_testimony_image']['url']; ?>" alt=""> 
+       </div>
+      </div>
+      <div class="col-md-8">
+       <div class="testimonies-box">
+        <div class="heading-testimonies">
+         <h2>Client Testimonies </h2>
+        </div> 
+        
+         	<div class="testi-slides">
+            <?php 
+              $test_args = array( 'post_type' => 'topic', 'posts_per_page' => 5, 'order' => 'DESC', 'orderby' => 'date' );
+          
+              $testimonial_query = new WP_Query( $test_args ); 
+          
+              if ( $testimonial_query->have_posts() ) { 
+                while ( $testimonial_query->have_posts() ) { $testimonial_query->the_post();
+            ?>
+            <div class="item-slide">
+              <?php echo custom_content(50).'...'; ?>
+              <h6><strong class="font-lora"><?php the_title(); ?> ( <?php the_author(); ?> ) </strong></h6>
+            </div>
+          
+             <?php } wp_reset_postdata(); 
+              } ?>          
+          </div> 
+
+          <div class="new-user-post clearfix">
+            <a href="<?php echo esc_url(home_url('/')); ?>testimony-login" class="btn black-btn testimonies-btn">Add New Testimony <span> <i class="fa fa-long-arrow-right"></i> </span></a>
+          </div>
+
+       </div> 
+      </div>
+      
+      
+    </div>
+  </div>
+</section>
+
+    <!--======= BLOG =========-->
+     <section class="blog-div">
+  <div class="container"> 
+   
+     <div class="blog-heading">
+      <h2><?php echo $church_options['blog_title']; ?></h2>
+      <?php echo $church_options['blog_sub_title']; ?>
+     </div>
+    
+    <?php
+      $blog_arr = [];
+	  
+      $blog_args = array(  
+          'post_type' => 'post',  
+          'posts_per_page' => 3,
+          'post_status' => 'publish',
+          'orderby' => 'date',
+          );  
+        
+      $blogposts = new WP_Query( $blog_args );  
+      //print_r($blogposts); 
+
+      while ($blogposts->have_posts()) : $blogposts->the_post(); 
+
+      $blog_arr[] = array(
+          'home_blog_title' => get_the_title(),
+          'home_blog_content' => get_the_content(),
+          'home_blog_image' => get_the_post_thumbnail_url(),
+          'home_blog_url' => get_the_permalink(),
+      );
+
+      endwhile;
+    ?>
+
+    <div class="row"> 
+          <div class="col-md-6">
+            <div class="left-blog"> 
+             <div class="left-blog-img">
+              <a class="font-lora title" href="<?php echo $blog_arr[0]['home_blog_url']; ?>"> <img class="img-responsive" src="<?php echo $blog_arr[0]['home_blog_image']; ?>" alt="" > </a>
+             </div> 
+             <div class="left-blog-content clearfix">
+               <a class="font-lora title" href="<?php echo $blog_arr[0]['home_blog_url']; ?>"><?php echo $blog_arr[0]['home_blog_title']; ?></a> 
+               <span class="font-lora"><?php the_time('F j, Y'); ?>  |  By <?php the_author(); ?> |  <?php comments_number( '0 comments', '1 comment', '% comments' ); ?></span>
+                <p><?php echo substr($blog_arr[0]['home_blog_content'], 0, 105).'[...]'; ?></p>
+                <a href="<?php echo $blog_arr[0]['home_blog_url']; ?>" class="blog-learn-btn">LEARN MORE <span> <i class="fa fa-long-arrow-right"></i> </span></a>
+             </div>
+            </div>
+            
+          </div>
+                    
+          <div class="col-md-6"> 
+            
+         <div class="row">
+              <div class="col-sm-4"> 
+                <div class="right-blog-img">
+                 <a href="<?php echo $blog_arr[1]['home_blog_url']; ?>"><img class="img-responsive" src="<?php echo $blog_arr[1]['home_blog_image']; ?>" alt="" ></a> 
+                </div>
+              </div> 
+              <div class="col-sm-8"> 
+               <div class="blog-box">
+                <a class="font-lora title" href="<?php echo $blog_arr[1]['home_blog_url']; ?>"><?php echo $blog_arr[1]['home_blog_title']; ?></a>
+                <span class="font-lora"><?php the_time('F j, Y'); ?>  |  By <?php the_author(); ?> |  <?php comments_number( '0 comments', '1 comment', '% comments' ); ?></span>
+                <p><?php echo substr($blog_arr[1]['home_blog_content'], 0, 105).'[...]'; ?></p>
+                <a href="<?php echo $blog_arr[1]['home_blog_url']; ?>" class="blog-learn-btn">LEARN MORE <span> <i class="fa fa-long-arrow-right"></i> </span></a>
+               </div> 
+              </div>  
+            </div>
+            
+            <div class="row">
+              <div class="col-sm-4"> 
+               <div class="right-blog-img"><a href="<?php echo $blog_arr[2]['home_blog_url']; ?>"><img class="img-responsive" src="<?php echo $blog_arr[2]['home_blog_image']; ?>" alt="" ></a> 
+               </div>
+              </div> 
+              <div class="col-sm-8"> 
+               <div class="blog-box">
+                <a class="font-lora title" href="<?php echo $blog_arr[2]['home_blog_url']; ?>"><?php echo $blog_arr[2]['home_blog_title']; ?></a> <span class="font-lora"><?php the_time('F j, Y'); ?>  |  By <?php the_author(); ?> |  <?php comments_number( '0 comments', '1 comment', '% comments' ); ?></span>
+                <p><?php echo substr($blog_arr[2]['home_blog_content'], 0, 105).'[...]'; ?></p>
+                <a href="<?php echo $blog_arr[2]['home_blog_url']; ?>" class="blog-learn-btn">LEARN MORE <span> <i class="fa fa-long-arrow-right"></i> </span></a>
+               </div> 
+              </div>  
+            </div>
+          </div>
+          
+          <div class="col-md-12 col-sm-12">
+           <div class="blog-view-btn">
+            <div class="view-btn">
+            <a href="<?php echo esc_url(home_url('/blog')); ?>" class="btn-donate black-btn btn-big blog-btn">VIEW ALL <span> <i class="fa fa-long-arrow-right"></i> </span></a>
+          </div>
+           </div>
+          </div>
+
+        </div>
+        <?php 
+          wp_reset_query();
+        ?>
+    <!--new layout-->
+
+  </div>
+</section>
+
+
+<?php get_footer(); ?>

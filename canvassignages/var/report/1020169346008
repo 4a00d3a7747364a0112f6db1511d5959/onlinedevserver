@@ -1,0 +1,11 @@
+a:5:{i:0;s:173:"Cannot send headers; headers already sent in /home/unitetoh/public_html/onlinedevserver.biz/dev/canvassignages/app/code/local/Fishpig/Customtabs/Model/Observer.php, line 142";i:1;s:1770:"#0 /home/unitetoh/public_html/onlinedevserver.biz/dev/canvassignages/lib/Zend/Controller/Response/Abstract.php(148): Zend_Controller_Response_Abstract->canSendHeaders(true)
+#1 /home/unitetoh/public_html/onlinedevserver.biz/dev/canvassignages/app/code/core/Mage/Core/Controller/Response/Http.php(107): Zend_Controller_Response_Abstract->setRedirect('http://onlinede...', 302)
+#2 /home/unitetoh/public_html/onlinedevserver.biz/dev/canvassignages/app/code/core/Mage/Adminhtml/Controller/Action.php(348): Mage_Core_Controller_Response_Http->setRedirect('http://onlinede...')
+#3 /home/unitetoh/public_html/onlinedevserver.biz/dev/canvassignages/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(751): Mage_Adminhtml_Controller_Action->_redirect('*/*/edit', Array)
+#4 /home/unitetoh/public_html/onlinedevserver.biz/dev/canvassignages/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->saveAction()
+#5 /home/unitetoh/public_html/onlinedevserver.biz/dev/canvassignages/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('save')
+#6 /home/unitetoh/public_html/onlinedevserver.biz/dev/canvassignages/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /home/unitetoh/public_html/onlinedevserver.biz/dev/canvassignages/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /home/unitetoh/public_html/onlinedevserver.biz/dev/canvassignages/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 /home/unitetoh/public_html/onlinedevserver.biz/dev/canvassignages/index.php(83): Mage::run('', 'store')
+#10 {main}";s:3:"url";s:161:"/dev/canvassignages/index.php/admin/catalog_product/save/back/edit/tab/product_info_tabs_customer_options/set/4/type/simple/key/fb2501a653ce48631a430267161d4853/";s:11:"script_name";s:29:"/dev/canvassignages/index.php";s:4:"skin";s:5:"admin";}

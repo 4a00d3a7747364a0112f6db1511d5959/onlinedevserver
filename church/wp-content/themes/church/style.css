@@ -1,0 +1,242 @@
+/*
+Theme Name: church
+Theme URI: http://www.rccgalbanyny.org/
+Author: rccgalbanyny
+Author URI: http://www.rccgalbanyny.org/
+version: 1.0.0
+Description: This is church theme with user friendly features.
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: church, divine, prayer
+Text Domain: church
+*/
+
+.hide {
+	display: none !important;
+}
+.search-highlight {
+	background: #FFFF00
+}
+.productHolder .addthis_toolbox.addthis_default_style.addthis_32x32_style {
+	display: none;
+}
+.post-type-archive h2.product_title, .tax-product_cat h2.product_title {
+	display: none;
+}
+.post_details span.author a {
+	color: #353434 !important;
+	text-transform: capitalize;
+	float: right;
+	padding-top: 2px;
+}
+.alignnone {
+	margin: 5px 20px 20px 0;
+}
+.aligncenter, div.aligncenter {
+	display: block;
+	margin: 5px auto 5px auto;
+}
+.alignright {
+	float: right;
+	margin: 5px 0 20px 20px;
+}
+.alignleft {
+	float: left;
+	margin: 5px 20px 20px 0;
+}
+a img.alignright {
+	float: right;
+	margin: 5px 0 20px 20px;
+}
+a img.alignnone {
+	margin: 5px 20px 20px 0;
+}
+a img.alignleft {
+	float: left;
+	margin: 5px 20px 20px 0;
+}
+a img.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto
+}
+.wp-caption {
+	background: #fff;
+	border: 1px solid #f0f0f0;
+	max-width: 96%; /* Image does not overflow the content area */
+	padding: 5px 3px 10px;
+	text-align: center;
+}
+.wp-caption.alignnone {
+	margin: 5px 20px 20px 0;
+}
+.wp-caption.alignleft {
+	margin: 5px 20px 20px 0;
+}
+.wp-caption.alignright {
+	margin: 5px 0 20px 20px;
+}
+.wp-caption img {
+	border: 0 none;
+	height: auto;
+	margin: 0;
+	max-width: 98.5%;
+	padding: 0;
+	width: auto;
+}
+.wp-caption p.wp-caption-text {
+	font-size: 11px;
+	line-height: 17px;
+	margin: 0;
+	padding: 0 4px 5px;
+}
+.slb_data_title {
+	display: none !important;
+}
+.page-id-220 .wp-social-login-widget {
+	display: none !important;
+}
+
+/* .fp-quality-selector {
+	display: block !important;
+    width: 100px !important;
+    left: 0;
+    top: 0;
+} */
+video::-internal-media-controls-download-button {
+    display:none;
+}
+
+video::-webkit-media-controls-enclosure {
+    overflow:hidden;
+}
+
+video::-webkit-media-controls-panel {
+    width: calc(100% + 30px); /* Adjust as needed */
+}
+
+.share-video {
+	width: auto;
+	float: right;
+}
+
+.share-video .share-btn {
+    width: auto;
+    height: auto;
+    display: inline-block;
+    margin: 25% 0 0;
+    line-height: 44px;
+    background: #19a8e3;
+    color: #fff;
+    padding: 2px 10px;
+}
+a.share-btn {
+    font-size: 18px;
+    text-align: center;
+    line-height: 20px;
+    color: #000;
+    cursor: pointer;
+}
+.share-video .modal .modal-header {
+    min-height: 16.43px;
+    padding: 15px 70px 14px 15px;
+    border-bottom: none !important;
+    background: #f6f6f6;
+}
+.share-video .modal .modal-header .modal-title {
+    font-size: 22px;
+    line-height: 44px;
+    font-weight: 700;
+    font-family: 'Carrois Gothic', sans-serif;
+}
+.share-video .modal .modal-footer {
+    padding: 15px;
+    text-align: center;
+    border-top: none;
+    background: #f6f6f6;
+    font-size: 17px;
+    clear: both;
+}
+.share-video .modal .modal-header .close {
+    margin-top: -2px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    vertical-align: sub;
+    background: #19a8e3;
+    top: 13px;
+    position: absolute;
+    right: 10px;
+    opacity: 1;
+    color: #fff;
+    font-size: 25px;
+}
+#wpcf7-f518-o1 input {
+	margin-bottom: 10px;
+}
+#wpcf7-f518-o1 .wpcf7-submit {
+	float: right;
+}
+#wpcf7-f518-o1 div.wpcf7-validation-errors {
+    border: 1px solid #f7e700;
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+#wpcf7-f518-o1 span.wpcf7-not-valid-tip {
+    float: left;
+}
+/*.social-video-share {
+    float: right;
+}*/
+.share-flw-video .share-video-btn {
+    background: #19a8e3;
+    padding: 7px 20px;
+    color: #fff;
+    float: right;
+    margin-bottom: 10px;
+	cursor:pointer;
+}
+.share-flw-video .modal .modal-header {
+    min-height: 16.43px;
+    padding: 15px 70px 14px 15px;
+    border-bottom: none !important;
+    background: #f6f6f6;
+}
+.share-flw-video .modal .modal-header .modal-title {
+    font-size: 22px;
+    line-height: 44px;
+    font-weight: 700;
+    font-family: 'Carrois Gothic', sans-serif;
+}
+.share-flw-video .modal .modal-header .close {
+    margin-top: -2px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: sub;
+    background: #19a8e3;
+    top: 13px;
+    position: absolute;
+    right: 10px;
+    opacity: 1;
+    color: #fff;
+    font-size: 30px;
+	line-height:55px;
+}
+.share-flw-video .modal .modal-header .close:hover {
+	background: #333;
+}
+.share-flw-video .modal .modal-body{
+	padding:20px 15px 45px 15px;
+}
+.share-flw-video .modal .modal-footer{
+	text-align:center;
+	background: #f6f6f6;
+}
+.share-flw-video .modal .modal-footer p{
+	padding-top:7px;
+}
+.share-flw-video .modal-content{
+	border-radius:0;
+}

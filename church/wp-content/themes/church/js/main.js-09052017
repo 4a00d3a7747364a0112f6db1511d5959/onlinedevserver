@@ -1,0 +1,87 @@
+jQuery(document).ready(function($){
+
+//menu js starts
+
+$('ul.sub-menu').addClass('dropdown-menu');
+$('li.menu-item-has-children').addClass('dropdown');
+$('li.menu-item-has-children > a').addClass('dropdown-toggle');
+$('li.menu-item-has-children > a.dropdown-toggle').addClass('disabled');
+$('li.menu-item-has-children > a').attr('data-toggle', 'dropdown');
+$('li.menu-item-has-children > a').append('<b class="caret"></b>');
+
+$(".dropdown").hover(
+  function(){
+    $('.dropdown-menu', this).stop( true, true ).fadeIn("slow");
+    $(this).toggleClass('open');
+    $('b', this).toggleClass("caret caret-up");
+  },
+
+  function() {
+    $('.dropdown-menu', this).stop( true, true ).fadeOut("slow");
+    $(this).toggleClass('open');
+    $('b', this).toggleClass("caret caret-up");
+  }
+);
+//menu js ends
+
+//banner js starts
+$('.flex-banner').flexslider({
+    animation: "fade",
+    slideshow: true,               
+    slideshowSpeed: 6000,
+    animationSpeed: 500,
+    autoPlay : true
+});
+//banner js ends
+
+//testimonial js starts
+$(".testi-slides").owlCarousel({ 
+    items : 1,
+    autoplay:true,
+    autoplayTimeout:5000,
+    autoplayHoverPause:true,
+    singleItem  : true,
+    navigation : true, // Show next and prev buttons
+    pagination : true,
+    animateOut: 'fadeOut',
+    navigationText: ["<i class='fa fa-angle-up'></i>","<i class='fa fa-angle-down'></i>"]
+});
+//testimonial js ends
+
+//gallery js starts
+var container = $('.portfolio-wrapper .items');
+
+container.imagesLoaded(function(){
+ container.isotope({
+     itemSelector: '.item',
+     layoutMode: 'masonry'
+  });
+});
+
+$('.filter li a').on("click",function() {
+    $('.filter li a').removeClass('active');
+    $(this).addClass('active');
+    var selector = $(this).attr('data-filter');
+    container.isotope({
+    filter: selector
+    });
+    return false;
+ });
+//gallery js ends //
+
+// back to top //
+$(window).scroll(function(){ 
+		if ($(this).scrollTop() > 100) { 
+			$('#scroll').fadeIn(); 
+		} else { 
+			$('#scroll').fadeOut(); 
+		} 
+	}); 
+	$('#scroll').click(function(){ 
+		$("html, body").animate({ scrollTop: 0 }, 600); 
+		return false; 
+	}); 
+// back to top end //
+
+
+}); //end tag of jquery

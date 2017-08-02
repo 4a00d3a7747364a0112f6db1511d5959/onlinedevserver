@@ -1,0 +1,142 @@
+<?php
+/*
+* Template Name: Media Center Page Template
+*/
+
+get_header(); 
+?>
+
+<!-- inner banner -->
+<section class="banner-div clearfix">
+    <div class="sub-banner" style="background:url(<?php echo $church_options['blog_common_banner']['url']; ?>) no-repeat center center;background-size:cove;">
+     <div class="overlay">
+      <div class="container">
+        <?php while ( have_posts() ) : the_post(); ?>
+          <?php 
+          $spanvalue = get_the_title();
+          $words = 1;
+          $words = $words-1;
+        $arr = explode(' ',trim($spanvalue));
+        $arrre = '';
+        for($sb = 0; $sb <= count($arr); $sb++){
+          $arrre .= $arr[$sb].' ';          
+          if($words == $sb){ 
+            $arrre .="<span>";
+          }else{
+
+          }
+        }
+        ?>
+        <h3><?php echo $arrre; ?></span></h3>
+        <?php endwhile; ?>
+
+        <?php echo do_shortcode( '[breadcrumb]' ); ?>
+      </div>
+     </div>
+    </div>
+</section>
+
+<section class="inner-div clearfix">
+	<div class="container">
+	 	<div class="row">
+	 	 	<div class="col-lg-7 col-md-7">
+	 	 	 <div class="flowplayer-video-box">
+				<div class="main-content" style="min-height: 300px;">
+					<?php //if(have_posts()) : while(have_posts()) : the_post(); ?>
+				    <?php //the_content(); ?>	
+				    <?php //endwhile; endif; ?>
+
+				    <?php echo do_shortcode('[flowplayer id="460"]'); ?>
+
+				</div>
+			 </div>	
+			</div>
+
+			<div class="col-lg-5 col-md-5">
+			 <div class="video-box-media">
+				<?php
+					$paged = 1;
+					if ( get_query_var('paged') ) $paged = get_query_var('paged');
+					if ( get_query_var('page') ) $paged = get_query_var('page');
+					 
+					query_posts( '&post_type=flowplayer5&paged=' . $paged );
+				?>
+				<!--video list-->
+				    <table class="table">
+					    <thead>
+					   	  <tr>
+					        <th><i class="fa fa-universal-access" aria-hidden="true"></i> Service Name </th>
+					        <th><i class="fa fa-calendar" aria-hidden="true"></i> Posted On</th>
+					        <th>Play Video</th>
+					      </tr>
+					    </thead>
+					    <tbody>
+							<?php 
+					          $video_args = array( 'post_type' => 'flowplayer5', 'posts_per_page' => -1, 'order' => 'DESC', 'orderby' => 'date', 'paged' => $paged );
+					          $video_query = new WP_Query( $video_args ); 
+
+					          //print_r($video_query);
+
+					          $i = 1;
+ 
+					          while ( $video_query->have_posts() ) { $video_query->the_post();
+					        ?>
+					      <tr>
+					        <td><?php the_title(); ?></td>
+					        <td><?php echo get_the_date('jS F, Y'); ?></td>
+					        <td>
+
+							<a class="video-btn" data-toggle="modal" data-target="#exampleModal<?php echo $i; ?>"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
+							<!-- Modal -->
+							<div class="modal fade" id="exampleModal<?php echo $i; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							  <div class="modal-dialog" role="document">
+							    <div class="modal-content">
+							      <div class="modal-header">
+							        <h5 class="modal-title" id="exampleModalLabel" style="display: block;"><?php the_title(); ?></h5>
+							        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							          <span aria-hidden="true">&times;</span>
+							        </button>
+							      </div>
+							      <div class="modal-body">
+							        <!-- <iframe src="<?php //echo get_post_meta(get_the_ID(), 'fp5-mp4-video', true); ?>?autoplay=0&cc_load_policy=1" width="100%" height="340" frameborder="0" allowfullscreen ></iframe> -->
+							        <video width="100%" height="340" controls>
+									  <source src="<?php echo get_post_meta(get_the_ID(), 'fp5-mp4-video', true); ?>" type="video/mp4">
+									  Your browser does not support the video tag.
+									</video>
+							      </div>
+							      <div class="modal-footer">
+							        Posted on: <?php echo get_the_date('jS F, Y'); ?>
+							      </div>
+							    </div>
+							  </div>
+							</div>
+
+					        </td>
+
+					      </tr>
+					      <?php $i++; }  wp_reset_postdata(); ?>
+
+					    </tbody>
+					  </table>
+					  <!--video list-->
+					  
+			</div>
+
+			<div class="row">
+			 <div class="col-md-12">
+			  <div class="video-flowplayer-pagination">
+				<?php echo paginate(); ?>
+			 </div>
+			</div> 
+		   </div>
+		   
+		  </div>
+		 </div> 
+
+			
+
+		
+    </div>
+</section>
+
+<?php get_footer(); ?>

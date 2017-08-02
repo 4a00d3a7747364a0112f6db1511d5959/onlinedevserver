@@ -1,0 +1,144 @@
+<?php
+/*
+  * Template Name: Leadership Page Template
+*/
+get_header(); ?>
+<section class="banner-div clearfix">
+    <div class="sub-banner" style="background:url(<?php echo $church_options['blog_common_banner']['url']; ?>) no-repeat center center;background-size:cove;">
+     <div class="overlay">
+      <div class="container">
+        <?php while ( have_posts() ) : the_post(); ?>
+          <?php 
+          $spanvalue = get_the_title();
+          $words = 1;
+          $words = $words-1;
+        $arr = explode(' ',trim($spanvalue));
+        $arrre = '';
+        for($sb = 0; $sb <= count($arr); $sb++){
+          $arrre .= $arr[$sb].' ';          
+          if($words == $sb){ 
+            $arrre .="<span>";
+          }else{
+
+          }
+        }
+        ?>
+        <h3><?php echo $arrre; ?></span></h3>
+        <?php endwhile; ?>
+
+        <?php echo do_shortcode( '[breadcrumb]' ); ?>
+      </div>
+     </div>
+    </div>
+</section>
+
+<!-- inner content -->
+<section class="inner-div">
+ <div class="inner-box">
+  <div class="container">
+	 	<div class="row">
+          <div class="main-content clearfix">
+           <div class="leadership-box">
+            <div class="col-md-9"> 
+             <div class="inner-content-heading">
+            <h2 class="big-text">OUR <small>LEADERSHIP TEAM</small></h2>
+           </div>
+             <h5>Pastor Lanre Peters and his wife Pastor Abiola Peters answered the call of God. </h5>
+             <p>asked by leadership of the church to start a branch of The Redeemed Christian Church of God in Albany, Upstate New York in 2003.  They embarked on a journey with a vision to lead the church family to know Christ, to be all that God wants us to be, and do all that God has called us to do.             </p>
+             <p>Pastor Lanre preaches the Word of God with enthusiastic passion and clarity so that you can really apply it to your everyday life. Pastor Abiola is also an anointed teacher of God's Word, helping people reach their greatest potential in life by applying God's Word to their daily lives. Pastor Abiola has a great love for people and the Word of God!            </p>
+             <p>In addition to their pastoral duties, Pastors Lanre & Abiola Peters also currently serve as the Zonal Coordinators of NY10, Province 1 Region 6 of RCCG North America. </p>
+             <p>They are proud parents of three wonderful children; Olaposi, Olakunsi, and Daniel Peters.</p>
+            
+            <!--======= SERVICES =========-->
+            </div>
+          
+            <div class="col-md-3">
+               <div class="leadership-img-box">
+                <div class="inner">
+                 <div class="leadership-img">
+                  <img src="http://onlinedevserver.biz/dev/church/wp-content/uploads/2017/03/leadership.jpg"  />
+                 </div>
+                 <div class="leadership-content">
+                  <h3> OUR PASTORS </h3>
+                  <h4> PASTORS LANRE & ABIOLA PETERS Zonal Coordinators, NY 10 </h4>
+                 </div>
+                 </div>
+                </div>
+               </div>
+            </div>
+           </div> 
+          </div>
+  
+		</div>
+    </div>
+ </div>   
+ <!-- leadrsship -->
+ <div class="leadrsship-div">   
+      <div class="container"> 
+        
+        <!-- TITTLE -->
+        <div class="inner-page-heading inner-heading">
+           <h2> OUR LEADERSHIP</h2>
+           <p>The charity that is a trifle to us can be precious to others.</p>
+        </div>
+        
+        <!-- leadrsship row -->
+          <div class="row"> 
+          
+          <!-- leadrsship col -->
+              <!-- leadrsship 1 -->
+              <div class="col-sm-3">
+               <div class="leadrsship-box">
+                <div class="avatar"> <img class="img-responsive" src="http://onlinedevserver.biz/dev/church/wp-content/uploads/2017/03/leadrship-1.jpg" alt=""> </div>
+                <div class="donor-details">
+                  <h5>Usher Ministry</h5>
+                  <p>Deaconess Tutu Bolarinwa</p>
+                  <!--<span>Donated : <strong>$252</strong></span>-->
+                  
+              </div>
+               </div>
+              </div>
+              <!-- DONATOR 2 -->
+              <div class="col-sm-3">
+               <div class="leadrsship-box">
+                <div class="avatar"> <img class="img-responsive" src="http://onlinedevserver.biz/dev/church/wp-content/uploads/2017/03/leadrship-2.jpg" alt=""> </div>
+                <div class="donor-details">
+                  <h5>Minister</h5>
+                  <p>Benjamin Tsahey </p>
+                  <!--<span>Donated : <strong>$252</strong></span>-->
+              </div>
+               </div>
+              </div>
+              <!-- leadrsship 1 -->
+              <div class="col-sm-3">
+               <div class="leadrsship-box">
+                <div class="avatar"> <img class="img-responsive" src="http://onlinedevserver.biz/dev/church/wp-content/uploads/2017/03/leadrship-3.jpg" alt=""> </div>
+                <div class="donor-details">
+                  <h5>Senior Pastor</h5>
+                  <p>Lanre Peters</p>
+                  <!--<span>Donated : <strong>$252</strong></span>-->
+                </div>
+               </div> 
+              </div>  
+              
+              <!-- DONATOR 2 -->
+              <div class="col-sm-3">
+               <div class="leadrsship-box">
+                <div class="avatar"> <img class="img-responsive" src="http://onlinedevserver.biz/dev/church/wp-content/uploads/2017/03/leadrship-4.jpg" alt=""> </div>
+                <div class="donor-details">
+                  <h5>Resident Pastor</h5>
+                  <p>Abiola Peters</p>
+                  <!--<span>Donated : <strong>$252</strong></span>-->
+                </div>
+               </div> 
+              </div>  
+          </div>
+          
+      </div>
+ </div>   
+   
+</section>
+
+
+
+<?php get_footer(); ?>

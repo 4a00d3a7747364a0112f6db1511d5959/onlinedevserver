@@ -1,0 +1,174 @@
+/*
+Theme Name: church
+Theme URI: http://www.rccgalbanyny.org/
+Author: rccgalbanyny
+Author URI: http://www.rccgalbanyny.org/
+version: 1.0.0
+Description: This is church theme with user friendly features.
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: church, divine, prayer
+Text Domain: church
+*/
+
+.hide {
+	display: none !important;
+}
+.search-highlight {
+	background: #FFFF00
+}
+.productHolder .addthis_toolbox.addthis_default_style.addthis_32x32_style {
+	display: none;
+}
+.post-type-archive h2.product_title, .tax-product_cat h2.product_title {
+	display: none;
+}
+.post_details span.author a {
+	color: #353434 !important;
+	text-transform: capitalize;
+	float: right;
+	padding-top: 2px;
+}
+.alignnone {
+	margin: 5px 20px 20px 0;
+}
+.aligncenter, div.aligncenter {
+	display: block;
+	margin: 5px auto 5px auto;
+}
+.alignright {
+	float: right;
+	margin: 5px 0 20px 20px;
+}
+.alignleft {
+	float: left;
+	margin: 5px 20px 20px 0;
+}
+a img.alignright {
+	float: right;
+	margin: 5px 0 20px 20px;
+}
+a img.alignnone {
+	margin: 5px 20px 20px 0;
+}
+a img.alignleft {
+	float: left;
+	margin: 5px 20px 20px 0;
+}
+a img.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto
+}
+.wp-caption {
+	background: #fff;
+	border: 1px solid #f0f0f0;
+	max-width: 96%; /* Image does not overflow the content area */
+	padding: 5px 3px 10px;
+	text-align: center;
+}
+.wp-caption.alignnone {
+	margin: 5px 20px 20px 0;
+}
+.wp-caption.alignleft {
+	margin: 5px 20px 20px 0;
+}
+.wp-caption.alignright {
+	margin: 5px 0 20px 20px;
+}
+.wp-caption img {
+	border: 0 none;
+	height: auto;
+	margin: 0;
+	max-width: 98.5%;
+	padding: 0;
+	width: auto;
+}
+.wp-caption p.wp-caption-text {
+	font-size: 11px;
+	line-height: 17px;
+	margin: 0;
+	padding: 0 4px 5px;
+}
+.slb_data_title {
+	display: none !important;
+}
+.page-id-220 .wp-social-login-widget {
+	display: none !important;
+}
+a.video-btn {
+	font-size: 20px;
+	text-align: center;
+	line-height: 20px;
+	color: #000;
+	cursor: pointer;
+}
+.video-box-media{
+    padding: 20px;
+    background: #f6f6f6;
+    border: 1px #ddd solid;
+}
+.flowplayer-video-box {
+    border: 10px #f1f1f1 solid;
+    display: block;
+}
+.video-box-media .video-btn {
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    line-height: 42px;
+    background: #19a8e3;
+    color: #fff;
+    border: 1px #b3b3b3 solid;
+    border-radius: 50%;
+}
+.video-box-media .video-btn:hover {
+    background: #f1f1f1;
+    color: #333;
+    border: 1px #b3b3b3 solid;
+}
+.video-flowplayer-pagination{
+	text-align: center;
+	margin: 0 auto;
+	padding:35px 0; 
+}
+.video-flowplayer-pagination .page-numbers {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 34px;
+    display: inline-block;
+    border: 2px #19a8e3 solid;
+    border-radius: 50%;
+    color: #19a8e3;
+}
+.video-flowplayer-pagination .page-numbers:hover{
+	background: #19a8e3;
+	border: 2px #19a8e3 solid;
+	color: #fff;
+}
+.video-flowplayer-pagination .page-numbers.current{
+	background: #19a8e3;
+	border: 2px #19a8e3 solid;
+	color: #fff;
+}
+.video-flowplayer-pagination .next{
+	width: auto;
+	border: none;
+}
+.video-flowplayer-pagination .next:hover{
+	background: none;
+	border:  none;
+	color: #19a8e3;
+}
+
+.video-flowplayer-pagination .prev{
+	width: auto;
+	border: none;
+}
+.video-flowplayer-pagination .prev:hover{
+	background: none;
+	border:  none;
+	color: #19a8e3;
+}
