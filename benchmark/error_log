@@ -1,0 +1,11 @@
+[27-Jan-2017 10:00:01 UTC] PHP Fatal error:  Call to undefined method WooCommerce::get_image_size() in /home/unitetoh/public_html/onlinedevserver.biz/dev/benchmark/wp-content/themes/benchmark/front-page.php on line 84
+[27-Jan-2017 10:00:28 UTC] PHP Fatal error:  Call to undefined method WooCommerce::get_image_size() in /home/unitetoh/public_html/onlinedevserver.biz/dev/benchmark/wp-content/themes/benchmark/front-page.php on line 84
+[27-Jan-2017 10:02:08 UTC] PHP Fatal error:  Call to a member function have_posts() on null in /home/unitetoh/public_html/onlinedevserver.biz/dev/benchmark/wp-content/themes/benchmark/front-page.php on line 78
+[27-Jan-2017 10:02:41 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/unitetoh/public_html/onlinedevserver.biz/dev/benchmark/wp-content/themes/benchmark/front-page.php on line 109
+[27-Jan-2017 10:02:54 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/unitetoh/public_html/onlinedevserver.biz/dev/benchmark/wp-content/themes/benchmark/front-page.php on line 109
+[27-Jan-2017 10:03:08 UTC] PHP Fatal error:  Call to a member function have_posts() on null in /home/unitetoh/public_html/onlinedevserver.biz/dev/benchmark/wp-content/themes/benchmark/front-page.php on line 78
+[27-Jan-2017 10:03:08 UTC] PHP Fatal error:  Call to a member function have_posts() on null in /home/unitetoh/public_html/onlinedevserver.biz/dev/benchmark/wp-content/themes/benchmark/front-page.php on line 78
+[27-Jan-2017 10:18:39 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/unitetoh/public_html/onlinedevserver.biz/dev/benchmark/wp-content/themes/benchmark/front-page.php on line 100
+[31-Jan-2017 07:17:27 UTC] PHP Fatal error:  Call to undefined function super_hero_slider() in /home/unitetoh/public_html/onlinedevserver.biz/dev/benchmark/wp-content/themes/benchmark/front-page.php on line 62
+[31-Jan-2017 07:37:08 UTC] PHP Parse error:  syntax error, unexpected 'id' (T_STRING), expecting ']' in /home/unitetoh/public_html/onlinedevserver.biz/dev/benchmark/wp-content/themes/benchmark/front-page.php on line 62
+[31-Jan-2017 07:37:15 UTC] PHP Parse error:  syntax error, unexpected 'id' (T_STRING), expecting ']' in /home/unitetoh/public_html/onlinedevserver.biz/dev/benchmark/wp-content/themes/benchmark/front-page.php on line 62

@@ -1,0 +1,8 @@
+@media (min-width: 768px) {
+    .woocommerce-active .site-header #mega-menu-wrap-primary {
+        width: 73.9130434783%;
+        float: left;
+        margin-right: 4.347826087%;
+        clear: both;
+    }
+}

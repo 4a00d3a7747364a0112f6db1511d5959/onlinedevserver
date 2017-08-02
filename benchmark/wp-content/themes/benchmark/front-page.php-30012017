@@ -1,0 +1,126 @@
+<?php
+/**
+ * The template for displaying all pages.
+ *
+ * This is the template that displays all pages by default.
+ * Please note that this is the WordPress construct of pages
+ * and that other 'pages' on your WordPress site may use a
+ * different template.
+ *
+ * @link https://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package Clean_Commerce
+ */
+
+get_header(); ?>
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+			<?php while ( have_posts() ) : the_post(); ?>
+
+				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+				    <?php
+					  /**
+					   * Hook - clean_commerce_single_image.
+					   *
+					   * @hooked clean_commerce_add_image_in_single_display -  10
+					   */
+					  do_action( 'clean_commerce_single_image' );
+					?>
+					<div class="entry-content-wrapper">
+						<div class="entry-content">
+							<?php the_content(); ?>
+							<?php
+								wp_link_pages( array(
+									'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'clean-commerce' ),
+									'after'  => '</div>',
+								) );
+							?>
+						</div><!-- .entry-content -->
+					</div><!-- .entry-content-wrapper -->
+
+					<footer class="entry-footer">
+						<?php edit_post_link( esc_html__( 'Edit', 'clean-commerce' ), '<span class="edit-link">', '</span>' ); ?>
+					</footer><!-- .entry-footer -->
+				</article><!-- #post-## -->
+
+				<?php
+					// If comments are open or we have at least one comment, load up the comment template.
+				if ( comments_open() || get_comments_number() ) :
+					comments_template();
+					endif;
+				?>
+
+			<?php endwhile; // End of the loop. ?>
+			
+			<!--category wise product display starts-->
+			<?php 
+				$benchmark_terms = get_terms( array( 'taxonomy' => 'product_cat' ) );
+
+				//print_r($benchmark_terms);
+
+				foreach($benchmark_terms as $benchmark_term) {
+					
+
+					$args = array(
+						'post_type' => 'product',
+				        'tax_query' => array(
+				            array(
+				                'taxonomy' => 'product_cat',
+				                'field' => 'slug',
+				                'terms' => $benchmark_term->slug,
+				            ),
+				        )			        
+				     );
+			?>
+			<div class="benchmark-products">
+				<div class="benchmark-product-category">
+					<h3><?php echo $benchmark_term->name; ?></h3>
+				</div>
+				<ul class="clearfix">
+					<?php 
+	      				$sb_loop = new WP_Query($args);
+
+	      				//print_r($sb_loop);
+
+ 						if($sb_loop->have_posts()) {
+	      		
+              			while($sb_loop->have_posts()) : $sb_loop->the_post(); global $product;
+              		?>
+					<li>
+						<a href="<?php the_permalink() ?>" title="<?php echo esc_attr(get_the_title() ? get_the_title() : get_the_ID()); ?>">
+    						<?php 
+    							if (has_post_thumbnail()) the_post_thumbnail('shop_thumbnail'); 
+    							else echo '<img src="'. woocommerce_placeholder_img_src() .'" alt="Placeholder" width="'.$woocommerce->get_image_size('shop_thumbnail_image_width').'" height="'.$woocommerce->get_image_size('shop_thumbnail_image_height').'" />'; 
+    						?>
+        				</a> 
+        				<div class="benchmark-products-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></div>
+        				<div class="benchmark-products-price"><?php echo $product->get_price_html(); ?></div>
+        				<div class="benchmark-products-button"><?php woocommerce_template_loop_add_to_cart(); ?></div>
+					</li>
+					<?php
+	                	endwhile;
+							}
+	                ?>
+				</ul>
+			</div>
+			<?php
+	      			}
+				wp_reset_query();
+	      	?>
+			<!--category wise product display ends-->
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+<?php
+	/**
+	 * Hook - clean_commerce_action_sidebar.
+	 *
+	 * @hooked: clean_commerce_add_sidebar - 10
+	 */
+	do_action( 'clean_commerce_action_sidebar' );
+?>
+
+<?php get_footer(); ?>

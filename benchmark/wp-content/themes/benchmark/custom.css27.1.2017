@@ -1,0 +1,52 @@
+/*--custom css--*/
+.benchmark-products {
+	margin: 0 0 2%;
+	padding: 2%;
+	width: 100%;
+	float: left;
+	border: 1px solid #ddd;
+}
+.benchmark-products .benchmark-product-category {
+	margin: 0 0 1%;
+	padding: 1%;
+	width: 100%;
+	float: left;
+	border: 1px solid #ddd;
+}
+.benchmark-products ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+}
+.benchmark-products ul li {
+    margin: 1% 1% 2% 1%;
+    padding: 4% 0;
+    list-style: none;
+    float: left;
+    display: inline;
+    width: auto;
+    border: 1px solid #ddd;
+}
+.benchmark-products ul li img {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+.benchmark-products-title {
+	width: 100%;
+	float: left;
+	margin: 0 0 10px;
+	text-align: center;
+}
+.benchmark-products-price {
+	width: 100%;
+	float: left;
+	margin: 0 0 10px;
+	text-align: center;
+}
+.benchmark-products-button {
+	width: 100%;
+	float: left;
+	text-align: center;
+}
