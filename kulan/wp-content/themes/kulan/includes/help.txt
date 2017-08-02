@@ -1,0 +1,3 @@
+//using CMB2 for metabox fields for pages and posts
+//require_once dirname( __FILE__ ) . '/includes/CMB2/init.php';
+//require_once dirname( __FILE__ ) . '/includes/CMB2/cmb2-functions.php';

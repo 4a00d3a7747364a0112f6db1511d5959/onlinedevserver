@@ -1,0 +1,1012 @@
+@charset "utf-8";
+/* CSS Document */
+@media (max-width: 1400px) {
+	  .home-tag p{
+		font-size: 16px;
+	}
+	}
+
+@media (max-width: 1366px) {
+	.home-video h1{
+		font-size: 60px;
+	}
+	.home-video h2{
+		font-size: 36px;
+	}
+	
+}
+@media (max-width: 1200px) {
+	.home-video h1{
+		font-size: 50px;
+	}
+	.home-video h2{
+		font-size: 30px;
+	}
+	.home-video h1:after{
+		bottom: -120px;
+	}
+	.bannre-logo{
+		width: 400px;
+	}
+		
+
+}
+
+@media (max-width: 1100px) {
+	.front .menu li{
+		margin: 10px 10px;
+	}
+	.feature-blocks .block a{
+		height: 260px;
+	}
+}
+
+
+
+
+
+
+
+@media (max-width: 991px) {
+	
+	.home-video h1{
+		font-size: 44px;
+	}
+	.home-video h1:before{
+		display: none;
+	}
+	.home-video h1:after{
+		display: none;
+	}
+	.bannre-logo{
+		width: 300px;
+	}
+	
+	
+	
+	
+	.header {
+        position: fixed;
+        top: 0;
+        height: 38px;
+        -webkit-transition: height .3s cubic-bezier(.77, 0, .175, 1);
+        transition: height .3s cubic-bezier(.77, 0, .175, 1);
+        overflow: hidden
+    }
+    .header .logo {
+        position: absolute;
+        top: 8px;
+        left: 10px;
+        background-size: 100px 27px
+    }
+    .header .logo h1 {
+        display: none
+    }
+    .header .location-chooser {
+        left: 0;
+        top: 60px
+    }
+    .header .flip-container {
+        display: none;
+        position: static;
+        width: 100%;
+        height: 300px
+    }
+    .header .flip-container .flipper {
+        -webkit-transform-style: flat;
+        transform-style: flat;
+        height: 100%
+    }
+    .header .flip-container .front {
+        width: 100%;
+        height: 300px
+    }
+    .header .flip-container .front .menu {
+        width: 50%;
+        float: right;
+        text-align: right;
+        margin: 40px 0 0;
+        white-space: auto
+    }
+    .header .flip-container .front .menu li {
+        margin: 8px;
+        line-height: 20px;
+        display: block
+    }
+    .header .flip-container .back {
+        width: 170px;
+        position: absolute;
+        z-index: 3;
+        top: auto;
+        right: auto;
+        bottom: 40px;
+        left: 10px;
+        -webkit-transform: rotateY(0);
+        transform: rotateY(0)
+    }
+    .header .flip-container .back #search_form {
+        top: auto;
+        right: auto
+    }
+    .header .fa-search {
+        display: none
+    }
+    .header .fa-bars {
+        display: block
+    }
+    .home-video-wrap {
+        margin-top: 38px;
+        height: 320px
+    }
+    .home-video-wrap .video-logo-wrap img {
+        height: 80px;
+        margin-bottom: 0
+    }
+    .homepage-features {
+        padding: 10px
+    }
+    .home-tag .container {
+        text-align: center
+    }
+   
+    .full-img .left-side {
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 20px
+    }
+    .full-img .left-side h3 {
+        margin: 0;
+        font-size: 20px;
+        line-height: 22px;
+        text-transform: uppercase;
+        font-weight: 500;
+        color: #FFF;
+        letter-spacing: 2px
+    }
+    .full-img .left-side p {
+        color: #FFF;
+        font-size: 16px;
+        font-weight: 200;
+        
+    }
+    .full-img .left-side p:nth-child(2) {
+        padding-bottom: 20px
+    }
+    .full-img .left-side a.arrow-button {
+        color: #FFF;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 500
+    }
+    .full-img .left-side a.arrow-button:after {
+        content: '\0000a0 \0000a0 \232A'
+    }
+    .homepage-agents {
+        padding: 0
+    }
+    .content h2 {
+        padding: 10px 40px;
+        font-size: 18px
+    }
+    .family {
+        margin-bottom: -40px
+    }
+    #timelineSlide .slide .info .year {
+        font-size: 16px
+    }
+    #timelineSlide .slide .info .copy {
+        font-size: 12px
+    }
+    .subnav {
+        top: 38px;
+        width: 100%;
+        height: 40px;
+        position: fixed;
+        -webkit-transition: top .3s cubic-bezier(.77, 0, .175, 1);
+        transition: top .3s cubic-bezier(.77, 0, .175, 1)
+    }
+    .subnav .menu-popout-submenu-container {
+        display: none
+    }
+    .subnav ul {
+        padding: 2px 0;
+        margin: 8px 0;
+        overflow: hidden
+    }
+    .subnav ul li {
+        font-size: 14px;
+        display: block;
+        float: left;
+        margin: 0;
+        padding: 0 10px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box
+    }
+    .subnav {
+        height: auto;
+        min-height: 40px;
+    }
+    .subnav ul li.right {
+        float: left;
+    }
+    #properties {
+        padding-top: 0
+    }
+    #mainListingSlide .slide .first-slide-title {
+        padding: 10px;
+        font-size: 16px
+    }
+    #neightborhoodSlide .slide h3 {
+        padding-top: 130px;
+        font-size: 20px
+    }
+    .content-individual-property-top-details {
+        padding: 10px
+    }
+    .content-individual-property-top-details .content-main {
+        padding: 0;
+        width: 100%
+    }
+    .slick-next,
+    .slick-prev {
+        display: none!important
+    }
+    #main-content {
+        padding-top: 78px;
+        -webkit-transition: padding .3s cubic-bezier(.77, 0, .175, 1);
+        transition: padding .3s cubic-bezier(.77, 0, .175, 1)
+    }
+    #main-content .hero h1 {
+        font-size: 24px;
+        margin: 60px 0
+    }
+    #main-content .hero .neighborhood-location {
+        padding: 40px 0
+    }
+    #main-content .hero .neighborhood-location h1 {
+        text-align: center;
+        margin: 20px 0
+    }
+    #main-content .hero .neighborhood-location p {
+        font-size: 18px
+    }
+    #main-content .building-header {
+        padding: 10px
+    }
+    #main-content .building-header .building-location {
+        margin-bottom: 10px
+    }
+    #main-content .building-header .text-slider h1 {
+        margin: 10px 0
+    }
+    #main-content .building-tags .center {
+        text-align: center
+    }
+    #main-content .building-tags .center span {
+        font-size: 14px;
+        padding: 8px 12px
+    }
+    #main-content .building-image-grid {
+        display: block;
+        height: auto
+    }
+    #main-content .building-details .feature-slides .wrap>div .left br,
+    #main-content .building-details .feature-slides .wrap>div .right br,
+    #main-content .building-details .feature-slides .wrap>div svg,
+    #main-content .building-map .map-scroller,
+    #main-content .neighborhood-details .feature-slides .wrap>div .left br,
+    #main-content .neighborhood-details .feature-slides .wrap>div .right br,
+    #main-content .neighborhood-details .feature-slides .wrap>div svg {
+        display: none
+    }
+    #main-content .building-image-grid .flex-item {
+        min-height: 240px
+    }
+    #main-content .building-highlights .feature-slides .slide,
+    #main-content .neigborhood-highlights .feature-slides .slide {
+        height: 240px
+    }
+    #main-content .building-highlights .feature-slides .slide .wrap,
+    #main-content .neigborhood-highlights .feature-slides .slide .wrap {
+        font-size: 14px
+    }
+    #main-content .building-highlights .feature-slides .slide .wrap>div,
+    #main-content .neigborhood-highlights .feature-slides .slide .wrap>div {
+        width: 100%
+    }
+    #main-content .building-highlights .feature-slides .slide .wrap h1,
+    #main-content .neigborhood-highlights .feature-slides .slide .wrap h1 {
+        font-size: 24px
+    }
+    #main-content .building-highlights .slick-dots,
+    #main-content .neigborhood-highlights .slick-dots {
+        bottom: 0
+    }
+    #main-content .building-highlights .feature-slides .slide {
+        padding: 0
+    }
+    #main-content .building-features {
+        padding: 20px 0
+    }
+    #main-content .building-features .features-nav {
+        padding: 4px;
+        font-size: 12px
+    }
+    #main-content .building-features .features-nav li {
+        padding: 4px
+    }
+    #main-content .building-features .feature-slides .slide,
+    #main-content .building-features .feature-slides .slide .wrap {
+        width: 100%
+    }
+    #main-content .building-features .feature-slides .slide .wrap>div {
+        width: 100%;
+        padding: 10px;
+        font-size: 12px
+    }
+    #main-content .building-details .feature-slides .wrap,
+    #main-content .neighborhood-details .feature-slides .wrap {
+        width: 100%;
+        height: 240px
+    }
+    #main-content .building-details .feature-slides .wrap>div,
+    #main-content .neighborhood-details .feature-slides .wrap>div {
+        width: 100%;
+        text-align: center
+    }
+    #main-content .building-details .feature-slides .wrap>div .left,
+    #main-content .neighborhood-details .feature-slides .wrap>div .left {
+        padding: 0;
+        width: 100%;
+        font-size: 14px;
+        float: none;
+        margin-top: 90px
+    }
+    #main-content .building-details .feature-slides .wrap>div .right,
+    #main-content .neighborhood-details .feature-slides .wrap>div .right {
+        width: 100%;
+        float: none;
+        font-size: 12px;
+        color: #FFF;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, .5)
+    }
+    #main-content .building-details .feature-slides .wrap>div h2,
+    #main-content .neighborhood-details .feature-slides .wrap>div h2 {
+        text-align: center;
+        font-size: 14px;
+        color: #FFF;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, .5)
+    }
+    #main-content .building-details .feature-slides .wrap>div h3,
+    #main-content .neighborhood-details .feature-slides .wrap>div h3 {
+        text-align: center;
+        font-size: 12px;
+        color: #FFF;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, .5)
+    }
+    #main-content .building-details .feature-slides .wrap>div ul,
+    #main-content .neighborhood-details .feature-slides .wrap>div ul {
+        display: none;
+        font-size: 9px;
+        color: #FFF;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, .5)
+    }
+    #main-content .building-details .feature-slides .wrap>div p,
+    #main-content .neighborhood-details .feature-slides .wrap>div p {
+        padding: 0;
+        font-size: 14px;
+        color: #FFF;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, .5)
+    }
+    #main-content .building-details .feature-slides .slick-next,
+    #main-content .building-details .feature-slides .slick-prev,
+    #main-content .neighborhood-details .feature-slides .slick-next,
+    #main-content .neighborhood-details .feature-slides .slick-prev {
+        opacity: 0
+    }
+    #main-content .building-neighborhood .neighborhood-wrap h3 {
+        font-size: 32px;
+        margin: 0 0 -16px
+    }
+    #main-content .building-neighborhood .neighborhood-wrap .feature-slides .slide {
+        width: 100%;
+        height: 240px;
+        margin: 2px
+    }
+    #main-content .neigborhood-highlights .feature-slides .slide {
+        padding: 0 10px
+    }
+    #main-content .neigborhood-highlights .feature-slides .slide .wrap>div {
+        padding: 10px
+    }
+    #main-content .neighborhood-facts .feature-slides,
+    #main-content .neighborhood-facts .feature-slides .slide,
+    #main-content .neighborhood-vibe .feature-slides,
+    #main-content .neighborhood-vibe .feature-slides .slide {
+        height: 240px
+    }
+    #main-content .neighborhood-facts .feature-slides .wrap,
+    #main-content .neighborhood-facts .feature-slides .wrap>div,
+    #main-content .neighborhood-vibe .feature-slides .wrap,
+    #main-content .neighborhood-vibe .feature-slides .wrap>div {
+        width: 100%;
+        height: 240px
+    }
+    #main-content .neighborhood-facts .slick-next,
+    #main-content .neighborhood-facts .slick-prev,
+    #main-content .neighborhood-vibe .slick-next,
+    #main-content .neighborhood-vibe .slick-prev {
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        opacity: 0
+    }
+    #main-content .buildings-similar .building-block {
+        width: 100%
+    }
+    #main-content .all-buildings .building-link {
+        width: 100%;
+        margin: 0 20px
+    }
+    
+    .full-img {
+        height: auto;
+    }
+    .full-img .lux {
+        margin-bottom: -120px;
+        width: 240px;
+        background-color: #000
+    }
+    .full-img .lux h3 {
+        font-size: 32px
+    }
+    .mobile_hide {
+        display: none!important
+    }
+    #sidebar_menu {
+        text-align: center;
+        padding: 0;
+        margin: 30px 0 0;
+        width: 100%
+    }
+    .menu {
+        width: 100%
+    }
+    .menu li {
+        display: inline-block
+    }
+    .stuck .slide-nav {
+        height: 60px!important
+    }
+    .stuck .jcarouselnav ul li img,
+    .stuck .jcarouselnav-wrapper {
+        height: 60px
+    }
+    .container {
+        padding: 20px
+    }
+    .container.padding {
+        padding: 30px
+    }
+    .contact {
+        padding-top: 120px
+    }
+    .slider {
+        padding-bottom: 50px
+    }
+    .slider .stuck .slide-title h2 {
+        padding: 10px;
+        font-size: 14px
+    }
+    .slider.about-large {
+        margin-top: 125px
+    }
+    .slider.about-large li,
+    .slider.about-large ul {
+        height: 300px
+    }
+    .slider .navigation,
+    .slider .navigation li {
+        height: 60px
+    }
+    .habla-mobile {
+        display: none!important
+    }
+    .about .jcarouselnav-wrapper,
+    .about .jcarouselnav-wrapper .gallery img {
+        height: 120px
+    }
+    .about .jcarouselnav-control-next,
+    .about .jcarouselnav-control-prev {
+        top: 130px
+    }
+    .single-agent .container {
+        padding-bottom: 0!important
+    }
+    .single-agent .jcarouselnav-wrapper {
+        height: 120px;
+        margin-bottom: 60px
+    }
+    .single-agent .jcarouselnav-wrapper .gallery {
+        height: 100%
+    }
+    .single-agent .jcarouselnav-wrapper .gallery img {
+        height: 120px
+    }
+    #content-individual-property-top {
+        padding: 0
+    }
+    #content-individual-property-top .count {
+        bottom: 10px;
+        right: 10px;
+        font-size: 16px
+    }
+    #content-individual-property-bottom>p,
+    .content-individual-property-bottom-disclaimer>p {
+        padding-right: 0
+    }
+    .agents-list,
+    .properties-list {
+        list-style: none
+    }
+    .agents-list li,
+    .properties-list li {
+        display: block!important
+    }
+    .agents-list .wrap,
+    .agents-list .wrap a,
+    .properties-list .wrap,
+    .properties-list .wrap a {
+        height: auto
+    }
+    .agents-list .wrap {
+        height: 255px;
+        overflow: hidden
+    }
+    .agents-list .wrap a {
+        height: 255px
+    }
+    .agents-list .wrap p {
+        font-size: 12px
+    }
+    .agents-list .wrap h4 {
+        font-size: 14px
+    }
+    .agent-profile {
+        position: relative;
+        background-color: #e6e6e6;
+        height: auto
+    }
+    .agent-profile .squeeze {
+        height: 280px
+    }
+    .agent-profile .squeeze h2 {
+        padding: 10px 0 0
+    }
+    .agent-profile h2 {
+        font-size: 26px;
+        padding: 10px 0 0
+    }
+    .agent-profile .agent-profile-details,
+    .agent-profile .agent-profile-title {
+        padding-top: 0;
+        float: none;
+        width: 100%
+    }
+    .agent-profile h3 {
+        font-size: 14px
+    }
+    .agent-profile p {
+        margin: 4px 0
+    }
+    .agent-profile>div {
+        height: auto!important
+    }
+    .agent-profile>div:first-child {
+        height: auto;
+        overflow: hidden
+    }
+    .agent-profile>div:first-child img {
+        width: 100%;
+        height: auto
+    }
+    .agent-profile>div:nth-child(2) {
+        padding: 0
+    }
+    .agent-profile .agent-profile-title {
+        margin: 0
+    }
+    .agent-profile .agent-profile-title .social {
+        margin: 10px 0 10px -6px
+    }
+    .agent-profile .block-half {
+        position: relative;
+        overflow: visible
+    }
+    .agent-profile .button {
+        position: absolute;
+        bottom: 0;
+        left: auto;
+        top: auto;
+        right: 0;
+        color: #FFF;
+        background: #1A1A1A!important;
+        padding: 4px 8px;
+        font-size: 13px
+    }
+    .agent-profile .addbullets {
+        display: block
+    }
+    .floating-list {
+        width: 100%
+    }
+    .videopad {
+        padding: 0
+    }
+    footer .footer1 ul {
+        padding: 10px 10px 10px 0
+    }
+
+    footer .footer2 .block {
+        padding: 8px
+    }
+    footer .footer1 ul,
+    footer .footer2 ul,
+    footer .footer3 ul {
+        margin: 0
+    }
+    footer .footer2 #mp_1 p {
+        width: 40%
+    }
+    footer .footer2 #mp_1 p:nth-child(3) {
+        width: 20%
+    }
+    footer .footer3 .copyright {
+        font-size: 14px
+    }
+    .content-bottom-slider,
+    .content-individual-property-top-details-sidebar {
+        width: 100%
+    }
+    .agent-book .the_content {
+        padding-right: 0;
+        margin-bottom: 20px
+    }
+    .agent-book .book {
+        font-weight: 700;
+        padding: 0 20px 20px 0;
+        min-height: inherit
+    }
+    .agent-book .book span {
+        font-weight: 200
+    }
+    .agent-book .block-two-third {
+        margin-bottom: 40px
+    }
+    #sidebar_main,
+    .wpcf7-form {
+        padding-right: 0
+    }
+	#mainListingSlide .slide,
+    #matterportSlide .slide,
+    #neightborhoodSlide .slide {
+        max-height: 300px
+    }
+    #main-content .building-image-grid .flex-item .content-item,
+    #main-content .building-image-grid .flex-item .tags,
+    body .nav-open .header #menu-sf-primary,
+    html .nav-open .header #menu-sf-primary {
+        opacity: 1
+    }
+    body,
+    html {
+        width: 100%;
+        padding: 0!important;
+        margin-top: 0;
+        -webkit-transition: margin .3s cubic-bezier(.77, 0, .175, 1);
+        transition: margin .3s cubic-bezier(.77, 0, .175, 1)
+    }
+    body .nav-open,
+    html .nav-open {
+        margin-top: 232px
+    }
+    body .nav-open .header,
+    html .nav-open .header {
+        height: 308px;
+        padding: 0
+    }
+    body .nav-open .header .flip-container,
+    html .nav-open .header .flip-container {
+        display: block
+    }
+    body .nav-open .subnav,
+    html .nav-open .subnav {
+        top: 280px
+    }
+    body .nav-open #main-content,
+    html .nav-open #main-content {
+        padding-top: 0
+    }
+    body .mapped .building-map,
+    html .mapped .building-map {
+        top: 0
+    }
+    body.page-template-template-about-brick-php,
+    body.page-template-template-rent-your-space-php,
+    body.page-template-template-sell-your-home-php {
+        margin: 73px 0 0
+    }
+    .header {
+        position: fixed;
+        top: 0;
+        height: 75px;
+        -webkit-transition: height .3s cubic-bezier(.77, 0, .175, 1);
+        transition: height .3s cubic-bezier(.77, 0, .175, 1);
+        overflow: hidden
+    }
+    .header .logo {
+        position: absolute;
+        top: 8px;
+        left: 10px;
+        background-size: 100px 27px
+    }
+    .header .logo h1 {
+        display: none
+    }
+    .header .location-chooser {
+        left: 0;
+        top: 60px
+    }
+    .header .flip-container {
+        display: none;
+        position: static;
+        width: 100%;
+        height: 300px
+    }
+    .header .flip-container .flipper {
+        -webkit-transform-style: flat;
+        transform-style: flat;
+        height: 100%
+    }
+    .header .flip-container .front {
+        width: 100%;
+        height: 300px
+    }
+    .header .flip-container .front .menu {
+        width: 50%;
+        float: right;
+        text-align: right;
+        margin: 60px 0 0;
+        white-space: auto
+    }
+    .header .flip-container .front .menu li {
+        margin: 8px;
+        line-height: 25px;
+        display: block
+    }
+    .header .flip-container .back {
+        width: 170px;
+        position: absolute;
+        z-index: 3;
+        top: auto;
+        right: auto;
+        bottom: 40px;
+        left: 10px;
+        -webkit-transform: rotateY(0);
+        transform: rotateY(0)
+    }
+    .header .flip-container .back #search_form {
+        top: auto;
+        right: auto
+    }
+    .header .fa-search {
+        display: none
+    }
+    .header .fa-bars {
+        display: block
+    }
+    .home-video-wrap {
+        margin-top: 75px;
+        height: auto;
+    }
+    .home-video-wrap .video-logo-wrap img {
+        height: 80px;
+        margin-bottom: 0
+    }
+    .homepage-features {
+        padding: 10px
+    }
+    .home-tag .container {
+        text-align: center
+    }
+   
+    .full-img .left-side {
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 20px
+    }
+    .full-img .left-side h3 {
+        margin: 0 0 20px 0;
+        font-size: 45px;
+        line-height: 42px;
+        text-transform: uppercase;
+        font-weight: 500;
+        color: #FFF;
+        letter-spacing: 2px
+    }
+    .full-img .left-side p {
+        color: #FFF;
+        font-size: 16px;
+        font-weight: 200;
+       
+    }
+    .full-img .left-side p:nth-child(2) {
+        padding-bottom: 20px
+    }
+    .full-img .left-side a.arrow-button {
+        color: #FFF;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 500
+    }
+    .full-img .left-side a.arrow-button:after {
+        content: '\0000a0 \0000a0 \232A'
+    }
+    .homepage-agents {
+        padding: 0
+    }
+    .content h2 {
+        padding: 10px 40px;
+        font-size: 18px
+    }
+    .family {
+        margin-bottom: -40px
+    }
+    #timelineSlide .slide .info .year {
+        font-size: 16px
+    }
+    #timelineSlide .slide .info .copy {
+        font-size: 12px
+    }
+    .subnav {
+        top: 38px;
+        width: 100%;
+        height: 40px;
+        position: fixed;
+        -webkit-transition: top .3s cubic-bezier(.77, 0, .175, 1);
+        transition: top .3s cubic-bezier(.77, 0, .175, 1)
+    }
+    .subnav .menu-popout-submenu-container {
+        display: none
+    }
+    .subnav ul {
+        padding: 2px 0;
+        margin: 8px 0;
+        overflow: hidden
+    }
+    .subnav ul li {
+        font-size: 14px;
+        display: block;
+        float: left;
+        margin: 0;
+        padding: 0 10px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box
+    }
+    .subnav {
+        height: auto;
+        min-height: 40px;
+    }
+    .subnav ul li.right {
+        float: left;
+    }
+    #properties {
+        padding-top: 0
+    }
+    #mainListingSlide .slide .first-slide-title {
+        padding: 10px;
+        font-size: 16px
+    }
+    #neightborhoodSlide .slide h3 {
+        padding-top: 130px;
+        font-size: 20px
+    }
+    .content-individual-property-top-details {
+        padding: 10px
+    }
+    .content-individual-property-top-details .content-main {
+        padding: 0;
+        width: 100%
+    }
+    .slick-next,
+    .slick-prev {
+        display: none!important
+    }
+    #main-content {
+        padding-top: 78px;
+        -webkit-transition: padding .3s cubic-bezier(.77, 0, .175, 1);
+        transition: padding .3s cubic-bezier(.77, 0, .175, 1)
+    }
+    #main-content .hero h1 {
+        font-size: 24px;
+        margin: 60px 0
+    }
+    #main-content .hero .neighborhood-location {
+        padding: 40px 0
+    }
+    #main-content .hero .neighborhood-location h1 {
+        text-align: center;
+        margin: 20px 0
+    }
+    #main-content .hero .neighborhood-location p {
+        font-size: 18px
+    }
+    #main-content .building-header {
+        padding: 10px
+    }
+    #main-content .building-header .building-location {
+        margin-bottom: 10px
+    }
+	.homepage-agents .bricks-agents	.block{
+		width: 49%;
+	}
+}
+
+@media (max-width: 767px) {
+	.home-video h1{
+		font-size: 35px;
+	}
+	.bannre-logo{
+		width: 250px;
+	}
+	.full-img .left-side h3{
+		font-size: 35px;
+	}
+	.grid.feature-blocks .block{
+		width: 49%;
+	}
+	.home-tag{
+		padding: 20px 0;
+	}
+}
+@media (max-width: 667px) {
+	.homepage-agents .bricks-agents	.block{
+		width: 100%;
+	}
+	.grid.feature-blocks .block{
+		width: 100%;
+	}
+}
+@media (max-width: 480px) {
+	.home-video h1{
+		font-size: 24px;
+	}
+	.home-video h2{
+		font-size: 14px;
+	}
+	.bannre-logo{
+		width: 200px;
+	}
+	.full-img .left-side h3{
+		font-size: 24px;
+	}
+	.full-img .left-side p{
+		font-size: 14px;
+	}
+	
+}
+@media (max-width: 390px) {
+	.home-video h1{
+		font-size: 20px;
+	}
+	.home-video h2{
+		font-size: 14px;
+	}
+	.bannre-logo{
+		width: 150px;
+	}
+}

@@ -1,0 +1,42 @@
+<?php
+/**
+ * The template for displaying all single posts and attachments
+ *
+ * @package WordPress
+ * @subpackage Twenty_Fifteen
+ * @since Twenty Fifteen 1.0
+ */
+
+get_header(); ?>
+
+	<div class="inner-content" style="min-height: 300px;">
+
+		<section id="blog-all-container-with-sidebar">
+		<?php while ( have_posts() ) : the_post(); ?>
+			<?php //the_field('estate_gallery_shortcode'); ?>
+	       <div class="container clearfix">
+	             
+                     <?php 
+                		//if ( has_post_thumbnail() ) { 
+			        		//the_post_thumbnail( 'full' );
+			      		//}
+                	?>
+
+                    <h3><?php the_title(); ?></h3>
+
+				<?php the_content(); ?> 
+
+		</div><!--all blog section-->
+		<?php endwhile; ?>
+
+	    <div class="blog-sider-bar">
+			<?php if ( is_active_sidebar( 'blog-widget' ) ) { ?>
+				<?php dynamic_sidebar( 'blog-widget' ); ?>
+			<?php } ?>
+	    </div>
+	       </div>
+	  	</section>
+
+	</div>
+
+<?php get_footer(); ?>
