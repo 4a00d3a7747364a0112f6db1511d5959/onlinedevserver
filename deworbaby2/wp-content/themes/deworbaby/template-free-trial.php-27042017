@@ -1,0 +1,156 @@
+<?php
+/*
+Template Name: Free Trail Template
+*/
+
+get_header(); 
+
+?>
+
+<!--free trial starts-->
+<section class="sliderSec clearfix">
+  <div class="slider-container">  
+        <div class="slider" >    
+          <div class="slide">    
+            <img src="<?php echo get_template_directory_uri(); ?>/images/free_trial_bg.jpg" alt=""> 
+            <div class="overlay">
+                  
+            </div>
+              <div class="caption">
+                <div class="capContent container">
+                    <div class="maincaptionHolder">
+                      <div class="mainCapInner">
+                        <h1>FEEL THE SOFTNESS OF BAMBOO DIAPERS</h1>
+                        <p>Parenthood is all about the choices you make everyday by putting someone else’s happiness and well being ahead of your own. Let Dewor Baby help you to do the right thing by providing the best diaper for your baby’s delicate skin.</p>
+                      </div>
+                    </div>
+                </div>
+                
+              </div> 
+          </div>
+        </div>
+        
+  </div>
+</section>
+<!-- slider ends -->
+
+<!-- Free Samples section -->
+<section class="freeSamples">
+  <div class="container">
+    <h2>YOUR FREE SAMPLES</h2>
+
+    <div class="samplesContainer clearfix">
+        <div class="col-3">
+          <div class="samples">
+            <div class="absDivs">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/ft_1.png" alt="">
+            </div>
+              <h4>Sign UP</h4>
+              <p>To get your free trial of 6 super soft bamboo diapers with choice of your size. Delivered right to your doorstep.</p>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="samples">
+            <div class="absDivs">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/ft_2.png" alt="">
+            </div>
+              <h4>Keep Enjoying</h4>
+              <p>Fall in love with our diapers. No need to subscribe again.  You have 7 days after receiving your free samples before  you are <span>automatically enrolled into our monthly diaper subscription.</span></p>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="samples">
+            <div class="absDivs">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/ft_3.png" alt="">
+            </div>
+              <h4>Change of Heart</h4>
+              <p>You can change your delivery,  size and payment options any time.Or simply cancel your subscription.</p>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+<!-- end free samples -->
+
+<!-- benefits  -->
+<section class="benefits">
+  <div class="container">
+    <h2>EXCLUSIVE BENEFITS OF BAMBOO DIAPERS </h2>
+  
+    <div class="benfits_holder">
+        <div class="col-3">
+            <div class="absDivs">
+              <div class="absDivInner">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/bi_1.png" alt="">
+              </div>
+            </div>  
+            <div class="samples"> 
+              <div class="smples_content">
+                <h4>SOURCED FROM NATURE</h4>
+                  <p>Bamboo trees are the fastest growing woody plants in the world.Bamboo fibers have a high breaking tenacity, better moisture-wicking properties and better moisture absorption. </p>
+                  <a href="javascript:void(0)" class="btn show_now btn_learn_more hvr-shutter-out-horizontal"><span class="hvr-shutter-out-horizontal">LEARN MORE</span></a>
+                </div>          
+           </div>
+        </div>
+
+        <div class="col-3">
+          <div class="absDivs">
+            <div class="absDivInner">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/bi_2.png" alt="">
+            </div>
+          </div>  
+          <div class="samples"> 
+            <div class="smples_content">
+              <h4>NATURALLY STRONG</h4>
+                <p>Bamboo fiber that is used as a material in our diaper is very resilient and durable. The Result is worry free diapers with superior absorbency, snug fit and ultra comfort. </p>
+                <a href="javascript:void(0)" class="btn show_now btn_learn_more hvr-shutter-out-horizontal"><span class="hvr-shutter-out-horizontal">LEARN MORE</span></a>
+              </div>          
+         </div>
+        </div>
+
+        <div class="col-3">
+              <div class="absDivs">
+                <div class="absDivInner">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/bi_3.png" alt="">
+                </div>
+              </div>  
+              <div class="samples"> 
+                <div class="smples_content">
+                  <h4>SILKY SOFT FEEL</h4>
+                    <p>Bamboo material is twice as soft as the softest cotton you will ever experience. This is because the bamboo fiber itself is naturally round and smooth without any chemical treatment. Our top sheet and back sheet is </p>
+                    <a href="javascript:void(0)" class="btn show_now btn_learn_more hvr-shutter-out-horizontal"><span class="hvr-shutter-out-horizontal">LEARN MORE</span></a>
+                  </div>          
+             </div>
+        </div>
+    </div>
+  </div>
+</section>
+<!-- benefits ends -->
+
+<section class="styles">
+  <div class="container clearfix">  
+    <?php global $post; 
+      $product_id = 825;
+      $post = get_post($product_id , OBJECT );
+      setup_postdata( $post ); 
+      $_product = wc_get_product( $product_id );
+    ?>
+
+    <div class="left_area">
+      <h2>ULTIMATE BABY STYLE</h2>
+      <p>Sometimes, simple is the real chic and the best style of modern day. Our pure white bamboo diapers are simple, yet beautifully soft and pleasant to touch. Get our premium diapers today.</p>
+      <h4>No Hidden Cost or Delivery charge!!!</h4>
+      <input type="hidden" class="quantity" name="quantity" value="1" >
+      <input type='hidden' value="<?php echo $product_id; ?>" name="add-to-cart" class="add-to-cart">
+      <a href='<?php echo esc_url( home_url( '/' ) ); ?>?add-to-cart=<?php the_id(); ?>' class="btn show_now btn_learn_more btn_free_diaper hvr-shutter-out-horizontal"><span class="hvr-shutter-out-horizontal">FREE DIAPER TRIAL</span></a>
+    </div>
+    <div class="right_area">
+      <!-- <img src="<?php //echo get_template_directory_uri(); ?>/images/right_img.jpg" alt=""> -->
+      <?php echo $_product->get_image(array( 450, 450 ));?>
+    </div>
+    
+  </div>
+</section>
+<!--free trial ends-->
+
+<?php get_footer(); ?>

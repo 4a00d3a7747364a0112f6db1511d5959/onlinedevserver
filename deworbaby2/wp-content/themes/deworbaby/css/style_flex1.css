@@ -1,0 +1,224 @@
+#flexiselDemo1, #flexiselDemo2, #flexiselDemo3 {
+
+display:none;
+
+}
+
+
+
+.nbs-flexisel-container {
+
+    position:relative;
+
+    max-width:100%;
+
+}
+
+.nbs-flexisel-ul {
+
+    position:relative;
+
+    width:99999px;
+
+    margin:0px 0 50px 0;
+
+    padding:0px;
+
+    list-style-type:none;   
+
+    text-align:center;  
+
+}
+
+
+
+.nbs-flexisel-inner {
+
+    position: relative;
+
+    overflow: hidden;
+
+    float:left;
+
+    width:100%;    
+
+    border-radius:5px;
+
+    -moz-border-radius:5px;
+
+    -webkit-border-radius:5px;  
+
+}
+
+
+
+.nbs-flexisel-item {
+
+    float:left;
+
+    margin:0px;
+
+    padding:0px;
+
+    cursor:pointer;
+
+    position:relative;
+
+    line-height:0px;
+
+}
+
+.nbs-flexisel-item img {
+
+    max-width: 100%;
+
+    cursor: pointer;
+
+    position: relative;
+
+    margin-top: 10px;
+
+    margin-bottom: 10px;
+
+   /* height: 100%;*/
+
+}
+
+
+
+/*** Navigation ***/
+
+
+
+.nbs-flexisel-nav-left,
+
+.nbs-flexisel-nav-right {
+
+    width: 30px;
+
+    height: 30px;       
+
+    position: absolute;
+
+    cursor: pointer;
+
+    z-index: 4;
+
+   /* bottom:2%;*/
+
+    background: #caaa55;
+
+    color: #fff;   
+
+    text-align: center;  
+
+    transform: rotate(45deg);
+
+    -webkit-transform: rotate(45deg);
+
+    -moz-transform: rotate(45deg);
+
+    -ms-transform: rotate(45deg);
+    top: 88%;
+
+}
+
+
+
+.nbs-flexisel-nav-left {
+
+    left: 50%;
+
+    margin-left: -50px;
+
+    background: url(../images/right.png) center center no-repeat,  #caaa55;
+
+    
+
+}
+
+
+
+.nbs-flexisel-nav-left:before {
+
+    content: '';
+
+    position: absolute;
+
+    width: 37px;
+
+    height: 1px;
+
+    background: #898d98;
+
+    top:41px;
+
+    left: -100%;
+
+    transform: rotate(-45deg);
+
+    -moz-transform: rotate(-45deg);
+
+    -ms-transform: rotate(-45deg);
+
+    -webkit-transform: rotate(-45deg);
+
+}
+
+
+
+.nbs-flexisel-nav-left.disabled {
+
+    opacity: 0.4;
+
+}
+
+
+
+.nbs-flexisel-nav-right {
+
+    background: url(../images/left.png) center center no-repeat,  #caaa55;
+
+    right: 50%;
+
+    margin-right: -38px;   
+
+}
+
+
+
+.nbs-flexisel-nav-right:before {
+
+    content: '';
+
+    position: absolute;
+
+    width: 37px;
+
+    height: 1px;
+
+    background: #898d98;
+
+    top:-12px;
+
+    right: -100%;
+
+    transform: rotate(-45deg);
+
+    -webkit-transform: rotate(-45deg);
+
+    -moz-transform: rotate(-45deg);
+
+    -ms-transform: rotate(-45deg);
+
+ 
+
+}
+
+
+
+.nbs-flexisel-nav-right.disabled {
+
+    opacity: 0.4;
+
+}

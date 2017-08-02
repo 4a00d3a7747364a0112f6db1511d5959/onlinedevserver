@@ -1,0 +1,118 @@
+jQuery(document).ready(function(){	
+	jQuery('.ywsl-social.ywsl-facebook').text('Facebook'); //ywsl-social ywsl-google
+
+	jQuery('.ywsl-social.ywsl-google').text('Google Plus');
+
+
+	jQuery('.login.ywsl-box a').each(function() {
+		jQuery(this).wrap('<li></li>');
+	});
+	jQuery('.ywsl-social ywsl-facebook').wrap('<li></li>');
+
+
+	jQuery('.login.ywsl-box li').wrapAll('<ul class="social_btn"></ul>');
+	jQuery('.login.ywsl-box ul').wrapAll('<div class="social_btn"></div>');
+
+	var winWidth = jQuery(window).width();
+
+	jQuery.fn.__mainBody(winWidth);	
+
+	jQuery('#sub_sec_2 .description').height(jQuery('.sub_sec_2 .contentArea').height());
+
+	jQuery('.sub_sec_3 .description').height(jQuery('.sub_sec_3').height());
+
+	jQuery('.subscrib_now').bind('click',function(){ jQuery.fn.__goForSubs(); });
+
+
+    var navObj=jQuery('.navigation');
+    if(!navObj.length){
+    	return;
+    }
+    var navPos=navObj.offset().top;
+   // console.log(navPos);
+	var nav_height = jQuery('.navigation').height();
+
+jQuery('.navigation ul li a').on('click', function(){
+    var ids=jQuery(this).attr('href');
+       jQuery('html, body').animate({
+     	scrollTop:((jQuery(ids).offset().top) - (nav_height +90))
+     },800);
+
+  });
+
+jQuery(window).scroll(function(){
+        var winPos=jQuery(window).scrollTop();
+	if(winPos>=navPos){
+
+		jQuery('.navigation').addClass('fixed');	
+
+		//jQuery('.navigation').css({'position':'relative','top': (winPos-navPos)+'px','z-index':'99'})
+
+	}else{
+
+	jQuery('.navigation').removeClass('fixed');	
+
+	}
+	
+});
+
+//jQuery('.woocommerce form.login.ywsl-box .ywsl-social.ywsl-facebook').text('FACEBOOK');
+   jQuery('.woocommerce form.login.ywsl-box .ywsl-social').on('click',function(){
+   	alert();
+   });
+
+
+
+
+});
+
+jQuery(document).on('click','.close', function(){
+
+	jQuery.fn.__closeMenu();
+
+});
+
+jQuery.fn.__mainBody = function(e){
+
+	jQuery('.responsiveMenu').bind('click', function(){
+
+		jQuery.fn.__toggleMenu();
+
+	});
+
+	if(e<= 768){
+
+		jQuery('<div class="close"><i class="fa fa-times"></i></div>')
+
+		.appendTo('nav ul');	
+
+	}	
+
+}
+
+jQuery.fn.__closeMenu = function(){
+
+	jQuery('nav ul').fadeOut();
+
+}
+
+
+
+jQuery.fn.__toggleMenu = function(){
+
+	jQuery('nav ul').fadeToggle();
+
+}
+
+jQuery.fn.__goForSubs = function(){
+
+	
+
+	 jQuery("html, body").animate({ scrollTop: jQuery('.signIn').offset().top }, 600);
+
+	//jQuery(window).scrollTop();
+
+}
+
+
+

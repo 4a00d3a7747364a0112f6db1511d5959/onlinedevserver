@@ -1,0 +1,45 @@
+jQuery(document).ready(function(){
+jQuery("#flexiselDemo3").flexisel({
+        visibleItems: 2,
+        itemsToScroll: 1,
+        autoPlay: {
+            enable: true,
+            interval: 5000,
+            pauseOnHover: true
+        }      
+    });
+
+jQuery("#navds").appendTo("#menu-header-menu");
+    jQuery('.post-type-archive-product').addClass('page_subscribe'); //shop page
+    jQuery('.page-id-87').addClass('page_subscribe'); //privacy policy page
+    jQuery('.page-id-85').addClass('page_subscribe'); //faq page
+    jQuery('.page-id-156').addClass('page_subscribe'); //wholesale page
+    jQuery('.page-id-194').addClass('page_subscribe'); //subscribe page
+    jQuery('.page-id-9').addClass('page_subscribe'); //learn page
+
+   
+
+    //swaping woocommerce registration fields
+    var copy_email = jQuery("p.confirm-email").clone();
+    jQuery(copy_email).insertBefore("p.set-pwd");
+    jQuery('.register p').eq(5).remove();
+
+    //re-locate facebook and google login in wp registration/login
+    var clone_social = jQuery(".wc-social-login").html();
+    jQuery(clone_social).insertBefore("p.or").addClass('dodo');
+    jQuery('.socials-list:not(.dodo)').parent().remove();
+    jQuery('.socials-list:not(.dodo)').remove(); //wc-social-login
+
+    //changing google plus to google
+    jQuery("a.ywsl-google").html("Google");
+
+   
+    jQuery('input').attr('autocomplete', 'off');
+
+    //change type for zip and phone
+    jQuery("#billing_phone").prop("type", "tel");
+    jQuery("#billing_postcode").prop("type", "tel");
+    jQuery("#billing_phone").attr("maxlength", "10");
+    jQuery("#billing_postcode").attr("maxlength", "6");
+    
+});

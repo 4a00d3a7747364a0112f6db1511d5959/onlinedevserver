@@ -1,0 +1,106 @@
+[12-Apr-2017 11:32:04 UTC] PHP Parse error:  syntax error, unexpected '-', expecting '(' in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/themes/deworbaby/functions.php on line 356
+[12-Apr-2017 11:32:09 UTC] PHP Parse error:  syntax error, unexpected '-', expecting '(' in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/themes/deworbaby/functions.php on line 356
+[12-Apr-2017 11:32:15 UTC] PHP Parse error:  syntax error, unexpected '-', expecting '(' in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/themes/deworbaby/functions.php on line 356
+[12-Apr-2017 11:32:16 UTC] PHP Parse error:  syntax error, unexpected '-', expecting '(' in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/themes/deworbaby/functions.php on line 356
+[12-Apr-2017 11:32:17 UTC] PHP Parse error:  syntax error, unexpected '-', expecting '(' in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/themes/deworbaby/functions.php on line 356
+[12-Apr-2017 11:32:31 UTC] PHP Parse error:  syntax error, unexpected '-', expecting '(' in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/themes/deworbaby/functions.php on line 356
+[12-Apr-2017 11:32:32 UTC] PHP Parse error:  syntax error, unexpected '-', expecting '(' in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/themes/deworbaby/functions.php on line 356
+[12-Apr-2017 11:32:32 UTC] PHP Parse error:  syntax error, unexpected '-', expecting '(' in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/themes/deworbaby/functions.php on line 356
+[12-Apr-2017 11:34:31 UTC] PHP Parse error:  syntax error, unexpected '-', expecting '(' in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/themes/deworbaby/functions.php on line 356
+[12-Apr-2017 11:34:32 UTC] PHP Parse error:  syntax error, unexpected '-', expecting '(' in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/themes/deworbaby/functions.php on line 356
+[12-Apr-2017 11:34:32 UTC] PHP Parse error:  syntax error, unexpected '-', expecting '(' in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/themes/deworbaby/functions.php on line 356
+[17-Apr-2017 07:05:19 UTC] PHP Fatal error:  Call to a member function get() on null in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/woocommerce-subscriptions-gifting/templates/emails/recipient-new-initial-order.php on line 11
+[17-Apr-2017 09:52:17 UTC] PHP Fatal error:  Call to a member function get() on null in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/woocommerce-subscriptions-gifting/templates/emails/recipient-new-initial-order.php on line 11
+[19-Apr-2017 09:36:53 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/report-mail/includes/templates/admin/dashboard.php on line 43
+[19-Apr-2017 09:36:57 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/report-mail/includes/templates/admin/dashboard.php on line 43
+[19-Apr-2017 09:37:06 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/report-mail/includes/templates/admin/dashboard.php on line 43
+[19-Apr-2017 09:37:19 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/report-mail/includes/templates/admin/dashboard.php on line 43
+[19-Apr-2017 09:37:23 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/report-mail/includes/templates/admin/dashboard.php on line 43
+[19-Apr-2017 11:16:33 UTC] PHP Parse error:  syntax error, unexpected '$order_user_id' (T_VARIABLE) in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/report-mail/includes/templates/admin/dashboard.php on line 79
+[19-Apr-2017 11:16:37 UTC] PHP Parse error:  syntax error, unexpected '$order_user_id' (T_VARIABLE) in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/report-mail/includes/templates/admin/dashboard.php on line 79
+[19-Apr-2017 11:17:12 UTC] PHP Parse error:  syntax error, unexpected '$order_user_id' (T_VARIABLE) in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/report-mail/includes/templates/admin/dashboard.php on line 79
+[19-Apr-2017 12:30:12 UTC] PHP Warning:  Missing argument 1 for plugin_dir_url(), called in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/report-mail/includes/templates/admin/dashboard.php on line 17 and defined in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/plugin.php on line 723
+[25-Apr-2017 08:36:08 UTC] PHP Fatal error:  Class 'WCS_Gifting' not found in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/ds-plugin/ds.php on line 186
+[27-Apr-2017 09:50:12 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/themes/deworbaby/functions.php on line 101
+[27-Apr-2017 10:47:15 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting '(' in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/themes/deworbaby/functions.php on line 397
+[06-May-2017 11:06:32 UTC] PHP Fatal error:  Class 'WCS_Gifting' not found in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/ds-plugin/ds.php on line 194
+[06-May-2017 11:07:19 UTC] PHP Fatal error:  Class 'WCS_Gifting' not found in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/ds-plugin/ds.php on line 194
+[22-May-2017 07:15:05 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/themes/deworbaby/functions.php on line 560
+[22-May-2017 07:21:05 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/themes/deworbaby/functions.php on line 560
+[12-Jun-2017 06:03:30 UTC] PHP Fatal error:  Uncaught exception 'phpmailerException' with message 'Invalid address:  (setFrom) Daily Product Report Mail' in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-phpmailer.php:1023
+Stack trace:
+#0 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/pluggable.php(352): PHPMailer->setFrom('Daily Product R...', 'WordPress', false)
+#1 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/report-mail/report-mail.php(187): wp_mail('subrat@uniterre...', 'Products to be ...', 'message', 'From: Daily Pro...', '/home/unitetoh/...')
+#2 [internal function]: send_csv_action('')
+#3 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp-hook.php(298): call_user_func_array('send_csv_action', Array)
+#4 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters('', Array)
+#5 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/plugin.php(453): WP in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-phpmailer.php on line 1023
+[12-Jun-2017 06:03:41 UTC] PHP Fatal error:  Uncaught exception 'phpmailerException' with message 'Invalid address:  (setFrom) Daily Product Report Mail' in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-phpmailer.php:1023
+Stack trace:
+#0 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/pluggable.php(352): PHPMailer->setFrom('Daily Product R...', 'WordPress', false)
+#1 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/report-mail/report-mail.php(187): wp_mail('subrat@uniterre...', 'Products to be ...', 'message', 'From: Daily Pro...', '/home/unitetoh/...')
+#2 [internal function]: send_csv_action('')
+#3 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp-hook.php(298): call_user_func_array('send_csv_action', Array)
+#4 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters('', Array)
+#5 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/plugin.php(453): WP in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-phpmailer.php on line 1023
+[12-Jun-2017 06:08:29 UTC] PHP Fatal error:  Uncaught exception 'phpmailerException' with message 'Invalid address:  (setFrom) Daily Product Report Mail' in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-phpmailer.php:1023
+Stack trace:
+#0 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/pluggable.php(352): PHPMailer->setFrom('Daily Product R...', 'WordPress', false)
+#1 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/report-mail/report-mail.php(187): wp_mail('subrat@uniterre...', 'Products to be ...', 'message', 'From: Daily Pro...', '/home/unitetoh/...')
+#2 [internal function]: send_csv_action('')
+#3 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp-hook.php(298): call_user_func_array('send_csv_action', Array)
+#4 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters('', Array)
+#5 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/plugin.php(453): WP in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-phpmailer.php on line 1023
+[12-Jun-2017 06:11:52 UTC] PHP Fatal error:  Uncaught exception 'phpmailerException' with message 'Invalid address:  (setFrom) Product Delivery Report Mail' in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-phpmailer.php:1023
+Stack trace:
+#0 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/pluggable.php(352): PHPMailer->setFrom('Product Deliver...', 'WordPress', false)
+#1 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/report-mail/report-mail.php(191): wp_mail('subrat@uniterre...', 'Products to be ...', 'message', 'From: Product D...', '/home/unitetoh/...')
+#2 [internal function]: send_csv_action('')
+#3 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp-hook.php(298): call_user_func_array('send_csv_action', Array)
+#4 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters('', Array)
+#5 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/plugin.php(453): in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-phpmailer.php on line 1023
+[12-Jun-2017 06:12:29 UTC] PHP Fatal error:  Uncaught exception 'phpmailerException' with message 'Invalid address:  (setFrom) Product Delivery Report Mail' in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-phpmailer.php:1023
+Stack trace:
+#0 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/pluggable.php(352): PHPMailer->setFrom('Product Deliver...', 'WordPress', false)
+#1 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/report-mail/report-mail.php(191): wp_mail('subrat@uniterre...', 'Products to be ...', 'message', 'From: Product D...', '/home/unitetoh/...')
+#2 [internal function]: send_csv_action('')
+#3 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp-hook.php(298): call_user_func_array('send_csv_action', Array)
+#4 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters('', Array)
+#5 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/plugin.php(453): in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-phpmailer.php on line 1023
+[12-Jun-2017 06:13:13 UTC] PHP Fatal error:  Uncaught exception 'phpmailerException' with message 'Invalid address:  (setFrom) Product Delivery Report Mail' in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-phpmailer.php:1023
+Stack trace:
+#0 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/pluggable.php(352): PHPMailer->setFrom('Product Deliver...', 'WordPress', false)
+#1 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/report-mail/report-mail.php(191): wp_mail('subrat@uniterre...', 'Products to be ...', 'message', 'From: Product D...', '/home/unitetoh/...')
+#2 [internal function]: send_csv_action('')
+#3 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp-hook.php(298): call_user_func_array('send_csv_action', Array)
+#4 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters('', Array)
+#5 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/plugin.php(453): in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-phpmailer.php on line 1023
+[12-Jun-2017 06:14:32 UTC] PHP Fatal error:  Uncaught exception 'phpmailerException' with message 'Invalid address:  (setFrom) Product Delivery Report Mail' in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-phpmailer.php:1023
+Stack trace:
+#0 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/pluggable.php(352): PHPMailer->setFrom('Product Deliver...', 'WordPress', false)
+#1 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/report-mail/report-mail.php(191): wp_mail('subrat@uniterre...', 'Products to be ...', 'message', 'From: Product D...', '/home/unitetoh/...')
+#2 [internal function]: send_csv_action('')
+#3 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp-hook.php(298): call_user_func_array('send_csv_action', Array)
+#4 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters('', Array)
+#5 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/plugin.php(453): in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-phpmailer.php on line 1023
+[12-Jun-2017 06:19:28 UTC] PHP Fatal error:  Uncaught exception 'phpmailerException' with message 'Invalid address:  (setFrom) Daily Product Delivery Report Mail' in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-phpmailer.php:1023
+Stack trace:
+#0 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/pluggable.php(352): PHPMailer->setFrom('Daily Product D...', 'WordPress', false)
+#1 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/report-mail/report-mail.php(191): wp_mail('subrat@uniterre...', 'Products to be ...', 'message', 'From: Daily Pro...', '/home/unitetoh/...')
+#2 [internal function]: send_csv_action('')
+#3 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp-hook.php(298): call_user_func_array('send_csv_action', Array)
+#4 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters('', Array)
+#5 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/plugin.php in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-phpmailer.php on line 1023
+[12-Jun-2017 06:19:41 UTC] PHP Fatal error:  Uncaught exception 'phpmailerException' with message 'Invalid address:  (setFrom) Daily Product Delivery Report Mail' in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-phpmailer.php:1023
+Stack trace:
+#0 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/pluggable.php(352): PHPMailer->setFrom('Daily Product D...', 'WordPress', false)
+#1 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/report-mail/report-mail.php(191): wp_mail('subrat@uniterre...', 'Products to be ...', 'message', 'From: Daily Pro...', '/home/unitetoh/...')
+#2 [internal function]: send_csv_action('')
+#3 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp-hook.php(298): call_user_func_array('send_csv_action', Array)
+#4 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters('', Array)
+#5 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/plugin.php in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-phpmailer.php on line 1023
+[28-Jun-2017 08:35:43 UTC] PHP Fatal error:  Class 'PluginInfo_2_2' not found in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/phppoet-checkout-fields/plugin-update-checker/github-checker.php on line 60
+[26-Jul-2017 06:09:55 UTC] PHP Fatal error:  Class 'PluginInfo_2_2' not found in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/phppoet-checkout-fields/plugin-update-checker/github-checker.php on line 60
+[26-Jul-2017 07:47:59 UTC] PHP Fatal error:  Class 'PluginInfo_2_2' not found in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/phppoet-checkout-fields/plugin-update-checker/github-checker.php on line 60
+[26-Jul-2017 08:18:27 UTC] PHP Fatal error:  Class 'PluginInfo_2_2' not found in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/phppoet-checkout-fields/plugin-update-checker/github-checker.php on line 60
+[26-Jul-2017 10:21:42 UTC] PHP Fatal error:  Class 'PluginInfo_2_2' not found in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/phppoet-checkout-fields/plugin-update-checker/github-checker.php on line 60

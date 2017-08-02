@@ -1,0 +1,151 @@
+jQuery(document).ready(function($){
+
+	$("#flexiselDemo3").flexisel({
+
+        visibleItems: 2,
+
+        itemsToScroll: 1,         
+
+        autoPlay: {
+
+            enable: true,
+
+            interval: 5000,
+
+            pauseOnHover: true
+
+        }        
+
+    });
+
+
+
+    $('.post-type-archive-product').addClass('page_subscribe');
+    $('.page-id-87').addClass('page_subscribe');
+    $('.page-id-85').addClass('page_subscribe');
+
+
+
+    //$('.add_to_cart_button, .single_add_to_cart_button').after(' <a class="poplink" href="#"> (Size Chart & counts)</a>');
+
+
+
+    //product gallery slide divs
+
+    /*$("a.woocommerce-main-image .thumbnails").addClass("bxslider");
+
+
+
+    $('.thumbnails').bxSlider({
+
+        mode: 'vertical',
+
+        slideMargin: 5,
+
+        minSlides: 4,
+
+        maxSlides: 4,
+
+        moveSlides: 1,
+
+        slideWidth: 110,
+
+        pager: false,
+
+        controls: true,
+
+        nextText: 'Next',
+
+        prevText: 'Prev',
+
+    }); */   
+
+
+
+    //calculate number of images
+
+    /*$('.bxslider').find(function() {
+
+       var x = $('.size-shop_thumbnail', this).length;
+
+       //alert(x);
+
+       if( x <= 3 ){
+
+        $( ".bx-controls" ).hide();
+
+       }
+
+    });*/
+
+
+
+    //instagram pictures
+
+    var token = '1362124742.3ad74ca.6df307b8ac184c2d830f6bd7c2ac5644',
+
+    num_photos = 20;
+
+ 
+
+    $.ajax({
+
+        url: 'https://api.instagram.com/v1/users/self/media/recent',
+
+        dataType: 'jsonp',
+
+        type: 'GET',
+
+        data: {access_token: token, count: num_photos},
+
+        success: function(data){
+
+            //console.log(data);
+
+            for( x in data.data ){
+
+                $('ul#sb_custom_instafeeds').append('<li><img src="'+data.data[x].images.low_resolution.url+'"></li>');
+
+            }
+
+        },
+
+        error: function(data){
+
+            //console.log(data);
+
+        }
+
+    });
+
+
+
+    /*$("#sb_custom_instafeeds").addClass("bxslider");
+
+
+
+    $('.bxslider').bxSlider({
+
+        slideMargin: 2,
+
+        minSlides: 5,
+
+        maxSlides: 5,
+
+        moveSlides: 1,
+
+        slideWidth: 200,
+
+        pager: false,
+
+        controls: true,
+
+        nextText: 'Next',
+
+        prevText: 'Prev',
+
+    });*/
+
+
+
+});

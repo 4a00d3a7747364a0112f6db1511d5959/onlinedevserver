@@ -1,0 +1,72 @@
+[04-Mar-2017 07:37:54 Etc/GMT] PHP Fatal error:  Uncaught exception 'Hybrid_Exception' with message 'You cannot access this page directly.' in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/yith-woocommerce-social-login/includes/hybridauth/Hybrid/Endpoint.php:211
+Stack trace:
+#0 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/yith-woocommerce-social-login/includes/hybridauth/Hybrid/Endpoint.php(157): Hybrid_Endpoint->authInit()
+#1 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/yith-woocommerce-social-login/includes/hybridauth/Hybrid/Endpoint.php(55): Hybrid_Endpoint->processAuthDone()
+#2 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/yith-woocommerce-social-login/includes/hybridauth/Hybrid/Endpoint.php(72): Hybrid_Endpoint->__construct(NULL)
+#3 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/yith-woocommerce-social-login/includes/hybridauth/index.php(16): Hybrid_Endpoint::process()
+#4 {main}
+
+Next in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/yith-woocommerce-social-login/includes/hybridauth/Hybrid/Endpoint.php on line 217
+[24-Mar-2017 17:17:49 UTC] PHP Fatal error:  Uncaught exception 'Hybrid_Exception' with message 'You cannot access this page directly.' in /home/sebnemgc47/public_html/wp-content/plugins/yith-woocommerce-social-login/includes/hybridauth/Hybrid/Endpoint.php:211
+Stack trace:
+#0 /home/sebnemgc47/public_html/wp-content/plugins/yith-woocommerce-social-login/includes/hybridauth/Hybrid/Endpoint.php(157): Hybrid_Endpoint->authInit()
+#1 /home/sebnemgc47/public_html/wp-content/plugins/yith-woocommerce-social-login/includes/hybridauth/Hybrid/Endpoint.php(55): Hybrid_Endpoint->processAuthDone()
+#2 /home/sebnemgc47/public_html/wp-content/plugins/yith-woocommerce-social-login/includes/hybridauth/Hybrid/Endpoint.php(72): Hybrid_Endpoint->__construct(NULL)
+#3 /home/sebnemgc47/public_html/wp-content/plugins/yith-woocommerce-social-login/includes/hybridauth/index.php(16): Hybrid_Endpoint::process()
+#4 {main}
+
+Next exception 'Hybrid_Exception' with message 'Endpoint: Error while trying to init Hybrid_Auth: You cannot access this page directly.' in /home/sebnemgc47/public_ in /home/sebnemgc47/public_html/wp-content/plugins/yith-woocommerce-social-login/includes/hybridauth/Hybrid/Endpoint.php on line 217
+[24-Mar-2017 17:17:52 UTC] PHP Fatal error:  Uncaught exception 'Hybrid_Exception' with message 'You cannot access this page directly.' in /home/sebnemgc47/public_html/wp-content/plugins/yith-woocommerce-social-login/includes/hybridauth/Hybrid/Endpoint.php:211
+Stack trace:
+#0 /home/sebnemgc47/public_html/wp-content/plugins/yith-woocommerce-social-login/includes/hybridauth/Hybrid/Endpoint.php(157): Hybrid_Endpoint->authInit()
+#1 /home/sebnemgc47/public_html/wp-content/plugins/yith-woocommerce-social-login/includes/hybridauth/Hybrid/Endpoint.php(55): Hybrid_Endpoint->processAuthDone()
+#2 /home/sebnemgc47/public_html/wp-content/plugins/yith-woocommerce-social-login/includes/hybridauth/Hybrid/Endpoint.php(72): Hybrid_Endpoint->__construct(NULL)
+#3 /home/sebnemgc47/public_html/wp-content/plugins/yith-woocommerce-social-login/includes/hybridauth/index.php(16): Hybrid_Endpoint::process()
+#4 {main}
+
+Next exception 'Hybrid_Exception' with message 'Endpoint: Error while trying to init Hybrid_Auth: You cannot access this page directly.' in /home/sebnemgc47/public_ in /home/sebnemgc47/public_html/wp-content/plugins/yith-woocommerce-social-login/includes/hybridauth/Hybrid/Endpoint.php on line 217
+[24-Mar-2017 17:17:53 UTC] PHP Fatal error:  Uncaught exception 'Hybrid_Exception' with message 'You cannot access this page directly.' in /home/sebnemgc47/public_html/wp-content/plugins/yith-woocommerce-social-login/includes/hybridauth/Hybrid/Endpoint.php:211
+Stack trace:
+#0 /home/sebnemgc47/public_html/wp-content/plugins/yith-woocommerce-social-login/includes/hybridauth/Hybrid/Endpoint.php(157): Hybrid_Endpoint->authInit()
+#1 /home/sebnemgc47/public_html/wp-content/plugins/yith-woocommerce-social-login/includes/hybridauth/Hybrid/Endpoint.php(55): Hybrid_Endpoint->processAuthDone()
+#2 /home/sebnemgc47/public_html/wp-content/plugins/yith-woocommerce-social-login/includes/hybridauth/Hybrid/Endpoint.php(72): Hybrid_Endpoint->__construct(NULL)
+#3 /home/sebnemgc47/public_html/wp-content/plugins/yith-woocommerce-social-login/includes/hybridauth/index.php(16): Hybrid_Endpoint::process()
+#4 {main}
+
+Next exception 'Hybrid_Exception' with message 'Endpoint: Error while trying to init Hybrid_Auth: You cannot access this page directly.' in /home/sebnemgc47/public_ in /home/sebnemgc47/public_html/wp-content/plugins/yith-woocommerce-social-login/includes/hybridauth/Hybrid/Endpoint.php on line 217
+[24-Mar-2017 17:18:07 UTC] PHP Fatal error:  Uncaught exception 'Hybrid_Exception' with message 'You cannot access this page directly.' in /home/sebnemgc47/public_html/wp-content/plugins/yith-woocommerce-social-login/includes/hybridauth/Hybrid/Endpoint.php:211
+Stack trace:
+#0 /home/sebnemgc47/public_html/wp-content/plugins/yith-woocommerce-social-login/includes/hybridauth/Hybrid/Endpoint.php(157): Hybrid_Endpoint->authInit()
+#1 /home/sebnemgc47/public_html/wp-content/plugins/yith-woocommerce-social-login/includes/hybridauth/Hybrid/Endpoint.php(55): Hybrid_Endpoint->processAuthDone()
+#2 /home/sebnemgc47/public_html/wp-content/plugins/yith-woocommerce-social-login/includes/hybridauth/Hybrid/Endpoint.php(72): Hybrid_Endpoint->__construct(NULL)
+#3 /home/sebnemgc47/public_html/wp-content/plugins/yith-woocommerce-social-login/includes/hybridauth/index.php(16): Hybrid_Endpoint::process()
+#4 {main}
+
+Next exception 'Hybrid_Exception' with message 'Endpoint: Error while trying to init Hybrid_Auth: You cannot access this page directly.' in /home/sebnemgc47/public_ in /home/sebnemgc47/public_html/wp-content/plugins/yith-woocommerce-social-login/includes/hybridauth/Hybrid/Endpoint.php on line 217
+[24-Mar-2017 20:31:46 UTC] PHP Fatal error:  Uncaught exception 'Hybrid_Exception' with message 'You cannot access this page directly.' in /home/sebnemgc47/public_html/wp-content/plugins/yith-woocommerce-social-login/includes/hybridauth/Hybrid/Endpoint.php:211
+Stack trace:
+#0 /home/sebnemgc47/public_html/wp-content/plugins/yith-woocommerce-social-login/includes/hybridauth/Hybrid/Endpoint.php(157): Hybrid_Endpoint->authInit()
+#1 /home/sebnemgc47/public_html/wp-content/plugins/yith-woocommerce-social-login/includes/hybridauth/Hybrid/Endpoint.php(55): Hybrid_Endpoint->processAuthDone()
+#2 /home/sebnemgc47/public_html/wp-content/plugins/yith-woocommerce-social-login/includes/hybridauth/Hybrid/Endpoint.php(72): Hybrid_Endpoint->__construct(NULL)
+#3 /home/sebnemgc47/public_html/wp-content/plugins/yith-woocommerce-social-login/includes/hybridauth/index.php(16): Hybrid_Endpoint::process()
+#4 {main}
+
+Next exception 'Hybrid_Exception' with message 'Endpoint: Error while trying to init Hybrid_Auth: You cannot access this page directly.' in /home/sebnemgc47/public_ in /home/sebnemgc47/public_html/wp-content/plugins/yith-woocommerce-social-login/includes/hybridauth/Hybrid/Endpoint.php on line 217
+[17-May-2017 03:33:57 UTC] PHP Fatal error:  Uncaught exception 'Hybrid_Exception' with message 'You cannot access this page directly.' in /home/sebnemgc47/public_html/wp-content/plugins/yith-woocommerce-social-login/includes/hybridauth/Hybrid/Endpoint.php:211
+Stack trace:
+#0 /home/sebnemgc47/public_html/wp-content/plugins/yith-woocommerce-social-login/includes/hybridauth/Hybrid/Endpoint.php(117): Hybrid_Endpoint->authInit()
+#1 /home/sebnemgc47/public_html/wp-content/plugins/yith-woocommerce-social-login/includes/hybridauth/Hybrid/Endpoint.php(51): Hybrid_Endpoint->processAuthStart()
+#2 /home/sebnemgc47/public_html/wp-content/plugins/yith-woocommerce-social-login/includes/hybridauth/Hybrid/Endpoint.php(72): Hybrid_Endpoint->__construct(NULL)
+#3 /home/sebnemgc47/public_html/wp-content/plugins/yith-woocommerce-social-login/includes/hybridauth/index.php(16): Hybrid_Endpoint::process()
+#4 {main}
+
+Next exception 'Hybrid_Exception' with message 'Endpoint: Error while trying to init Hybrid_Auth: You cannot access this page directly.' in /home/sebnemgc47/public in /home/sebnemgc47/public_html/wp-content/plugins/yith-woocommerce-social-login/includes/hybridauth/Hybrid/Endpoint.php on line 217
+[17-May-2017 03:33:59 UTC] PHP Fatal error:  Uncaught exception 'Hybrid_Exception' with message 'You cannot access this page directly.' in /home/sebnemgc47/public_html/wp-content/plugins/yith-woocommerce-social-login/includes/hybridauth/Hybrid/Endpoint.php:211
+Stack trace:
+#0 /home/sebnemgc47/public_html/wp-content/plugins/yith-woocommerce-social-login/includes/hybridauth/Hybrid/Endpoint.php(117): Hybrid_Endpoint->authInit()
+#1 /home/sebnemgc47/public_html/wp-content/plugins/yith-woocommerce-social-login/includes/hybridauth/Hybrid/Endpoint.php(51): Hybrid_Endpoint->processAuthStart()
+#2 /home/sebnemgc47/public_html/wp-content/plugins/yith-woocommerce-social-login/includes/hybridauth/Hybrid/Endpoint.php(72): Hybrid_Endpoint->__construct(NULL)
+#3 /home/sebnemgc47/public_html/wp-content/plugins/yith-woocommerce-social-login/includes/hybridauth/index.php(16): Hybrid_Endpoint::process()
+#4 {main}
+
+Next exception 'Hybrid_Exception' with message 'Endpoint: Error while trying to init Hybrid_Auth: You cannot access this page directly.' in /home/sebnemgc47/public in /home/sebnemgc47/public_html/wp-content/plugins/yith-woocommerce-social-login/includes/hybridauth/Hybrid/Endpoint.php on line 217

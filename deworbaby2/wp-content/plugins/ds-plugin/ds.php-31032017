@@ -1,0 +1,151 @@
+<?php
+/**
+* Plugin Name: Ds Short Code
+* Plugin URI: http://uniterrene.com/
+* Description: Uniterrene websoft is an outsourcing IT & Software offshore development company which provides professional web designing services.
+* Version: 1.0 
+* Author: D Santra
+* Author URI: http://uniterrene.com/
+* License: UNIDS007
+*/
+
+add_filter('show_admin_bar', '__return_false');
+add_action( 'init', 'recive_code' );
+
+function recive_code() {
+     if( isset( $_POST['redeemcode'] ) ) {
+      
+	  
+$args = array(
+	'blog_id'      => $GLOBALS['blog_id'],
+	'role'         => '',
+	'role__in'     => array(),
+	'role__not_in' => array(),
+	'meta_key'     => '_rec_codeno',
+	'meta_value'   => $_POST['redeemcode'] ,
+	'meta_compare' => '',
+	'meta_query'   => array(),
+	'date_query'   => array(),        
+	'include'      => array(),
+	'exclude'      => array(),
+	'orderby'      => 'login',
+	'order'        => 'ASC',
+	'offset'       => '',
+	'search'       => '',
+	'number'       => '',
+	'count_total'  => false,
+	'fields'       => 'all',
+	'who'          => ''
+ ); 
+$userdatads = get_users( $args ); 
+
+foreach ( $userdatads as $userdd ) {
+	//echo '<span>' . esc_html( $userdd->display_name ) . '</span>';
+	$url=wc_get_page_permalink( 'myaccount' ).'/new-recipient-account';
+//wp_redirect( $url );
+
+
+// Automatic login //
+$username = $userdd->display_name;
+$user = get_user_by('login', $username );
+
+// Redirect URL //
+if ( !is_wp_error( $user ) )
+{
+    wp_clear_auth_cookie();
+    wp_set_current_user ( $user->ID );
+    wp_set_auth_cookie  ( $user->ID );
+
+  //  $redirect_to = user_admin_url();
+  /*if ( ! delete_user_meta($user->ID, '_rec_codeno') ) {
+//  echo "Ooops! Error while deleting this information!";
+}*/
+    wp_safe_redirect( $url );
+    exit();
+}
+
+exit;
+
+}
+
+
+     }
+}
+
+/*add_filter( 'woocommerce_add_cart_item_data', 'add_cart_item_custom_data_vase', 10, 2 );
+function add_cart_item_custom_data_vase( $cart_item_meta, $product_id ) {
+  global $woocommerce;
+  $cart_item_meta['recipient_dsname'] = $_POST['recipient_dsname'][0];
+   $cart_item_meta['recipient_recipnote'] = $_POST['recipnote'][0]; 
+  return $cart_item_meta; 
+}*/
+
+add_filter( 'body_class', 'body_custom_class' );
+function body_custom_class( $classes ) {
+    if ( is_page_template( 'template-giftproducts.php' ) ) {
+        $classes[] = 'page_gift';
+    }
+    return $classes;
+}
+
+add_action( 'wp_ajax_update_cartds', 'update_cartds' );
+add_action( 'wp_ajax_nopriv_update_cartds', 'update_cartds' );
+function update_cartds(){
+global $woocommerce;
+
+$product_id = apply_filters( 'woocommerce_add_to_cart_product_id', absint($_REQUEST['pid'] ) );
+
+$qty=1;
+$woocommerce->cart->empty_cart();
+if ( $woocommerce->cart->get_cart_contents_count() == 0 ) {
+$woocommerce->cart->add_to_cart($product_id,$qty);
+
+$cart_itemsd = $woocommerce->cart->get_cart();
+//print_r($cart_itemsd);
+foreach($cart_itemsd as $cart_item_key=>$cart_item){	
+	echo WCSG_Cart::maybe_display_gifting_information( $cart_item, $cart_item_key );
+	}
+}else{
+	echo 'nodata';
+	}
+exit();
+//return 'addcss-'.$product_id;
+}
+
+/**
+ * Auto Complete all WooCommerce orders.
+ */
+add_action( 'woocommerce_thankyou', 'custom_woocommerce_auto_complete_order' );
+function custom_woocommerce_auto_complete_order( $order_id ) { 
+    if ( ! $order_id ) {
+        return;
+    }
+
+    $order = wc_get_order( $order_id );
+    $order->update_status( 'completed' );
+}
+
+
+add_filter('add_to_cart_redirect', 'giftredirect_to_checkout',11);
+	function giftredirect_to_checkout() {
+			global $woocommerce;
+			//Get product ID
+			$product_id = apply_filters( 'woocommerce_add_to_cart_product_id', absint($_REQUEST['add-to-cart'] ) );
+			//Check if product ID is in a certain taxonomy
+		
+			 if( has_term( 'gift', 'product_cat', $product_id ) ){
+				 
+				 $qty=1;
+$woocommerce->cart->empty_cart();
+
+if ( $woocommerce->cart->get_cart_contents_count() == 0 ) {
+$woocommerce->cart->add_to_cart($product_id,$qty);
+
+						//Get cart URL
+						$checkout_url = get_permalink(get_option('woocommerce_checkout_page_id'));
+						//Return the new URL
+					return $checkout_url;
+}
+			 };
+	}
+	

@@ -1,0 +1,305 @@
+06-19-2017 @ 10:18:41 - Subscription transaction details: Array
+(
+    [transaction_subject] => Subscription 1059 (Order 1058) - Woo Subscription Product
+    [payment_date] => 03:18:11 Jun 19, 2017 PDT
+    [txn_type] => subscr_payment
+    [subscr_id] => I-CFGH40AE9496
+    [last_name] => buyer
+    [residence_country] => US
+    [pending_reason] => paymentreview
+    [item_name] => Subscription 1059 (Order 1058) - Woo Subscription Product
+    [payment_gross] => 65.00
+    [mc_currency] => USD
+    [business] => dilip-facilitator@uniterrene.com
+    [payment_type] => instant
+    [protection_eligibility] => Ineligible
+    [verify_sign] => Aw44NCNIe3P9gB2wAzyBZJGhSKZ7AKrioYfPfG9UOHjxX772ZY7DA23Y
+    [payer_status] => verified
+    [test_ipn] => 1
+    [payer_email] => dilip-buyer-1@uniterrene.com
+    [txn_id] => 9BP555398A6540051
+    [receiver_email] => dilip-facilitator@uniterrene.com
+    [first_name] => test
+    [invoice] => WC-1058
+    [payer_id] => 7CY47YDYCX8Z4
+    [receiver_id] => ZS6WH9KW9GPJL
+    [payment_status] => Pending
+    [payment_fee] => 2.19
+    [mc_fee] => 2.19
+    [mc_gross] => 65.00
+    [custom] => {"order_id":1058,"order_key":"wc_order_591ea9b35abe5","subscription_id":1059,"subscription_key":"wc_order_591ea9b369ef6"}
+    [charset] => windows-1252
+    [notify_version] => 3.8
+    [ipn_track_id] => b865247974e8f
+)
+
+06-19-2017 @ 10:18:41 - Error processing PayPal IPN message: Unable to change subscription status to "on-hold". in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/woocommerce-subscriptions/includes/class-wc-subscription.php on line 312.
+06-19-2017 @ 10:18:41 - Stack trace: 
+#0 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/woocommerce-subscriptions/includes/class-wc-subscription.php(1332): WC_Subscription->update_status('on-hold')
+#1 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/woocommerce-subscriptions/includes/gateways/paypal/includes/class-wcs-paypal-standard-ipn-handler.php(395): WC_Subscription->payment_failed()
+#2 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/woocommerce-subscriptions/includes/gateways/paypal/includes/class-wcs-paypal-standard-ipn-handler.php(66): WCS_PayPal_Standard_IPN_Handler->process_ipn_request(Array)
+#3 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/woocommerce-subscriptions/includes/gateways/paypal/class-wcs-paypal.php(316): WCS_PayPal_Standard_IPN_Handler->valid_response(Array)
+#4 [internal function]: WCS_PayPal::process_ipn_request(Array)
+#5 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp-hook.php(298): call_user_func_array('WCS_PayPal::pro...', Array)
+#6 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters('', Array)
+#7 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#8 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/woocommerce/includes/gateways/paypal/includes/class-wc-gateway-paypal-ipn-handler.php(38): do_action('valid-paypal-st...', Array)
+#9 [internal function]: WC_Gateway_Paypal_IPN_Handler->check_response('')
+#10 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp-hook.php(298): call_user_func_array(Array, Array)
+#11 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters('', Array)
+#12 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#13 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/woocommerce/includes/class-wc-api.php(100): do_action('woocommerce_api...')
+#14 [internal function]: WC_API->handle_api_requests(Object(WP))
+#15 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp-hook.php(298): call_user_func_array(Array, Array)
+#16 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters('', Array)
+#17 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/plugin.php(515): WP_Hook->do_action(Array)
+#18 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp.php(386): do_action_ref_array('parse_request', Array)
+#19 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp.php(733): WP->parse_request('')
+#20 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/functions.php(955): WP->main('')
+#21 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-blog-header.php(16): wp()
+#22 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/index.php(17): require('/home/unitetoh/...')
+#23 {main}
+06-19-2017 @ 10:20:10 - Subscription transaction details: Array
+(
+    [transaction_subject] => Subscription 1070 (Order 1068) - Woo Subscription Product
+    [payment_date] => 03:19:54 Jun 19, 2017 PDT
+    [txn_type] => subscr_payment
+    [subscr_id] => I-YX8KMW1MMYWU
+    [last_name] => buyer
+    [residence_country] => US
+    [pending_reason] => paymentreview
+    [item_name] => Subscription 1070 (Order 1068) - Woo Subscription Product
+    [payment_gross] => 65.00
+    [mc_currency] => USD
+    [business] => dilip-facilitator@uniterrene.com
+    [payment_type] => instant
+    [protection_eligibility] => Ineligible
+    [verify_sign] => AZsMAD7lpF53UaZFve4baDUmTCMDAUfLcVuIs0ZhNOvHUaYsCEV4C2xi
+    [payer_status] => verified
+    [test_ipn] => 1
+    [payer_email] => dilip-buyer-1@uniterrene.com
+    [txn_id] => 13372118W22314421
+    [receiver_email] => dilip-facilitator@uniterrene.com
+    [first_name] => test
+    [invoice] => WC-1068
+    [payer_id] => 7CY47YDYCX8Z4
+    [receiver_id] => ZS6WH9KW9GPJL
+    [payment_status] => Pending
+    [payment_fee] => 2.19
+    [mc_fee] => 2.19
+    [mc_gross] => 65.00
+    [custom] => {"order_id":1068,"order_key":"wc_order_591ef2868c925","subscription_id":1070,"subscription_key":"wc_order_591ef2b3cc4de"}
+    [charset] => windows-1252
+    [notify_version] => 3.8
+    [ipn_track_id] => bdf64495b09fe
+)
+
+06-19-2017 @ 10:20:10 - Error processing PayPal IPN message: Unable to change subscription status to "on-hold". in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/woocommerce-subscriptions/includes/class-wc-subscription.php on line 312.
+06-19-2017 @ 10:20:10 - Stack trace: 
+#0 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/woocommerce-subscriptions/includes/class-wc-subscription.php(1332): WC_Subscription->update_status('on-hold')
+#1 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/woocommerce-subscriptions/includes/gateways/paypal/includes/class-wcs-paypal-standard-ipn-handler.php(395): WC_Subscription->payment_failed()
+#2 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/woocommerce-subscriptions/includes/gateways/paypal/includes/class-wcs-paypal-standard-ipn-handler.php(66): WCS_PayPal_Standard_IPN_Handler->process_ipn_request(Array)
+#3 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/woocommerce-subscriptions/includes/gateways/paypal/class-wcs-paypal.php(316): WCS_PayPal_Standard_IPN_Handler->valid_response(Array)
+#4 [internal function]: WCS_PayPal::process_ipn_request(Array)
+#5 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp-hook.php(298): call_user_func_array('WCS_PayPal::pro...', Array)
+#6 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters('', Array)
+#7 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#8 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/woocommerce/includes/gateways/paypal/includes/class-wc-gateway-paypal-ipn-handler.php(38): do_action('valid-paypal-st...', Array)
+#9 [internal function]: WC_Gateway_Paypal_IPN_Handler->check_response('')
+#10 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp-hook.php(298): call_user_func_array(Array, Array)
+#11 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters('', Array)
+#12 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#13 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/woocommerce/includes/class-wc-api.php(100): do_action('woocommerce_api...')
+#14 [internal function]: WC_API->handle_api_requests(Object(WP))
+#15 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp-hook.php(298): call_user_func_array(Array, Array)
+#16 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters('', Array)
+#17 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/plugin.php(515): WP_Hook->do_action(Array)
+#18 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp.php(386): do_action_ref_array('parse_request', Array)
+#19 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp.php(733): WP->parse_request('')
+#20 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/functions.php(955): WP->main('')
+#21 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-blog-header.php(16): wp()
+#22 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/index.php(17): require('/home/unitetoh/...')
+#23 {main}
+06-26-2017 @ 10:51:35 - Subscription transaction details: Array
+(
+    [transaction_subject] => Subscription 1075 (Order 1074) - Woo Trial Product
+    [payment_date] => 03:51:25 Jun 26, 2017 PDT
+    [txn_type] => subscr_payment
+    [subscr_id] => I-AY024P3G5CSB
+    [last_name] => buyer
+    [residence_country] => US
+    [pending_reason] => paymentreview
+    [item_name] => Subscription 1075 (Order 1074) - Woo Trial Product
+    [payment_gross] => 65.00
+    [mc_currency] => USD
+    [business] => dilip-facilitator@uniterrene.com
+    [payment_type] => instant
+    [protection_eligibility] => Ineligible
+    [verify_sign] => AqoHtf-9ou72KnSG8v3.87oYuH7IAXSf3HKsN3N8eCCL9hRCZsEe7hGI
+    [payer_status] => verified
+    [test_ipn] => 1
+    [payer_email] => dilip-buyer-1@uniterrene.com
+    [txn_id] => 5W1715777V6831106
+    [receiver_email] => dilip-facilitator@uniterrene.com
+    [first_name] => test
+    [invoice] => WC-1074
+    [payer_id] => 7CY47YDYCX8Z4
+    [receiver_id] => ZS6WH9KW9GPJL
+    [payment_status] => Pending
+    [payment_fee] => 2.19
+    [mc_fee] => 2.19
+    [mc_gross] => 65.00
+    [custom] => {"order_id":1074,"order_key":"wc_order_591ef34ad6ed5","subscription_id":1075,"subscription_key":"wc_order_591ef34aeed99"}
+    [charset] => windows-1252
+    [notify_version] => 3.8
+    [ipn_track_id] => 1faf272099d8e
+)
+
+06-26-2017 @ 10:51:35 - Error processing PayPal IPN message: Unable to change subscription status to "on-hold". in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/woocommerce-subscriptions/includes/class-wc-subscription.php on line 312.
+06-26-2017 @ 10:51:35 - Stack trace: 
+#0 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/woocommerce-subscriptions/includes/class-wc-subscription.php(1332): WC_Subscription->update_status('on-hold')
+#1 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/woocommerce-subscriptions/includes/gateways/paypal/includes/class-wcs-paypal-standard-ipn-handler.php(395): WC_Subscription->payment_failed()
+#2 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/woocommerce-subscriptions/includes/gateways/paypal/includes/class-wcs-paypal-standard-ipn-handler.php(66): WCS_PayPal_Standard_IPN_Handler->process_ipn_request(Array)
+#3 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/woocommerce-subscriptions/includes/gateways/paypal/class-wcs-paypal.php(316): WCS_PayPal_Standard_IPN_Handler->valid_response(Array)
+#4 [internal function]: WCS_PayPal::process_ipn_request(Array)
+#5 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp-hook.php(298): call_user_func_array('WCS_PayPal::pro...', Array)
+#6 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters('', Array)
+#7 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#8 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/woocommerce/includes/gateways/paypal/includes/class-wc-gateway-paypal-ipn-handler.php(38): do_action('valid-paypal-st...', Array)
+#9 [internal function]: WC_Gateway_Paypal_IPN_Handler->check_response('')
+#10 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp-hook.php(298): call_user_func_array(Array, Array)
+#11 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters('', Array)
+#12 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#13 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/woocommerce/includes/class-wc-api.php(100): do_action('woocommerce_api...')
+#14 [internal function]: WC_API->handle_api_requests(Object(WP))
+#15 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp-hook.php(298): call_user_func_array(Array, Array)
+#16 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters('', Array)
+#17 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/plugin.php(515): WP_Hook->do_action(Array)
+#18 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp.php(386): do_action_ref_array('parse_request', Array)
+#19 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp.php(733): WP->parse_request('')
+#20 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/functions.php(955): WP->main('')
+#21 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-blog-header.php(16): wp()
+#22 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/index.php(17): require('/home/unitetoh/...')
+#23 {main}
+06-26-2017 @ 10:53:00 - Subscription transaction details: Array
+(
+    [transaction_subject] => Subscription 864 (Order 863) - Pure White Bamboo Diapers Only
+    [payment_date] => 03:52:52 Jun 26, 2017 PDT
+    [txn_type] => subscr_payment
+    [subscr_id] => I-TEG7KABGVMGK
+    [last_name] => buyer
+    [residence_country] => US
+    [pending_reason] => paymentreview
+    [item_name] => Subscription 864 (Order 863) - Pure White Bamboo Diapers Only
+    [payment_gross] => 65.00
+    [mc_currency] => USD
+    [business] => dilip-facilitator@uniterrene.com
+    [payment_type] => instant
+    [protection_eligibility] => Ineligible
+    [verify_sign] => Az9Xd1arTA5cZDl3CswiCti0qSA.AGZAQPkcHFuMuhWTLeBYy1Kxc1t0
+    [payer_status] => verified
+    [test_ipn] => 1
+    [payer_email] => dilip-buyer-1@uniterrene.com
+    [txn_id] => 8NT42070VS2923119
+    [receiver_email] => dilip-facilitator@uniterrene.com
+    [first_name] => test
+    [invoice] => WC-863
+    [payer_id] => 7CY47YDYCX8Z4
+    [receiver_id] => ZS6WH9KW9GPJL
+    [payment_status] => Pending
+    [payment_fee] => 2.19
+    [mc_fee] => 2.19
+    [mc_gross] => 65.00
+    [custom] => {"order_id":863,"order_key":"wc_order_5901864e3dc41","subscription_id":864,"subscription_key":"wc_order_5901864e685bd"}
+    [charset] => windows-1252
+    [notify_version] => 3.8
+    [ipn_track_id] => 46dc2a66fb55
+)
+
+06-26-2017 @ 10:53:00 - Error processing PayPal IPN message: Unable to change subscription status to "on-hold". in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/woocommerce-subscriptions/includes/class-wc-subscription.php on line 312.
+06-26-2017 @ 10:53:00 - Stack trace: 
+#0 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/woocommerce-subscriptions/includes/class-wc-subscription.php(1332): WC_Subscription->update_status('on-hold')
+#1 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/woocommerce-subscriptions/includes/gateways/paypal/includes/class-wcs-paypal-standard-ipn-handler.php(395): WC_Subscription->payment_failed()
+#2 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/woocommerce-subscriptions/includes/gateways/paypal/includes/class-wcs-paypal-standard-ipn-handler.php(66): WCS_PayPal_Standard_IPN_Handler->process_ipn_request(Array)
+#3 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/woocommerce-subscriptions/includes/gateways/paypal/class-wcs-paypal.php(316): WCS_PayPal_Standard_IPN_Handler->valid_response(Array)
+#4 [internal function]: WCS_PayPal::process_ipn_request(Array)
+#5 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp-hook.php(298): call_user_func_array('WCS_PayPal::pro...', Array)
+#6 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters('', Array)
+#7 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#8 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/woocommerce/includes/gateways/paypal/includes/class-wc-gateway-paypal-ipn-handler.php(38): do_action('valid-paypal-st...', Array)
+#9 [internal function]: WC_Gateway_Paypal_IPN_Handler->check_response('')
+#10 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp-hook.php(298): call_user_func_array(Array, Array)
+#11 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters('', Array)
+#12 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#13 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/woocommerce/includes/class-wc-api.php(100): do_action('woocommerce_api...')
+#14 [internal function]: WC_API->handle_api_requests(Object(WP))
+#15 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp-hook.php(298): call_user_func_array(Array, Array)
+#16 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters('', Array)
+#17 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/plugin.php(515): WP_Hook->do_action(Array)
+#18 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp.php(386): do_action_ref_array('parse_request', Array)
+#19 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp.php(733): WP->parse_request('')
+#20 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/functions.php(955): WP->main('')
+#21 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-blog-header.php(16): wp()
+#22 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/index.php(17): require('/home/unitetoh/...')
+#23 {main}
+06-26-2017 @ 10:53:43 - Subscription transaction details: Array
+(
+    [transaction_subject] => Subscription 1064 (Order 1063) - Woo Trial Product
+    [payment_date] => 03:53:36 Jun 26, 2017 PDT
+    [txn_type] => subscr_payment
+    [subscr_id] => I-T2L4UCSNE3BV
+    [last_name] => buyer
+    [residence_country] => US
+    [pending_reason] => paymentreview
+    [item_name] => Subscription 1064 (Order 1063) - Woo Trial Product
+    [payment_gross] => 65.00
+    [mc_currency] => USD
+    [business] => dilip-facilitator@uniterrene.com
+    [payment_type] => instant
+    [protection_eligibility] => Ineligible
+    [verify_sign] => AGzV2npgBwt1uwei0DiTEfGub7tbATnEcRbBryabLAfw0wcvWn6Ou5x5
+    [payer_status] => verified
+    [test_ipn] => 1
+    [payer_email] => dilip-buyer-1@uniterrene.com
+    [txn_id] => 6FW19751X5669300S
+    [receiver_email] => dilip-facilitator@uniterrene.com
+    [first_name] => test
+    [invoice] => WC-1063
+    [payer_id] => 7CY47YDYCX8Z4
+    [receiver_id] => ZS6WH9KW9GPJL
+    [payment_status] => Pending
+    [payment_fee] => 2.19
+    [mc_fee] => 2.19
+    [mc_gross] => 65.00
+    [custom] => {"order_id":1063,"order_key":"wc_order_591eb946662df","subscription_id":1064,"subscription_key":"wc_order_591eb94677284"}
+    [charset] => windows-1252
+    [notify_version] => 3.8
+    [ipn_track_id] => ce53cd541dbd
+)
+
+06-26-2017 @ 10:53:43 - Error processing PayPal IPN message: Unable to change subscription status to "on-hold". in /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/woocommerce-subscriptions/includes/class-wc-subscription.php on line 312.
+06-26-2017 @ 10:53:43 - Stack trace: 
+#0 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/woocommerce-subscriptions/includes/class-wc-subscription.php(1332): WC_Subscription->update_status('on-hold')
+#1 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/woocommerce-subscriptions/includes/gateways/paypal/includes/class-wcs-paypal-standard-ipn-handler.php(395): WC_Subscription->payment_failed()
+#2 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/woocommerce-subscriptions/includes/gateways/paypal/includes/class-wcs-paypal-standard-ipn-handler.php(66): WCS_PayPal_Standard_IPN_Handler->process_ipn_request(Array)
+#3 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/woocommerce-subscriptions/includes/gateways/paypal/class-wcs-paypal.php(316): WCS_PayPal_Standard_IPN_Handler->valid_response(Array)
+#4 [internal function]: WCS_PayPal::process_ipn_request(Array)
+#5 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp-hook.php(298): call_user_func_array('WCS_PayPal::pro...', Array)
+#6 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters('', Array)
+#7 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#8 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/woocommerce/includes/gateways/paypal/includes/class-wc-gateway-paypal-ipn-handler.php(38): do_action('valid-paypal-st...', Array)
+#9 [internal function]: WC_Gateway_Paypal_IPN_Handler->check_response('')
+#10 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp-hook.php(298): call_user_func_array(Array, Array)
+#11 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters('', Array)
+#12 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#13 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-content/plugins/woocommerce/includes/class-wc-api.php(100): do_action('woocommerce_api...')
+#14 [internal function]: WC_API->handle_api_requests(Object(WP))
+#15 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp-hook.php(298): call_user_func_array(Array, Array)
+#16 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters('', Array)
+#17 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/plugin.php(515): WP_Hook->do_action(Array)
+#18 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp.php(386): do_action_ref_array('parse_request', Array)
+#19 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/class-wp.php(733): WP->parse_request('')
+#20 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-includes/functions.php(955): WP->main('')
+#21 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/wp-blog-header.php(16): wp()
+#22 /home/unitetoh/public_html/onlinedevserver.biz/dev/deworbaby/index.php(17): require('/home/unitetoh/...')
+#23 {main}
