@@ -1,0 +1,34 @@
+.countPost {
+	display: none;
+}
+#loadMore {
+    padding: 10px;
+    text-align: center;
+    background-color: #ddd;
+    transition: all 600ms ease-in-out;
+    -webkit-transition: all 600ms ease-in-out;
+    -moz-transition: all 600ms ease-in-out;
+    -o-transition: all 600ms ease-in-out;
+    margin: 0 auto;
+    display: block;
+	width: auto;
+	text-transform: uppercase;
+	color: #000;
+}
+#loadMore:hover {
+    background-color: #ddd;
+}
+#loadMore span {
+	color: magenta;
+}
+
+.loadhide {
+    display: none !important;
+}
+
+/*--responsive media--*/
+@media( max-width: 530px ){
+	#loadMore {
+		width: 90%;
+	}
+}

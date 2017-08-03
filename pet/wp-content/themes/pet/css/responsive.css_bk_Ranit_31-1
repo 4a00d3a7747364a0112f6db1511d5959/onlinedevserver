@@ -1,0 +1,1173 @@
+/* CSS Document */
+
+
+
+
+
+
+
+    
+
+@media (min-width:320px) {
+
+    .container{
+
+        width: 95%
+
+    }
+
+}
+
+@media (min-width:481px) {
+
+    .container{
+
+        width: 470px
+
+    }
+
+}
+
+@media (min-width:641px) {
+
+    .container{
+
+        width: 630px
+
+    }
+
+}
+
+
+
+
+
+
+
+@media (min-width:768px) {
+
+    .container{
+
+        width: 750px
+
+    }
+
+}
+
+
+
+@media (min-width:992px) {
+
+    .container{
+
+        width: 980px
+
+    }
+
+}
+
+@media (min-width:1100px) {
+
+    .container{
+
+        width: 1090px
+
+    }
+
+}
+
+@media (min-width:1200px) {
+
+    .container{
+
+        width: 1135px
+
+    }
+
+}
+
+
+
+
+
+
+
+@media (max-width:1365px ){
+
+   nav .cross{
+
+    display: none;
+
+   }
+
+}
+
+@media(max-width:1200px){
+
+    #banner .banner{
+
+       padding: 90px 80px;
+
+    }
+
+}
+
+
+
+@media (max-width:1100px){
+
+
+
+  header .bottom ul li:last-child a{
+
+    background: url(../images/energy.png) no-repeat 190px center;
+
+}
+
+header .bottom ul li:last-child a:hover{
+
+    background:#fff url(../images/energy_color.png) no-repeat 190px center;
+
+}
+
+header .bottom ul li:first-child a:hover{
+
+    background:#fff url(../images/clock.png) no-repeat 190px center;
+
+}
+
+
+
+header .bottom ul li:first-child a{
+
+    background: url(../images/clock_white.png) no-repeat 190px center;
+
+}
+
+header .bottom ul li a.active_state{
+
+    background:#fff url(../images/clock.png) no-repeat 190px center;
+
+}
+
+    #banner .banner{
+
+       padding: 80px 80px;
+
+    }
+
+.banner_blog{
+	padding: 157px 80px;
+}
+.blog_image{
+	background-size:100%;
+}
+.what-new-box-right h6 a{
+	font-size:14px;
+}
+.all-post-box h6 a{
+	font-size:17px;
+}
+
+.boutique-left{
+	width: 337px;
+}
+.boutique-right{
+	width: 540px;
+}
+
+
+}
+
+
+
+	
+
+
+
+@media (max-width:991px) {
+
+header .middle nav ul li a{
+
+    font-size: 13px;
+
+    padding: 6px 10px
+
+}
+
+  header .bottom ul li:last-child a{
+
+    background: url(../images/energy.png) no-repeat 130px center;
+
+}
+
+header .bottom ul li:last-child a:hover{
+
+    background:#fff url(../images/energy_color.png) no-repeat 130px center;
+
+}
+
+header .bottom ul li:first-child a:hover{
+
+    background:#fff url(../images/clock.png) no-repeat 130px center;
+
+}
+
+
+
+header .bottom ul li:first-child a{
+
+    background: url(../images/clock_white.png) no-repeat 130px center;
+
+}
+
+header .bottom ul li a.active_state{
+
+    background:#fff url(../images/clock.png) no-repeat 130px center;
+
+}
+
+#banner .banner{
+
+       padding: 65px 80px;
+
+       background-size: 116%
+
+    }
+
+#banner .banner .baner_text{
+
+    background: #f79568;
+
+    width: auto;
+
+    display: inline-block;
+
+    padding: 10px 30px 10px 10px
+
+}
+
+#banner .banner .baner_text h1{
+
+    font-size: 30px
+
+}
+
+.box{
+
+    width: 40%;
+
+    margin-bottom: 15px
+
+}
+
+footer .footer .bottom .footer_logo{
+
+    width: 30%
+
+}
+
+footer .footer .bottom .social_area{
+
+    width: 42%
+
+}
+
+footer .footer .bottom .newsletter{
+
+    width: 100%;
+
+    margin-top: 20px
+
+}
+.banner_blog{
+	padding: 105px 33px;
+}
+
+.main-blog-image{
+	width:100%;
+}
+.main-blog-text{
+	width:100%;
+	margin-top:10px;
+}
+.right-new-post-box-text h5 a{
+	font-size: 16px;
+    line-height: 20px;
+}
+.right-new-post-box-text ul li{
+	width:100%;
+}
+.right-new-post-box-text ul li:last-child{
+	margin-top:10px;
+}
+.what-new-box-left{
+	width:40%;
+}
+.what-new-box-right{
+	width:56%;
+}
+.what-new-box-right h6 a{
+	font-size:12px;
+}
+.what-new-box{
+	min-height: 64px;
+}
+
+
+.all-post-left{
+	width: 100%;
+}
+.all-post-right{
+	width:100%;
+	border-top: 1px solid #d4d4d4;
+}
+
+.boutique-left{
+	width: 290px;
+}
+.boutique-right{
+	width: 396px;
+}
+.boutique-left h3{
+	font-size: 31px;
+}
+.boutique-btn{
+	margin-left:20px;
+}
+.boutique-right{
+	height: 285px;
+}
+.boutique-image-1{
+	width: 243px;
+}
+.boutique-image-2{
+	width: 252px;
+	top: 85px;
+    right: 12px;
+}
+.boutique-image-3{
+	width: 187px;
+	top: 139px;
+    left: 19px;
+}
+.boutique-left{
+	padding-top:30px;
+}
+
+#memorial h3{
+	font-size:17px;
+	line-height: 27px;
+}
+#memorial p{
+	font-size:17px;
+}
+.memorial-image ul li{
+	margin: 17px;
+}
+
+.main-blog-image .blog-overlay a{
+	left: 44%;
+}
+
+
+}
+
+	
+
+@media (max-width:767px) {
+    .boutique-btn a.more_btn{
+        padding: 10px 20px;
+    }
+
+ header .middle nav{
+
+    position: fixed;
+
+    right: 0;
+
+    top: 0;
+
+    bottom: 0;
+
+    background: #f79568;
+
+    z-index: 9999999
+
+ }
+
+ header .middle nav ul{
+
+    float: none;
+
+ }
+
+ header .middle nav ul li{
+
+    display: block;
+
+ }
+
+ header .middle nav ul li div.child{
+
+    position: inherit;
+
+    top: 0
+
+ }
+
+ header .middle nav ul li:hover div.child{
+
+    display: none;
+
+}
+
+header .middle nav{
+
+    width: 0;
+
+    transition:all .5s ease;
+
+    -moz-transition:all .5s ease;
+
+    -webkit-transition:all .5s ease;
+
+    -o-transition:all .5s ease;
+
+    -ms-transition:all .5s ease;
+
+}
+
+header .middle .logo{
+
+    width: 50%;
+
+}
+
+header .middle .search{
+
+    width: 40%
+
+}
+
+ nav .cross{
+
+    display: block;
+
+   }
+
+
+
+header .bottom ul li:last-child a{
+
+    background: url(../images/energy.png) no-repeat 100px center;
+
+}
+
+header .bottom ul li:last-child a:hover{
+
+    background:#fff url(../images/energy_color.png) no-repeat 100px center;
+
+}
+
+header .bottom ul li:first-child a:hover{
+
+    background:#fff url(../images/clock.png) no-repeat 100px center;
+
+}
+
+
+
+header .bottom ul li:first-child a{
+
+    background: url(../images/clock_white.png) no-repeat 100px center;
+
+}
+
+header .bottom ul li a.active_state{
+
+    background:#fff url(../images/clock.png) no-repeat 100px center;
+
+}
+
+#banner .banner{
+
+       padding: 55px 80px;
+
+       background-size: 120%
+
+    }
+
+ #jwelry_products .jwelry h2{
+
+    font-size: 24px
+
+ }   
+
+footer .footer ul.top li{
+
+    margin: 0 20px
+
+}
+
+.hamburger{
+
+    display: block;
+
+}
+
+.banner_blog{
+	padding: 10% 20px;
+}
+
+
+.left-top-blog{
+	width:100%;
+}
+.right-top-blog{
+	width:100%;
+}
+.main-blog-image{
+	width:45%;
+}
+.main-blog-text{
+	width:51%;
+	margin-top:0;
+}
+.main-blog-text p{
+	font-size: 14px;
+    line-height: 20px;
+}
+.main-blog-text h3{
+	padding-bottom: 2px
+}
+
+
+
+.all-post-left{
+	width: 45%;
+}
+.all-post-right{
+	width:51%;
+	border-top: 2px solid #f79568;
+}
+.all-post-box h6 a{
+	font-size:15px;
+}
+.all-post-box{
+	min-height:100px;
+}
+
+.right-new-post-box{
+	width:48%;
+	display:inline-block;
+	min-height: 224px;
+}
+
+.boutique-left{
+	width:100%;
+	float:none;
+	padding-top:0;
+}
+.boutique-right{
+	margin:auto;
+	float:none;
+	margin-top:40px;
+}
+.boutique-left h3{
+	text-align:center;
+}
+.mobile{
+	display:block;
+	width: 197px;
+    margin: 40px auto 0;
+}
+.desktop{
+	display:none;
+}
+.what-new-box{
+	width:49%;
+	display:inline-block;
+}
+.memorial-image ul li{
+	width:41%;
+}
+.main-blog-image .blog-overlay a{
+	left: 38%;
+}
+
+
+
+}
+
+
+
+@media (max-width:760px) {
+
+
+
+ 
+
+                            
+
+}
+
+
+
+
+
+@media (max-width:640px) {
+
+.search_bar_area form button{
+
+    right:5px;
+
+}
+
+ header .bottom ul li:last-child a{
+
+    background: url(../images/energy.png) no-repeat 60px center;
+
+}
+
+header .bottom ul li:last-child a:hover{
+
+    background:#fff url(../images/energy_color.png) no-repeat 60px center;
+
+}
+
+header .bottom ul li:first-child a:hover{
+
+    background:#fff url(../images/clock.png) no-repeat 60px center;
+
+}
+
+
+
+header .bottom ul li:first-child a{
+
+    background: url(../images/clock_white.png) no-repeat 60px center;
+
+}
+
+header .bottom ul li a.active_state{
+
+    background:#fff url(../images/clock.png) no-repeat 60px center;
+
+}
+
+
+
+#banner .banner{
+
+    padding: 20px 80px 50px 30px;
+
+}
+
+
+
+#banner .banner .baner_text h1{
+
+    font-size: 24px
+
+}
+
+#jwelry_products .jwelry h2{
+
+    background: #f79568;
+
+    padding: 3% 15%;
+
+    font-size: 100%
+
+}
+
+#jwelry_products .jwelry h2:nth-of-type(2){
+
+    background: #f79568;
+
+    padding: 3% 15%;
+
+    font-size: 100%
+
+}
+
+#jwelry_products .jwelry h2:nth-of-type(3){
+
+    background: #f79568;
+
+    padding: 3% 15%;
+
+    font-size: 100%
+
+}
+
+footer .footer ul.top li a{
+
+    font-size: 14px;
+
+}
+
+footer .footer ul.top li{
+
+    margin: 0 10px
+
+}
+
+footer .footer .bottom .social_area{
+
+    width: 100%;
+
+    margin-bottom: 20px
+
+}
+
+footer .footer .bottom .social_area .social{
+
+    text-align: center;
+
+}
+
+footer .footer .bottom .social_area ul li{
+
+    float: none;
+
+    display: inline-block;
+
+}
+
+footer .footer .bottom .footer_logo{
+
+    width: 100%;
+
+    margin: 0 0 0px 0
+
+}
+
+footer .footer .bottom .newsletter{
+
+    padding-left: 0
+
+}
+
+
+
+#banner .banner_blog h2{
+	font-size: 23px;
+}
+#banner .banner_blog h3{
+	font-size: 21px;
+}
+
+.main-blog-image{
+	width:100%;
+}
+.main-blog-text{
+	width:100%;
+	margin-top:10px;
+}
+.main-blog-text p{
+	font-size: 14px;
+    line-height: 20px;
+}
+.main-blog-text h3{
+	padding-bottom: 2px
+}
+
+.all-post-left{
+	width: 100%;
+}
+.all-post-right{
+	width:100%;
+	border-top: 1px solid #d4d4d4;
+}
+.all-post-box{
+	min-height: 122px;
+}
+
+.main-blog-image .blog-overlay a{
+	left: 44%;
+}
+
+}
+
+@media (max-width:500px) {
+
+    
+
+}
+
+
+
+@media (max-width:480px) {
+
+
+
+	header .middle .search .search_bar_area{
+
+        top:0;
+
+    }
+
+
+
+     header .bottom ul li:last-child a{
+
+    background: url(../images/energy.png) no-repeat 40px center;
+
+}
+
+header .bottom ul li:last-child a:hover{
+
+    background:#fff url(../images/energy_color.png) no-repeat 40px center;
+
+}
+
+header .bottom ul li:first-child a:hover{
+
+    background:#fff url(../images/clock.png) no-repeat 40px center;
+
+}
+
+
+
+header .bottom ul li:first-child a{
+
+    background: url(../images/clock_white.png) no-repeat 40px center;
+
+}
+
+header .bottom ul li a.active_state{
+
+    background:#fff url(../images/clock.png) no-repeat 40px center;
+
+}
+
+#banner .banner{
+
+    border-bottom: none
+
+}
+
+ #banner .banner .baner_text{
+
+    padding: 3%
+
+ }  
+
+ #banner .banner .baner_text h1{
+
+    font-size: 100%
+
+ }
+
+ .box{
+
+    width: 90%
+
+ } 
+
+footer .footer ul.top li{
+
+    margin:10px
+
+}
+
+footer .footer .bottom .newsletter .news_form input{
+
+    width: 100%
+
+}
+
+footer .footer .bottom .newsletter .news_form .submit{
+
+    width: 50%;
+
+    margin-top: 20px
+
+}
+
+#bottom_nav .bottom ul li a{
+	padding-left: 0px;
+	font-size: 10px;
+}
+
+#banner .banner_blog h2{
+	font-size: 20px;
+}
+#banner .banner_blog h3{
+	font-size: 21px;
+}
+
+.main-blog-text h3{
+	font-size:22px;
+}
+
+.right-new-post-box{
+	width:100%;
+}
+.right-new-post-box-text{
+	padding-top:10px;
+}
+.right-new-post-box{
+	min-height:245px;
+}
+.right-new-post-box-text ul li{
+	width:50%;
+}
+.right-new-post-box-text ul li:last-child{
+	margin-top:0;
+}
+.all-post-box{
+	min-height:104px;
+}
+
+
+.boutique-right{
+	width: 334px;
+	height:250px;
+}
+.boutique-image-3{
+	width: 140px;
+    top: 129px;
+    left: 19px;
+}
+.boutique-image-2{
+	width: 209px;
+}
+.boutique-image-1{
+	width: 200px;
+}
+.what-new-box{
+	width:100%;
+	display:inline-block;
+	min-height:103px;
+}
+.what-new-box-right h6 a{
+	font-size:18px;
+}
+
+#memorial h2{
+	width: 167px;
+	font-size:26px;
+}
+#memorial h2::before{
+	left: -81px;
+    top: 14px;
+}
+#memorial h2::after{
+	right: -81px;
+    top: 14px;
+}
+#memorial p{
+	width:14px;
+	width:100%;
+}
+.main-blog-image .blog-overlay a{
+	left: 42%;
+}
+
+}
+
+
+
+@media (max-width:430px) {
+
+
+
+header .top{
+
+    height: auto;
+
+    padding-bottom: 15px
+
+}
+
+header .f_left{
+
+    float: none;
+
+    width: 100%
+
+}
+
+header .f_right{
+
+    float: none;
+
+    width: 100%
+
+}
+
+header .top_inner{
+
+    text-align: center;
+
+}
+
+
+
+header .top .left_list{
+
+    display: inline-block;
+
+}
+
+header .top .social{
+
+    display: inline-block;
+
+}
+
+header .top .social li a{
+
+    margin-top: 0
+
+}
+.memorial-image ul li{
+	width:40%;
+}
+
+
+}
+
+
+
+	
+
+@media (max-width:390px) {
+
+
+
+  header .bottom ul li:last-child a{
+
+    background: url(../images/energy.png) no-repeat 15px center;
+
+}
+
+header .bottom ul li:last-child a:hover{
+
+    background:#fff url(../images/energy_color.png) no-repeat 15px center;
+
+}
+
+header .bottom ul li:first-child a:hover{
+
+    background:#fff url(../images/clock.png) no-repeat 15px center;
+
+}
+
+
+
+header .bottom ul li:first-child a{
+
+    background: url(../images/clock_white.png) no-repeat 15px center;
+
+}
+
+header .bottom ul li a.active_state{
+
+    background:#fff url(../images/clock.png) no-repeat 15px center;
+}
+
+
+.boutique-right{
+	width: 262px;
+	height:188px;
+}
+.boutique-image-3{
+	width: 115px;
+    top: 91px;
+}
+.boutique-image-2{
+	width: 160px;
+	top: 52px;
+}
+.boutique-image-1{
+	width: 150px;
+}
+
+.what-new-box-left{
+	width:100%;
+}
+.what-new-box-right{
+	width:100%;
+}
+.what-new-box-right h6 a{
+  padding:20px 0;
+}
+.what-new-box{
+	min-height:200px;
+}
+.memorial-image ul li{
+	width:100%;
+	margin:5px auto;
+}
+
+
+
+}
+
+
+
+
+
+@media (max-width:365px) {
+
+
+
+header .middle .logo{
+
+    margin-top: 15px
+
+}
+
+#banner .banner_blog h3{
+	font-size: 18px;
+}
+#banner .banner_blog h2{
+	font-size: 17px;
+}
+.banner_blog{
+	padding: 8% 20px;
+}
+
+
+.right-new-post-box-text ul li:first-child{
+	width:60%;
+}
+.right-new-post-box-text ul li:last-child{
+	width:40%;
+}
+.all-post-box{
+	min-height:85px;
+}
+#memorial h2::before{
+	display:none;
+}
+#memorial h2::after{
+	display:none;
+}
+.main-blog-image .blog-overlay a{
+	left: 40%;
+	
+}
+
+}
+
+
+
+
+
+@media (max-width:337px){
+
+
+
+}
+
+
+
+
+
+
+

@@ -1,0 +1,272 @@
+/*
+
+Theme Name: Pet
+Theme URI: http://www.uniterrene.com/
+Author: Subrat Kumar Barik
+Author URI: http://www.uniterrene.com/
+version: 1.0.0
+Description: This is pet theme with user friendly features.
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: Death of Pet, Grief.
+Text Domain: pet
+*/
+
+.hide {
+	display: none !important;
+}
+.search-highlight {
+	background: #FFFF00
+}
+.alignnone {
+	margin: 5px 20px 20px 0;
+}
+.aligncenter, div.aligncenter {
+	display: block;
+	margin: 5px auto 5px auto;
+}
+.alignright {
+	float: right;
+	margin: 5px 0 20px 20px;
+}
+.alignleft {
+	float: left;
+	margin: 5px 20px 20px 0;
+}
+a img.alignright {
+	float: right;
+	margin: 5px 0 20px 20px;
+}
+a img.alignnone {
+	margin: 5px 20px 20px 0;
+}
+a img.alignleft {
+	float: left;
+	margin: 5px 20px 20px 0;
+}
+a img.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto
+}
+.wp-caption {
+	background: #fff;
+	border: 1px solid #f0f0f0;
+	max-width: 96%; /* Image does not overflow the content area */
+	padding: 5px 3px 10px;
+	text-align: center;
+}
+.wp-caption.alignnone {
+	margin: 5px 20px 20px 0;
+}
+.wp-caption.alignleft {
+	margin: 5px 20px 20px 0;
+}
+.wp-caption.alignright {
+	margin: 5px 0 20px 20px;
+}
+.wp-caption img {
+	border: 0 none;
+	height: auto;
+	margin: 0;
+	max-width: 98.5%;
+	padding: 0;
+	width: auto;
+}
+.wp-caption p.wp-caption-text {
+	font-size: 11px;
+	line-height: 17px;
+	margin: 0;
+	padding: 0 4px 5px;
+}
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
+.wpcf7-text {
+	border: 1px solid #e3e3e3;
+	padding: 7px;
+	height: 40px;
+	width: 100%;
+	float: left;
+	font-family: "PT Sans", sans-serif;
+	font-size: 14px;
+	color: #c6c2c2;
+}
+.wpcf7-textarea {
+	border: 1px solid #e3e3e3;
+	padding: 7px;
+	height: 80px;
+	width: 100%;
+	float: left;
+}
+.wpcf7-submit {
+	background: #028cd5 !important;
+	color: #ffffff;
+	cursor: pointer;
+	float: left;
+	font-size: 18px;
+	line-height: 36px;
+	text-align: center;
+	transform: skew(-20deg);
+	transition: all 0.5s ease 0s;
+	width: 180px;
+	border-radius: 0 !important;
+	font-family: "PT Sans", sans-serif;
+	box-shadow: 7px -6px 0 #000;
+	transition: all 0.3s ease-in-out 0s;
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	width: 135px !important;
+	margin-top: 20px !important;
+	line-height: 10px !important;
+}
+.wpcf7-submit:hover {
+	background: #028cd5 !important;
+	color: #fff !important;
+	box-shadow: none !important;
+}
+::-webkit-input-placeholder {
+ font-family: "PT Sans", sans-serif;
+font-size: 14px;
+color: #c6c2c2;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+font-family: "PT Sans", sans-serif;
+font-size: 14px;
+ color: #c6c2c2;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+ font-family: "PT Sans", sans-serif;
+font-size: 14px;
+color: #c6c2c2;
+}
+
+:-ms-input-placeholder {
+ font-family: Raleway-Regular;
+ font-size: 13px;
+ color:#c6c2c2;
+}
+
+/*--SHOP--*/
+.pro_img {
+	position:relative;
+    width:auto;
+    height: 240px;
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+.pro_img img {
+    width:100%;
+    vertical-align:top;    
+    border: 1px solid #ccc;
+}
+
+.pro_img .overlay {
+    background: rgba(160, 55, 6, 0.8) none repeat scroll 0 0;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    transform: scale(0, 0);
+    transition: all 0.5s ease 0s;
+    width: 100%;
+}
+
+.pro_img:hover .overlay {
+    opacity: 1;
+    transform: scale(1, 1);
+}
+.pro_img .overlay a {
+    border: 1px solid #fff;
+    display: inline-block;
+    height: 40px;
+    left: 40%;
+    margin-left: 10px;
+    margin-top: -20px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 40px;
+}
+.pro_img .overlay a i {
+    color: #fff;
+    display: block;
+    font-size: 15px;
+    line-height: 40px;
+    text-align: center;
+}
+span.price {
+	width: 100%;
+	float: left;
+}
+
+/*--dropdown icon--*/
+.has_child {
+    position: relative;
+}
+.has_child:before {
+    content: "\f107";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #000;
+    font-size: 18px;
+    padding-right: 0.5em;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    padding: 0 5px 0 0;
+}
+
+/*--ribbon width fix--*/
+#jwelry_products .jwelry h2 {
+	background-size: contain !important;
+}
+
+/*--kelma--*/
+ul.affiliate-product {
+	list-style: none;
+}
+ul.affiliate-product li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px;
+    margin: 5px 5px 18px;
+}
+ul.affiliate-product li img {
+    border: 1px solid #ddd;	
+}
+ul.affiliate-product li p {
+	text-align: center;
+	margin: 20px 0;
+	font-weight: bold;
+}
+/*--kelma--*/
