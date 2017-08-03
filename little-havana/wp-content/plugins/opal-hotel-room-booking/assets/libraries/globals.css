@@ -1,0 +1,251 @@
+/* Backbone dialog */
+#opalhotel_backbone_modal{
+    background-color: #fff;
+}
+#opalhotel_backbone_modal #container{
+    padding: 10px;
+}
+#opalhotel_backbone_modal *{
+    font-size: 13px;
+}
+#opalhotel_backbone_modal .opalhotel_backbone_modal_overflow{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 360px;
+    background: #000;
+    opacity: .7;
+    z-index: 99900;
+}
+#opalhotel_backbone_modal .opalhotel_backbone_modal_content{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    min-width: 500px;
+    max-width: 700px;
+    background: #fff;
+    z-index: 100000;
+    -webkit-transform: translate(0,-25%);
+    transform: translate(0,-25%);
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    transition: -webkit-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out,-webkit-transform 0.3s ease-out;
+}
+#opalhotel_backbone_modal .opalhotel_backbone_modal_content header{
+    padding: 13px;
+    border-bottom: 1px solid #e5e5e5;
+    min-height: 16.42857143px;
+    position: relative;
+}
+#opalhotel_backbone_modal .opalhotel_backbone_modal_content footer{
+    padding: 16px;
+    overflow: hidden;
+}
+#opalhotel_backbone_modal .opalhotel_backbone_modal_content footer button{
+    float: right;
+    margin: 0px 5px;
+}
+#opalhotel_backbone_modal .opalhotel_backbone_modal_content footer.center{
+    text-align: center;
+}
+#opalhotel_backbone_modal .opalhotel_backbone_modal_content footer.center button{
+    float: initial;
+}
+#opalhotel_backbone_modal .opalhotel_backbone_modal_content header h1{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1;
+}
+#opalhotel_backbone_modal .opalhotel_backbone_modal_content header .opalhotel_button_close{
+    color: #999;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    text-align: center;
+    line-height: 24px;
+    font-size: 14px;
+    font-family: serif;
+    border-radius: 2px;
+}
+#opalhotel-room-pricing h3:focus{
+    outline: none;
+}
+#opalhotel-room-pricing .ui-accordion-header{
+    background: none !important;
+    background-color: #9BAEB7 !important;
+    color: #fff;
+}
+#opalhotel-room-pricing .ui-accordion .ui-accordion-content{
+    /*height: auto !important;*/
+}
+/* Rating */
+.star-wrapper .star{
+    color: #111;
+    font-family: FontAwesome;
+}
+.star-wrapper .star:hover{
+    cursor: pointer;
+}
+.star-wrapper .star:before{
+    content: '\f006';
+}
+.star-wrapper .star.active:before{
+    content: '\f005';
+}
+.comment-rating{
+    position: relative;
+}
+.comment-rating:before{
+    content: '\f006\f006\f006\f006\f006';
+    font-family: Fontawesome;
+}
+.comment-rating span{
+  overflow: hidden;
+  font-family: Fontawesome;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+}
+.comment-rating span:before{
+  display: block;
+  content: '\f005\f005\f005\f005\f005';
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+}
+.opalhotel-room-modal-wrapper .opalhotel-room-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  min-width: 320px;
+  height: auto;
+  z-index: 2000;
+  visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.opalhotel-room-modal-wrapper .overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  opacity: 0;
+  background: rgba(80, 74, 73, 0.8);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.opalhotel-room-modal-wrapper.active .opalhotel-room-modal,
+.opalhotel-room-modal-wrapper.active .overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.opalhotel-room-modal-wrapper .content {
+  background: #fff;
+  position: relative;
+  border-radius: 3px;
+  margin: 0 auto;
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.opalhotel-room-modal-wrapper .content {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  overflow: hidden;
+}
+.opalhotel-room-modal-wrapper .content h3 {
+  margin: 0;
+  padding: 0.4em;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 300;
+  background: #a4aae8;
+  border-radius: 3px 3px 0 0;
+}
+
+.opalhotel-room-modal-wrapper .content > div {
+  padding: 15px 40px 30px;
+  margin: 0;
+  font-weight: 300;
+  font-size: 1.15em;
+}
+
+.opalhotel-room-modal-wrapper .content > div p {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.opalhotel-room-modal-wrapper .content button {
+  display: block;
+  margin: 0 auto;
+  font-size: 0.8em;
+}
+.opalhotel-single-book-room,
+.opalhotel-single-book-room.opalhotel_form_section {
+  padding: 15px;
+  overflow: hidden;
+}
+.opalhotel-single-book-room input{
+  width: 100%;
+}
+.opalhotel-single-book-room button{
+  background-color: #FFF;
+  text-transform: uppercase;
+  border-color: #e4e4e4;
+  border-width: 1px;
+  border-style: solid;
+  color: #333;
+  padding: 7px 20px 7px 12px;
+  font-size: 11px;
+  line-height: 1.2;
+  background-image: none;
+  width: 100%;
+}
+.opalhotel-room-modal-wrapper .opalhotel-available-form,
+.opalhotel-room-modal-wrapper .opalhotel-available-form .room-choose-packages,
+.opalhotel-room-package-wrapper,
+.room-choose-packages .opalhotel-room-package-wrapper .opalhotel-room-package-item + .opalhotel-room-package-item,
+.opalhotel-room-modal-wrapper .clearfix{
+  overflow: hidden;
+  box-sizing: content-box;
+}
+.opalhotel-room-modal-wrapper .room-choose-packages .opalhotel-room-package-wrapper .opalhotel-room-package-item{
+  padding: 20px;
+  box-sizing: content-box;
+  overflow: hidden;
+  margin: 0;
+}

@@ -1,0 +1,77 @@
+/*
+Theme Name: Paradise
+Theme URI: http://venusdemo.com/paradise/
+Author: Opal Team
+Author URI: https://wordpress.org/
+Description: In 2015, our default theme lets you create a responsive magazine website with a sleek, modern design. Feature your favorite homepage content in either a grid or a slider. Use the three widget areas to customize your website, and change your content's layout with a full-width page template and a contributor page to show off your authors. Creating a magazine website with WordPress has never been easier.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: two-columns, three-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
+Text Domain: paradise
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+ 
+@mixin rotate($degrees) {
+  -webkit-transform: rotate($degrees);
+      -ms-transform: rotate($degrees); // IE9 only
+       -o-transform: rotate($degrees);
+          transform: rotate($degrees);
+}
+@mixin transition($transition...) {
+  -webkit-transition: $transition;
+       -o-transition: $transition;
+          transition: $transition;
+}
+@mixin box-shadow($shadow...) {
+  -webkit-box-shadow: $shadow; // iOS <4.3 & Android <4.1
+          box-shadow: $shadow;
+}
+
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+
+@mixin square($size) {
+  @include size($size, $size);
+}
+// Opacity
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  // IE8 filter
+  $opacity-ie: ($opacity * 100);
+  filter: alpha(opacity=$opacity-ie);
+}
+
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.clearfix{
+   @include clearfix();
+}
+
+@import "components/variables";
+@import "components/mixins";
+
+
+@import "opalhotel/3rd";
+
+@import "opalhotel/form";
+@import "opalhotel/styles";
+
+
+@import "opalhotel/widgets";

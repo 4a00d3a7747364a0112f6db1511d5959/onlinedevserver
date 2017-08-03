@@ -1,0 +1,547 @@
+/*============================================================================
+
+			RESPONSIVE CSS WITH MEDIA 
+
+=============================================================================*/
+
+
+
+/*=============  MEDIA 1400px   =============*/
+
+@media(min-width:1200px) and (max-width:1400px) {
+
+}
+
+/*=============  MEDIA 1200px   =============*/
+
+@media(max-width:1200px) {
+.ht-col-box {
+    width: 33% !important;
+    margin: 30px 0px !important;
+}
+/*.tours-image {
+    height: 100% !important;
+}*/
+.ht-tours-col {
+    margin: 30px 12px !important;
+}
+.tours-bottom-section-right {
+    width: 33% !important;
+    padding-left: 20px;
+}
+button.opalhotel-button-submit{
+	font-size:15px;
+}
+.button.button-theme{
+	font-size:12px !important;
+}
+}
+
+/*=============  MEDIA 1024px   =============*/
+
+@media(max-width:1024px) {
+.ht-slide-caption{
+	width: 95% !important;
+}
+.ht-slide-caption{
+	left:42% !important;
+}
+.horizontal-form header.heading-form{
+	padding:35px 14px !important;
+}
+.opalhotel-comment-form .comment-form-author, .opalhotel-comment-form .comment-form-email{
+	width: 48.75% !important;
+}
+}
+
+/*=============  MEDIA 991px   =============*/
+
+@media(max-width:991px) {
+.sub-text {
+    width: 100% !important;
+    margin: 0 auto;
+}
+.ht-col-box {
+    width: 33% !important;
+    margin: 30px 0px !important;
+}
+.header-top{
+	display:none
+}
+.ht-col-md-8{
+	width:100% !important
+}
+.stretchy_wrapper {
+    width: 100% !important;
+    height: auto !important;
+}
+.light_section {
+    padding: 60px 0 60px 0 !important;
+}
+.ht-col-md-6 {
+    width: 100% !important;
+	position:inherit !important;
+}
+.stretchy_wrapper-right {
+    top: 0 !important;
+    position: inherit !important;
+}
+.events-box-content {
+    top: 20px !important;
+	padding: 18px !important;
+}
+.tours-image-box {
+    height: auto !important;
+}
+.ht-tours-col {
+    margin: 30px 11px !important;
+}
+.tours-image {
+    height: 205px !important;
+}
+
+.opalhotel-main .grid-column{
+	width:45%;
+}
+.single-room-right{
+	width:34% !important;
+}
+.single-room-left{
+	width:63% !important;
+}
+.opalhotel-single .opalhotel-room-meta li{
+	width:50% !important;
+}
+ul.opalhotel-search-results li.opalhotel-available-item .room-info{
+	width:100% !important;
+}
+ul.opalhotel-search-results li.opalhotel-available-item .room-actions{
+	width:100% !important;
+}
+.opalhotel-room-toggle-packages{
+	width:100% !important;
+}
+ul.opalhotel-search-results li.opalhotel-available-item .room-info{
+	padding:10px !important;
+}
+.horizontal-form header.heading-form{
+	display:none;
+}
+.ht-slide-cap-title{
+	margin-bottom:0 !important;
+}
+.opalhotel-reservation-container{
+	margin-bottom:112px !important;
+}
+.ht-slide-cap-title span{
+	font-size:45px !important;
+}
+.opalhotel-reservation-process-steps ul li h4{
+	font-size:14px !important;
+}
+.opalhotel-reservation-process-steps ul li{
+	padding-bottom: 30px !important;
+}
+
+}
+
+/*=============  MEDIA 880px  =============*/
+
+@media(max-width:880px) {
+.ht-tours-col {
+    margin: 30px 9px !important;
+}
+.ht-main-header .ht-main-title{
+	padding-top: 16px !important;
+}
+.ht-main-header{
+	padding:13px 0;
+}
+
+
+}
+
+/*=============  MEDIA 768px - 991px   =============*/
+
+@media(min-width:768px) and (max-width:991px) {
+.leftHulf .hulf{
+	width:100%;
+}
+.leftHulf .hulf:first-child {
+    width: 100% !important;
+}
+.rightHulf .hulf{
+	width:100%;
+}
+.footerSocial {
+    text-align: left !important;
+}
+.footerSocial{
+	padding-left: 20%;
+}
+
+}
+
+
+
+/*=============  MEDIA 767px   =============*/
+
+@media(max-width:767px) {
+.ht-about-image {
+    width: 100% !important;
+}
+.ht-featured-post {
+    width: 45.7% !important;
+	display:inline-block;
+    margin: 0 10px 50px 10px !important;
+}
+.ht-featured-post-wrap {
+    margin-left: 0;
+    text-align: center;
+}
+.ht-featured-post img{
+	width:100%;
+}
+.header-top {
+    display: none;
+}
+.ht-top-footer .ht-footer:nth-of-type(1) {
+    width: 45% !important;
+}
+.ht-footer {
+    width: 45% !important;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 16px;
+}
+.midFooter {
+    padding:15px !important;
+}
+.rightHulf .hulf:first-child h4, .rightHulf .hulf:first-child p {
+    padding-left:0% !important;
+}
+.footerSocial {
+    text-align: left !important;
+}
+.rightHulf {
+    padding-left: 25px;
+}
+.ht-section-sub-title {
+    text-align: center;
+}
+.leftHulf .hulf{
+	width:100%;
+}
+.leftHulf .hulf:first-child {
+    width: 100% !important;
+}
+.rightHulf .hulf{
+	width:100%;
+}
+.formRow input:last-child {
+    padding: 8px !important;
+    font-size: 12px;
+}
+.formRow input:first-child {
+    width: 68% !important;
+}
+#ht-site-navigation {
+    width: 35% !important;
+    min-height: 92px;
+}
+#ht-site-branding {
+    width: 60% !important;
+}
+.tours-bottom-section-left {
+    width: 100% !important;
+}
+.tours-bottom-section-right {
+    width: 100% !important;
+}
+.tours-bottom-bg-1::after{
+	display:none !important
+}
+.tours-bottom-bg-1::before{
+	display:none !important
+}
+.tours-bottom-bg-1 img{
+	width:100%;
+	margin-top:30px;
+}
+.ht-tours-col {
+    width: 48% !important;
+    margin: 20px 4px !important;
+}
+.tours_info {
+    padding: 15px 5px !important;
+}
+.ht-col-box {
+    width: 47% !important;
+    margin: 30px 8px !important;
+}
+.events-box-image {
+    width: 100% !important;
+	float:none !important;
+}
+.events-box-content {
+    position: inherit !important;
+    width:100% !important;
+	top:0 !important;
+	padding: 18px !important;
+}
+.single-room-right{
+	width:100% !important;
+}
+.single-room-left{
+	width:100% !important;
+	margin-top:20px;
+}
+.opalhotel-single .opalhotel-room-meta li{
+	width:50% !important;
+}
+.add{
+	display:none;
+}
+
+ul.opalhotel-search-results li.opalhotel-available-item .opalhotel-catalog-thumbnail{
+	width:100% !important;
+}
+ul.opalhotel-search-results li.opalhotel-available-item .opalhotel-catalog-thumbnail img{
+	width:100% !important;
+}
+ul.opalhotel-search-results li.opalhotel-available-item .room-content{
+	width:100% !important;
+}
+.mobile-book{
+	display:block !important;
+}
+.home-slider-btn {
+    display: none !important;
+}
+.opalhotel-reservation-process-steps ul li span{
+	width:45px !important;
+	height:45px !important;
+	line-height:45px !important;
+}
+.opalhotel-reservation-process-steps ul li h4{
+	font-size:13px !important;
+}
+}
+
+/*=============  MEDIA 600px   =============*/
+
+@media (max-width:640px) {
+.tours-bottom-section-left h1 {
+    font-size: 36px !important;
+}
+.ht-col-box {
+    width: 100% !important;
+    margin: 30px 0 !important;
+}
+.events-box-image {
+    width: 100% !important;
+	float:none !important;
+}
+.events-box-content {
+    position: inherit !important;
+    width:100% !important;
+	top:0 !important;
+	padding: 18px !important;
+}
+.events-box-content h3{
+	font-size:21px !important;
+}
+.opalhotel-main .grid-column{
+	width:100%;
+	margin:10px 0 !important;
+}
+.horizontal-form .form-content .opalhotel-form-field.adults-input, .horizontal-form .form-content .opalhotel-form-field.children-input{
+	width:25% !important;
+}
+.horizontal-form .form-content .opalhotel-form-field{
+	width:50% !important;
+	padding:5px 5px !important;
+}
+.ht-slide-cap-title span {
+    font-size: 22px !important;
+    padding: 0;
+    line-height: 15px;
+}
+.ht-slide-caption {
+    top: 54% !important;
+}
+.col_info h3 {
+    font-size: 20px !important;
+}
+.horizontal-form .form-content .opalhotel-form-field.button-wrap{
+	width:100% !important;
+}
+.opalhotel-reservation-container{
+	margin-bottom:0 !important;
+}
+.horizontal-form .form-content{
+	padding: 0 15px 13px !important;
+}
+.opalhotel-reservation-process-steps ul li h4{
+	font-size:10px !important;
+}
+.opalhotel-reservation-process-steps ul li{
+	padding-bottom:12px !important;
+}
+.opalhotel_order_confirm_order .column{
+	width:25% !important;
+}
+.opalhotel_order_customer_details .row{
+	height:125px !important;
+}
+
+}
+
+/*=============  MEDIA 540px   =============*/
+
+@media(max-width:540px) {
+.ht-featured-post {
+    width: 100% !important;
+	display:inline-block;
+    margin: 0 0px 50px 0px !important;
+}
+.hulf {
+    width: 100% !important;
+}
+.ht-section-sub-title {
+    font-size: 34px !important;
+}
+.midFooter .rightHulf {
+    padding-left: 0px !important;
+	padding-top: 30px !important;
+}
+.ht-slide-cap-desc {
+    font-size: 11px !important;
+    margin-bottom: 6px !important;
+}
+
+.ht-slide-cap-title {
+    padding: 0 1% !important;
+}
+.ht-slide-cap-title span {
+    font-size: 22px !important;
+}
+.ht-tours-col {
+    width: 100% !important;
+    margin: 0px !important;
+}
+.tours_info {
+    padding: 15px 5px !important;
+}
+.ht-col-box {
+    width: 100% !important;
+    margin: 30px 0 !important;
+}
+#opalhotel_coupon_code{
+	max-width:100% !important;
+	margin-bottom: 5px;
+}
+#opalhotel_apply_coupon{
+	width:100% !important;
+}
+
+
+}
+
+/*=============  MEDIA 480px   =============*/
+
+@media(max-width:480px) {
+body{
+	overflow-x:hidden;
+}
+.ht-about-sec h2 {
+    top: 20px;
+    left: 0px !important;
+    font-size: 27px !important;
+}
+.ht-featured-post {
+    width: 100% !important;
+	margin:0 0 40px 0 !important;
+}
+.ht-top-footer .ht-footer:nth-of-type(1) {
+    width: 100% !important;
+}
+.ht-footer {
+    width: 100% !important;
+}
+
+h1{
+    margin: 0 0 2px !important;
+	font-size:20px;
+}
+.ht-main-header .ht-main-title{
+	padding-top:4px !important;
+}
+.opalhotel-single .opalhotel-room-meta li{
+	width:100% !important;
+	
+}
+ul.opalhotel-search-results li.opalhotel-available-item .room-content .room-meta-info li{
+	width:50%;
+}
+.opalhotel-reservation-step a{
+	width:100% !important;
+	margin:5px 0 !important;
+}
+.horizontal-form .form-content .opalhotel-form-field label{
+	font-size:10px;
+}
+.ht-section{
+	padding:40px 0 !important;
+}
+.opalhotel-reservation-process-steps ul li.active::after {
+	display:none !important;
+}
+.opalhotel-reservation-process-steps ul li{
+	width:49% !important;
+}
+.opalhotel-comment-form .comment-form-author, .opalhotel-comment-form .comment-form-email{
+	width:100% !important;
+}
+.opalhotel-comment-form .comment-form-author{
+	padding-right:0 !important;
+}
+.opalhotel-comment-form .comment-form-email{
+	padding-left:0 !important;
+}
+.ht-portfolio-cat-name{
+	font-size:13px !important;
+}
+.opalhotel-form-group.coupon_section{
+	text-align:left !important;
+}
+
+.opalhotel_order_confirm_order .column{
+	width:45% !important;
+}
+.opalhotel_order_customer_details .row{
+	height:130px !important;
+}
+.opalhotel-form-section-group{
+	margin-bottom: 6px !important;
+}
+.opalhotel-form-footer button.opalhotel-button-submit{
+	width:100% !important;
+	padding:0 !important;
+}
+
+
+}
+
+/*=============  MEDIA 360px   =============*/
+
+@media(max-width:360px) {
+.ht-slide-cap-title span {
+    font-size: 22px !important;
+    padding: 0;
+    line-height: 15px;
+}
+.ht-slide-caption {
+    top: 54% !important;
+}
+}
