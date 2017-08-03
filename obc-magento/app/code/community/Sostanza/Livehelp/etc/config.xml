@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Sostanza_Livehelp>
+            <version>1.6.2</version>
+        </Sostanza_Livehelp>
+    </modules>
+    <global>
+        <blocks>
+            <livehelp>
+                <class>Sostanza_Livehelp_Block</class>
+            </livehelp>
+        </blocks>
+        <helpers>
+            <livehelp>
+                <class>Sostanza_Livehelp_Helper</class>
+            </livehelp>
+        </helpers>
+        <models>
+            <livehelp>
+                <class>Sostanza_Livehelp_Model</class>
+            </livehelp>
+        </models>	
+    </global>
+    <frontend>
+		<routers>
+            <livehelp>
+                <use>standard</use>
+                <args>
+                    <module>Sostanza_Livehelp</module>
+                    <frontName>livehelp</frontName>
+                </args>
+            </livehelp>
+        </routers>
+        <layout>
+            <updates>
+                <livehelp>
+                    <file>livehelp.xml</file>
+                </livehelp>
+            </updates>
+        </layout>
+    </frontend>
+	<admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <livehelp before="Mage_Adminhtml">Sostanza_Livehelp_Adminhtml</livehelp>
+                    </modules>
+                </args>
+            </adminhtml>
+			
+        </routers>
+    </admin>
+</config>

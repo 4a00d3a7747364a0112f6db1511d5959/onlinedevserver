@@ -1,0 +1,48 @@
+<config>
+	<menu>
+		<pfay translate="title" module="adminhtml">
+			
+			<title>Menu new</title>
+			
+			<sort_order>100</sort_order>
+			
+			<children>
+				<films translate="title" module="adminhtml">
+					<title>new</title>
+						<sort_order>0</sort_order>
+						<action>adminhtml/film/index</action>
+					</films>
+				</children>
+			
+			</pfay>
+		
+	</menu>
+	<acl>
+		<resources>
+			<admin>
+				<pfay translate="title">
+			
+			<title>Menu new</title>
+			
+			<sort_order>100</sort_order>
+			
+			<children>
+				<films translate="title">
+					<title>new</title>
+						<sort_order>0</sort_order>
+						<action>adminhtml/film/index</action>
+					</films>
+				</children>
+			
+			</pfay>
+				
+				</admin>
+			
+			</resources>
+		
+		
+		
+		</acl>
+	</config>
+
+

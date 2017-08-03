@@ -1,0 +1,21 @@
+<?php 
+$posts = Mage::getModel('blog/blog')
+                    ->getCollection()
+                    ->addPresentFilter()
+                    ->addStoreFilter(Mage::app()->getStore()->getId())
+                    ->addFieldToFilter('status', 1)
+                    ->setOrder('created_time ', 'desc')
+                    ->setPageSize(3);
+if(count($posts)):                    
+?>
+    <h3><?php echo $this->__('BLOG - Latest Posts');?></h3>
+    <ul>
+    <?php foreach ($posts as $post): ?>
+        <li>
+            <a href="<?php echo $post->getAddress(); ?>"><?php echo $post->getTitle(); ?></a>
+            (<?php echo $this->formatDate($post->getCreatedTime(), Mage::getStoreConfig('blog/blog/dateformat'), true); ?>)
+        </li>
+    <?php endforeach; ?>
+    </ul>     
+    <div id="messages_product_view"></div>
+<?php endif;?>

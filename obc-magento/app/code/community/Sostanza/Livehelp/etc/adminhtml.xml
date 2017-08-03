@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <menu>
+        <livehelp module="livehelp" translate="title">
+            <title>LiveHelp®</title>
+            <sort_order>10000</sort_order>
+            <children>
+                <index module="livehelp" translate="title">
+                    <title>Configure plugin</title>
+                    <sort_order>1</sort_order>
+                    <action>adminhtml/system_config/edit/section/livehelp</action>
+                </index>
+            </children>
+        </livehelp>
+    </menu>
+    <acl>
+        <resources>
+            <admin>			
+                <children>
+                    <sostanza_livehelp>
+                        <children>
+                            <livehelp>
+                                <title>livehelp</title>
+                                <sort_order>50</sort_order>
+                            </livehelp>
+                        </children>    
+                    </sostanza_livehelp>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <livehelp>
+                                        <title>Sostanza livehelp</title>
+                                    </livehelp>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

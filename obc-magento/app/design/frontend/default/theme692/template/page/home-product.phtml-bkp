@@ -1,0 +1,103 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2012 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<?php
+/**
+ * Template for Mage_Page_Block_Html
+ */
+?>
+
+
+
+<div class="product-grid-row">
+ <div class="title-section clearfix">
+  
+      <div class="col-lg-12 col-md-12">
+          <div class="text-center-horizontal">
+            <h1 data-after-text="our Services" data-before-text="" class="heading-content">
+              <span class="heading-text" data-lead-text="">Our Products</span> 
+            </h1>
+            <p class="is-mb-0">Fusce molestie urna eu lacus sollicitudin, ut finibus magna pharetra. Donec nec fringilla sapien. Proin volutpat lectus in l. Ut elementum quam ut vulputate molestie. Interdum et malesuada fames </p>
+          </div>
+      </div>
+  
+</div>
+
+ 
+ <div class="shop-page-section">
+ 
+  <?php 
+                            $collectionnew = Mage::getSingleton('catalog/product')->getCollection()
+                                ->addAttributeToFilter('status', 1)
+                                ->addAttributeToSelect('*');
+                            $collectionnew->addAttributeToFilter('status', 1);
+                            $collectionnew->addAttributeToFilter('home_page_display',1);
+                            $_helper = $this->helper('catalog/output');
+                            $backendModel1 = $collectionnew->getResource()->getAttribute('media_gallery')->getBackend();
+                            foreach($collectionnew as $productpopone):
+                                $productBlock = $this->getLayout()->createBlock('catalog/product_price');
+                                $prdpop1 = $productBlock->getPriceHtml($productpopone);
+                        ?>
+         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <div class="shop-product">
+          
+          <div class="shop-product-img-box">
+           <span class="new-tag"> New </span>
+           <span class="used-tag"> USED </span>
+            <a href="<?php echo $productpopone->getProductUrl()?>"><img src="<?php echo Mage::helper('catalog/image')->init($productpopone, 'thumbnail');?>" class="img-responsive" alt=""> </a>
+          </div> 
+          <div class="shop-tools">
+<!--
+            <a href="#" class="first"><i class="fa fa-tag"></i></a>
+-->
+            <a href="<?php echo Mage::helper('wishlist')->getAddUrl($productpopone) ?>" class="sec"><i class="fa fa-heart"></i></a>
+            <a href="<?php echo $productpopone->getProductUrl()?>" class="third"><i class="fa fa-link"></i></a>
+            <a href="<?php echo Mage::helper('checkout/cart')->getAddUrl($productpopone) ?>" class="four"><i class="fa fa-shopping-cart"></i></a>
+          </div>
+          <div class="shop-content">
+            <h2><a href="<?php echo $productpopone->getProductUrl()?>" class="black"><?php echo $productpopone->getName(); ?></a></h2>
+            <p>Pellentesque habitant morbi tristique senectus </p>
+            <span class="price">$<?php echo number_format($productpopone->getPrice(), 2) ?></span>
+<!--
+            <span class="star-rating pull-right">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-full"></i>
+            </span>
+-->
+          </div>        
+        </div>
+      </div>
+
+ <?php endforeach; ?>  
+ 
+
+</div>
+
+ 
+</div>

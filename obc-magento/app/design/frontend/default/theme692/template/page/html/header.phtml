@@ -1,0 +1,295 @@
+<?php
+
+/**
+
+ * Magento
+
+ *
+
+ * NOTICE OF LICENSE
+
+ *
+
+ * This source file is subject to the Academic Free License (AFL 3.0)
+
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+
+ * It is also available through the world-wide-web at this URL:
+
+ * http://opensource.org/licenses/afl-3.0.php
+
+ * If you did not receive a copy of the license and are unable to
+
+ * obtain it through the world-wide-web, please send an email
+
+ * to license@magentocommerce.com so we can send you a copy immediately.
+
+ *
+
+ * DISCLAIMER
+
+ *
+
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+
+ * versions in the future. If you wish to customize Magento for your
+
+ * needs please refer to http://www.magentocommerce.com for more information.
+
+ *
+
+ * @category    design
+
+ * @package     base_default
+
+ * @copyright   Copyright (c) 2012 Magento Inc. (http://www.magentocommerce.com)
+
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+
+ */
+
+/**
+
+ * @var Mage_Page_Block_Html_Header $this
+
+ */
+
+?>
+
+
+
+
+
+<div class="shadow"></div>
+
+<div class="swipe-left"></div>
+
+<div class="swipe">
+
+    <div class="swipe-menu">
+
+        <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->__('Home') ?>" class="home-link"><?php echo $this->__('Home') ?></a>
+
+        <?php echo $this->getChildHtml('topLinks') ?>
+
+        <?php echo $this->getChildHtml('currency_2') ?>
+
+        <?php echo $this->getChildHtml('store_language_2') ?>
+
+        <?php echo $this->getChildHtml('footer_links') ?>
+
+        <?php echo $this->getChildHtml('cms_footer_links') ?>
+
+        <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('cms_footer_links')->toHtml() ?>   
+
+        <div class="footer-links-menu"> 
+
+            <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('footer_links')->toHtml() ?>  
+
+            <?php echo $this->getLayout()->createBlock('core/template')->setTemplate('page/template/custum_link_header.phtml')->toHtml(); ?>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="top-icon-menu">
+
+    <div class="swipe-control"><i class="fa fa-align-justify"></i></div>
+
+    <div class="top-search"><i class="fa fa-search"></i></div>
+
+    <span class="clear"></span>
+
+</div>
+
+
+
+<div class="header-container">
+
+
+    <div class="header-top">
+      <div class="container">
+       <div class="row"> 
+         <div class="col-sm-6 col-md-6">
+         <div class="top-socail-media">
+          <ul>
+           <li> <a href="#"> <i class="fa fa-facebook"></i> </a> </li>
+           <li> <a href="#"> <i class="fa fa-twitter"></i> </a> </li>
+           <li> <a href="#"> <i class="fa fa-google-plus"></i> </a> </li>
+           <li> <a href="#"> <i class="fa fa-youtube-play"></i></a> </li>
+          </ul>
+         </div>
+        </div>
+    
+         <div class="col-sm-6 col-md-6">
+          <div class="f-right">
+    
+            <div class="quick-access">
+    
+                <?php echo $this->getChildHtml('topLinks') ?>
+    
+            </div>  
+    
+            <p class="welcome-msg"><?php //echo $this->getWelcome() ?> <?php echo $this->getAdditionalHtml() ?></p>
+    
+            <!-- <div class="skip-links-relative">
+    
+                <?php // echo $this->getLayout()->createBlock('core/template')->setTemplate('page/template/custum_link_header_2.phtml')->toHtml(); ?>
+    
+            </div> -->
+    
+            
+    
+        </div>
+        </div>
+       </div>
+      </div> 
+    </div>
+   <!-- ---------------> 
+    <div class="header-bottom">
+	 <div class="container">
+      <div class="row">
+       <div class="header">
+
+                        <!--<div class="header-border">
+
+                            <div class="header-buttons">
+
+                                <?php //echo $this->getChildHtml('store_language') ?>
+
+                                <?php //echo $this->getChildHtml('currency') ?>     
+
+                            </div>
+
+                            <?php //echo ($this->getLayout()->createBlock('cms/block')->setBlockId('header_info')->toHtml()); ?>
+
+                            <div class="clear"></div>
+
+                        </div>-->                       
+
+                        <div class="skip-links"> <span href="#header-account" class="skip-link skip-account"></span></div>
+
+                        <div id="header-account" class="skip-content"></div>
+
+                       
+                       <div class="col-sm-3 col-md-3">
+                        <div class="site-logo">
+                        <?php if ($this->getIsHomePage()):?>
+                       
+                        <h1 class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a></h1>
+
+                        <?php else:?>
+                       
+                            <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
+
+                        <?php endif?>
+                        </div>
+                       </div>
+                       
+                       <div class="col-sm-5 col-md-5 col-lg-offset-1">
+                        <div class="row">
+                         <div class="top-contact-details clearfix">
+                         
+                         <!-- <div class="top-details">
+                            <div class="icon-box">
+                                <div class="icon-box-cell">
+                                    <i class="fa fa-phone fa-call"></i>
+                                    <i class="fa fa-map-marker fa-address"></i>
+                                </div>
+                                <div class="address-details-top">
+                                    <span class="text-m">+904.337.6187</span>
+                                    <p class="address-name">JACKSONVILLE</p>
+                                    <p class="address-number">1500 INDUSTRIAL BLVD JACKSONVILLE, FL,32254</p>
+                                </div>
+                            </div>
+                           </div>-->
+                           
+<!--
+                          <div class="top-details">
+                            <div class="icon-box">
+                                <div class="icon-box-cell">
+                                    <i class="fa fa-phone fa-call"></i>
+                                    <i class="fa fa-map-marker fa-address"></i>
+                                </div>
+                                <div class="address-details-top">
+                                    <span class="text-m">+954.784.7778</span>
+                                    <p class="address-name">ft. lauderdale</p>
+                                    <p class="address-number">854 sw 12th ave pompano beach, fl 33069</p>
+                                </div>
+                            </div>
+                           </div>
+                           
+                          <div class="top-details">
+                            <div class="icon-box">
+                                <div class="icon-box-cell">
+                                    <i class="fa fa-phone fa-call"></i>
+                                    <i class="fa fa-map-marker fa-address"></i>
+                                </div>
+                                <div class="address-details-top">
+                                    <span class="text-m">+305.384.1274</span>
+                                    <p class="address-name">Miami</p>
+                                    <p class="address-number">8200 nw 27th st, suite 109 miami, fl 33122</p>
+                                </div>
+                            </div>
+                           </div>
+-->
+                         <?php  echo ($this->getLayout()->createBlock('cms/block')->setBlockId('header_address_info')->toHtml()); ?>  
+                         </div>  
+                        </div>
+                        
+                        <?php //echo $this->getChildHtml('cart_header'); ?>
+                       </div> 
+                       
+                       <div class="col-sm-4 col-md-4 col-lg-3">
+                        <div class="search-top">
+                         <?php echo $this->getChildHtml('topSearch') ?>
+
+                        <div class="clear"></div>
+                        </div>
+                       </div>
+                       
+                </div>
+      </div>
+
+		<div class="clear"></div>
+
+	 </div>
+    </div>
+   <!-- --------------->  
+</div>
+
+<?php echo $this->getChildHtml('topMenu') ?>
+
+<?php echo $this->getChildHtml('topContainer'); ?>
+
+<?php if(Mage::getSingleton('cms/page')->getIdentifier() == 'home'  && Mage::app()->getFrontController()->getRequest()->getRouteName() == 'cms' ) :  ?>
+      
+      <div class="banner-container clearfix">
+       <div class="hero-banner">
+	     <?php  echo ($this->getLayout()->createBlock('cms/block')->setBlockId('slider_1')->toHtml()); ?>
+       </div>
+       <div class="banner-category">
+         <?php  echo ($this->getLayout()->createBlock('cms/block')->setBlockId('banner-category')->toHtml()); ?>
+       </div>  
+      </div> 
+ 
+	 <div class="accessories-row"> 
+	  <div class="container">
+	   <div class="row">
+			<?php  echo ($this->getLayout()->createBlock('cms/block')->setBlockId('accessories')->toHtml()); ?>
+	   </div>
+	  </div>
+	 </div> 
+      
+
+
+<?php  echo ($this->getLayout()->createBlock('cms/block')->setBlockId('about_us_home')->toHtml()); ?>
+   
+</div> 
+
+             
+
+<?php endif;  ?>
+

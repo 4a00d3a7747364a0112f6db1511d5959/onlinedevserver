@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+  <config>
+     <modules>
+        <Pfay_Films>
+          <version>0.1.0</version>
+        </Pfay_Films>
+     </modules>
+     <frontend>
+       <routers>
+          <routeurfrontend>
+              <use>standard</use>
+              <args>
+                 <module>Pfay_Films</module>
+                 <frontName>films</frontName>
+              </args>
+           </routeurfrontend>
+       </routers>
+		<layout>
+			<updates>
+				<pfay_films>
+					<file>pfay_films.xml</file>
+				</pfay_films>
+			</updates>
+		</layout>
+    </frontend>
+    
+  <admin>
+	  <routers>
+		  <adminhtml>
+			  <args>
+				  <modules>
+					  <films before="Mage_Adminhtml">Pfay_Films_Adminhtml</films>
+					  
+					  </modules>
+				  </args>
+			  </adminhtml>
+		  </routers>
+	  </admin>
+	  
+	  <adminhtml>
+		  <layout>
+			  <updates>
+				  <films>
+					  <file>pfay_films.xml</file>
+					  
+					  </films>
+				  
+				  </updates>
+			  
+			  </layout>
+		  
+		  </adminhtml>
+    
+    <global>
+     
+     <blocks>
+         <pfay_films>
+              <class>Pfay_Films_Block</class>
+         </pfay_films>
+      </blocks>
+      
+     <models>
+		<pfay_films>
+			 <class>Pfay_Films_Model</class>
+			 <resourceModel>pfay_films_resource</resourceModel>
+		 </pfay_films>
+		<pfay_films_resource>
+			 <class>Pfay_Films_Model_Resource</class>
+			 <entities>
+				 <film>
+				   <table>pfay_films</table>
+				 </film>
+			  </entities>
+		</pfay_films_resource>
+	</models>
+	
+	<resources>
+			<!-- connection pour ecrire -->
+			<pfay_films_write>
+				<connection>
+					<use>core_write</use>
+				</connection>
+			</pfay_films_write>
+			<!-- connection pour lire-->
+		   <pfay_films_read>
+			  <connection>
+				 <use>core_read</use>
+			  </connection>
+		   </pfay_films_read>
+	</resources> 
+      
+      
+</global>
+</config>

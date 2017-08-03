@@ -1,0 +1,102 @@
+<?php
+//get the page
+
+$success= Mage::app()->getRequest()->getActionName();
+if ($this->isActive()){
+		//$view=0;
+$confronto=$this->getViewLH();	
+$view=false;
+$tutto=$this->getDynamic();
+$gen=$this->getGEN();
+$cat=$this->getCAT();
+$prod=$this->getPROD();
+$funnel=$this->getFUNNEL();
+$module ='';
+$controller='';
+$action='';
+
+if( ($funnel=="0" && $prod=="0" && $cat=="0"  && $gen=="0") && $tutto!="0"){
+	$view=true;
+	$idLH=$tutto;
+}else{
+
+	if($funnel!="0"){
+	
+		$request = $this->getRequest();
+		$module = $request->getModuleName();
+		$controller = $request->getControllerName();
+		$action = $request->getActionName();
+		if($module == 'checkout' && ($controller == 'cart' || $controller == 'onepage') && $action == 'index' || ($success=="success")){
+		
+			 $view=true;
+			 $idLH=$funnel;
+		}
+	}
+	if($prod!="0"){
+		$product=Mage::registry('product');
+		if ($product && $product->getId()) { 
+			$view=true;
+						
+			$idLH=$prod;
+		}
+	}
+	if($cat!="0"){
+		$category = Mage::registry('current_category');
+		$product=Mage::registry('product');
+		if (($category && $category->getId())&&!($product && $product->getId())) {
+			$view=true;
+						
+			$idLH=$cat;			
+		}
+	}
+	if($gen!="0"){
+	
+		$category = Mage::registry('current_category');
+		$product=Mage::registry('product');
+		$request = $this->getRequest();
+		$module = $request->getModuleName();
+		$controller = $request->getControllerName();
+		$action = $request->getActionName();
+		
+		if(!($module == 'checkout' && ($controller == 'cart' || $controller == 'onepage') && $action == 'index' || ($success=="success")) && (!($category && $category->getId()) &&!($product && $product->getId()))){
+		
+			$view=true;
+			$idLH=$gen;			
+		}
+	}	
+}
+		//voglio tracciare gli ordini conclusi grazie alla chat
+			if ($this->trackOrder()!="0")
+			{
+				if ($success=="success")
+				{
+					echo $this->trackCustomerOrder();						
+				}			
+			}
+		
+		if($view==true){
+		
+			$MAGENTOcart="";
+		
+			//vuole vedere cosa c'è nel carrello o l'id dell'utente se loggato
+			if ($this->getCart()!="0")
+			{								
+				$MAGENTOcart=Mage::getUrl()."livehelp/index/getcartlhinfo";				
+			}
+			
+			?>      
+			<!-- Start LiveHelp Magento activation widget - http://www.livehelp.it -->       
+			<script type="text/javascript"> 
+				var LHmagento='<?php echo $MAGENTOcart ?>';
+				var LHinfo='';								 
+				function LHready(){if(document.readyState == "complete"){(function(){ var lh=document.createElement("script");
+				lh.type="text/javascript"; lh.async=true;
+				lh.src="//server.livehelp.it/widgetjs/<?php echo $this->getLivehelpID(); ?>/<?php echo $idLH; ?>.js?x=" + 1*new Date();
+				var node=document.getElementsByTagName("script")[0];
+				node.parentNode.insertBefore(lh,node);
+				})();} else {setTimeout('LHready()',150);}} LHready();
+			</script>          
+		<?php
+		}
+		
+}?>

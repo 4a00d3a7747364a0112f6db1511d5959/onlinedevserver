@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<layout version="0.1.0">
+  <adminhtml_film_index>
+     <reference name="content">
+
+ <block type="pfay_films/adminhtml_grid" name="films" />
+      </reference>
+   </adminhtml_film_index>
+</layout>

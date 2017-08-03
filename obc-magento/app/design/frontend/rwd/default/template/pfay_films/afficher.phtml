@@ -1,0 +1,21 @@
+<!--
+<h1>Test Module</h1>
+<?php //echo $this->methodblock();?>
+-->
+
+<form action="<?php echo Mage::getUrl('films/index/save') ?>" method="post">
+  <fieldset>
+    <ul>
+     <li>
+       <label for="nom">Name</label>
+       <input type="text" id="name" name="name" />
+     </li>
+     <li>
+        <input type="submit" value="Enregistrer" />
+    </li>
+  </ul>
+ </fieldset>
+</form>
+
+<?php echo $this->methodblock(); ?>
+ 

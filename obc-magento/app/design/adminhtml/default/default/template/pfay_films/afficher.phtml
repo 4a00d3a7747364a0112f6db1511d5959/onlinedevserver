@@ -1,0 +1,24 @@
+<!--
+<h1>Test Module</h1>
+<?php //echo $this->methodblock();?>
+-->
+
+
+<form action="<?php echo Mage::getUrl('adminhtml/film/index') ?>" method="post">
+  <fieldset>
+    <ul>
+     <li>
+       <label for="nom">Name</label>
+       <input type="text" id="name" name="name" />
+     </li>
+     <li>
+		 <input name="form_key" type="hidden" value="<?php echo Mage::getSingleton('core/session')->getFormKey() ?>" />
+        <input type="submit" value="registrer" />
+    </li>
+  </ul>
+ </fieldset>
+ 
+</form>
+
+
+<?php echo $this->methodblock(); ?>
