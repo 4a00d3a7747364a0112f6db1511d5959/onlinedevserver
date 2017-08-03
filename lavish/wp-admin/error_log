@@ -1,0 +1,125 @@
+[16-Jan-2017 13:08:52 UTC] WordPress database error A table must have at least 1 column for query CREATE TABLE IF NOT EXISTS wp_vip_accounts made by activate_plugin, do_action('activate_custom-vip-account/custom-vip-account.php'), WP_Hook->do_action, WP_Hook->apply_filters, call_user_func_array, my_plugin_create_db, dbDelta
+[16-Jan-2017 13:08:52 UTC] WordPress database error Unknown collation: 'utf8mb4_unicode_520_ci' for query CREATE TABLE wp_vip_accounts (
+		  `vip_account_id` int(10) NOT NULL AUTO_INCREMENT,
+  `vip_account_name` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_account_package_name` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_account_post_limit` int(10) NOT NULL,
+  `vip_account_access` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_user_id` int(10) NOT NULL,
+  `is_payment` int(10) NOT NULL,
+  `vip_first_name` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_last_name` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_nationality` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_address` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_city` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_zipcode` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_email` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_phone` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_mob_num` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_time_call` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_explain` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_hot_spot` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_toys` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_gateway` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_monthy_package` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_total_package` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  PRIMARY KEY (`vip_account_id`)
+		) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci made by activate_plugin, do_action('activate_custom-vip-account/custom-vip-account.php'), WP_Hook->do_action, WP_Hook->apply_filters, call_user_func_array, my_plugin_create_db, dbDelta
+[16-Jan-2017 13:09:01 UTC] WordPress database error Table 'unitetoh_lav.wp_vip_accounts' doesn't exist for query SELECT * FROM wp_vip_accounts WHERE 0 >= '0' made by do_action('toplevel_page_myplugin/myplugin-admin-page'), WP_Hook->do_action, WP_Hook->apply_filters, call_user_func_array, myplguin_admin_page
+[16-Jan-2017 13:12:01 UTC] WordPress database error Table 'unitetoh_lav.wp_vip_accounts' doesn't exist for query SELECT * FROM wp_vip_accounts WHERE 0 >= '0' made by do_action('toplevel_page_myplugin/myplugin-admin-page'), WP_Hook->do_action, WP_Hook->apply_filters, call_user_func_array, myplguin_admin_page
+[16-Jan-2017 13:12:06 UTC] WordPress database error Table 'unitetoh_lav.wp_vip_accounts' doesn't exist for query SELECT * FROM wp_vip_accounts WHERE 0 >= '0' made by do_action('toplevel_page_myplugin/myplugin-admin-page'), WP_Hook->do_action, WP_Hook->apply_filters, call_user_func_array, myplguin_admin_page
+[16-Jan-2017 13:12:10 UTC] WordPress database error Table 'unitetoh_lav.wp_vip_accounts' doesn't exist for query SELECT * FROM wp_vip_accounts WHERE 0 >= '0' made by do_action('toplevel_page_myplugin/myplugin-admin-page'), WP_Hook->do_action, WP_Hook->apply_filters, call_user_func_array, myplguin_admin_page
+[16-Jan-2017 13:13:54 UTC] WordPress database error Unknown collation: 'utf8mb4_unicode_520_ci' for query CREATE TABLE wp_vip_accounts (
+		  `vip_account_id` int(10) NOT NULL AUTO_INCREMENT,
+  `vip_account_name` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_account_package_name` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_account_post_limit` int(10) NOT NULL,
+  `vip_account_access` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_user_id` int(10) NOT NULL,
+  `is_payment` int(10) NOT NULL,
+  `vip_first_name` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_last_name` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_nationality` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_address` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_city` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_zipcode` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_email` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_phone` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_mob_num` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_time_call` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_explain` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_hot_spot` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_toys` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_gateway` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_monthy_package` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_total_package` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  PRIMARY KEY (`vip_account_id`)
+		) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci made by activate_plugin, do_action('activate_custom-vip-account/custom-vip-account.php'), WP_Hook->do_action, WP_Hook->apply_filters, call_user_func_array, my_plugin_create_db, dbDelta
+[16-Jan-2017 13:33:01 UTC] WordPress database error Unknown collation: 'utf8mb4_unicode_520_ci' for query CREATE TABLE wp_vip_accounts (
+		  `vip_account_id` int(10) NOT NULL AUTO_INCREMENT,
+  `vip_account_name` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_account_package_name` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_account_post_limit` int(10) NOT NULL,
+  `vip_account_access` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_user_id` int(10) NOT NULL,
+  `is_payment` int(10) NOT NULL,
+  `vip_first_name` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_last_name` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_nationality` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_address` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_city` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_zipcode` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_email` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_phone` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_mob_num` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_time_call` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_explain` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_hot_spot` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_toys` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_gateway` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_monthy_package` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_total_package` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  PRIMARY KEY (`vip_account_id`)
+		) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci made by activate_plugin, do_action('activate_custom-vip-account/custom-vip-account.php'), WP_Hook->do_action, WP_Hook->apply_filters, call_user_func_array, my_plugin_create_db, dbDelta
+[16-Jan-2017 13:34:02 UTC] WordPress database error Unknown collation: 'utf8mb4_unicode_520_ci' for query CREATE TABLE wp_vip_accounts (
+		  `vip_account_id` int(10) NOT NULL AUTO_INCREMENT,
+  `vip_account_name` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_account_package_name` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_account_post_limit` int(10) NOT NULL,
+  `vip_account_access` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_user_id` int(10) NOT NULL,
+  `is_payment` int(10) NOT NULL,
+  `vip_first_name` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_last_name` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_nationality` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_address` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_city` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_zipcode` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_email` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_phone` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_mob_num` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_time_call` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_explain` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_hot_spot` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_toys` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_gateway` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_monthy_package` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `vip_total_package` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  PRIMARY KEY (`vip_account_id`)
+		) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci made by activate_plugin, do_action('activate_custom-vip-account/custom-vip-account.php'), WP_Hook->do_action, WP_Hook->apply_filters, call_user_func_array, my_plugin_create_db, dbDelta
+[07-Feb-2017 11:14:54 UTC] PHP Fatal error:  Call to undefined function feed_back_get_meta() in /home/unitetoh/public_html/onlinedevserver.biz/dev/lavish/wp-content/themes/lavish/functions.php on line 1613
+[07-Feb-2017 11:18:31 UTC] PHP Fatal error:  Call to undefined function feed_back_get_meta() in /home/unitetoh/public_html/onlinedevserver.biz/dev/lavish/wp-content/themes/lavish/functions.php on line 1613
+[07-Feb-2017 11:19:39 UTC] PHP Fatal error:  Call to undefined function feed_back_get_meta() in /home/unitetoh/public_html/onlinedevserver.biz/dev/lavish/wp-content/themes/lavish/functions.php on line 1613
+[07-Feb-2017 11:36:54 UTC] PHP Fatal error:  Call to undefined function feed_back_get_meta() in /home/unitetoh/public_html/onlinedevserver.biz/dev/lavish/wp-content/themes/lavish/functions.php on line 1613
+[07-Feb-2017 11:38:02 UTC] PHP Fatal error:  Call to undefined function feed_back_get_meta() in /home/unitetoh/public_html/onlinedevserver.biz/dev/lavish/wp-content/themes/lavish/functions.php on line 1613
+[07-Feb-2017 11:39:19 UTC] PHP Fatal error:  Call to undefined function feed_back_get_meta() in /home/unitetoh/public_html/onlinedevserver.biz/dev/lavish/wp-content/themes/lavish/functions.php on line 1613
+[07-Feb-2017 11:40:46 UTC] PHP Fatal error:  Call to undefined function feed_back_get_meta() in /home/unitetoh/public_html/onlinedevserver.biz/dev/lavish/wp-content/themes/lavish/functions.php on line 1613
+[07-Feb-2017 11:41:15 UTC] PHP Fatal error:  Call to undefined function feed_back_get_meta() in /home/unitetoh/public_html/onlinedevserver.biz/dev/lavish/wp-content/themes/lavish/functions.php on line 1613
+[07-Feb-2017 11:41:30 UTC] PHP Fatal error:  Call to undefined function feed_back_get_meta() in /home/unitetoh/public_html/onlinedevserver.biz/dev/lavish/wp-content/themes/lavish/functions.php on line 1613
+[07-Feb-2017 11:42:00 UTC] PHP Fatal error:  Call to undefined function feed_back_get_meta() in /home/unitetoh/public_html/onlinedevserver.biz/dev/lavish/wp-content/themes/lavish/functions.php on line 1613
+[07-Feb-2017 11:42:31 UTC] PHP Fatal error:  Call to undefined function feed_back_get_meta() in /home/unitetoh/public_html/onlinedevserver.biz/dev/lavish/wp-content/themes/lavish/functions.php on line 1613
+[18-Feb-2017 13:06:14 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/unitetoh/public_html/onlinedevserver.biz/dev/lavish/wp-content/themes/lavish/functions.php on line 1740
+[23-Feb-2017 07:32:14 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting '(' in /home/unitetoh/public_html/onlinedevserver.biz/dev/lavish/wp-content/themes/lavish/functions.php on line 506
+[23-Feb-2017 07:34:14 UTC] PHP Parse error:  syntax error, unexpected ''extra_profile_filed' (T_ENCAPSED_AND_WHITESPACE) in /home/unitetoh/public_html/onlinedevserver.biz/dev/lavish/wp-content/themes/lavish/functions.php on line 1050
+[23-Feb-2017 10:05:40 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/unitetoh/public_html/onlinedevserver.biz/dev/lavish/wp-content/plugins/custom-vip-account/get_data.php on line 386
+[01-Mar-2017 10:12:38 UTC] PHP Fatal error:  Call to undefined function feed_back_get_meta() in /home/unitetoh/public_html/onlinedevserver.biz/dev/lavish/wp-content/themes/lavish/functions.php on line 1768

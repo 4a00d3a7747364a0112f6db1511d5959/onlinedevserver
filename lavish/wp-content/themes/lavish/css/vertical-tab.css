@@ -1,0 +1,84 @@
+ul.tabs {
+	margin: 0;
+	padding: 0;
+	float: left;
+	list-style: none;
+	width: 25%;
+}
+
+ul.tabs li {
+	float: left;
+	margin: 0;
+	cursor: pointer;
+	/*padding: 0px 21px;*/
+	font-family: "Tw Cen MT";
+    font-size: 30px;
+    font-weight: 300;
+	color: #898787;
+	overflow: hidden;
+	position: relative;
+	width:100%;
+	text-align:right;
+	line-height: 50px;
+	padding:0 10px;
+	margin-bottom:12px;
+}
+
+/*.tab_last { border-right: 1px solid #333; }*/
+
+ul.tabs li:hover {
+	/*background-color: #ccc;*/
+	color: #333;
+}
+
+ul.tabs li.active {
+	background-color: #d4c9c4;
+	color: #898787;
+	display: block;
+	border-radius:10px;
+}
+
+.tab_container {
+	/*border: 1px solid #333;*/
+	border-top: none;
+	/*clear: both;*/
+	float: right;
+	width: 72%;
+	/*background: #fff;*/
+	overflow: auto;
+}
+
+.tab_content {
+	display: none;
+}
+
+.tab_drawer_heading { display: none; }
+
+@media screen and (max-width: 768px) {
+	.tabs {
+		display: none;
+	}
+	.tab_drawer_heading {
+		background-color: #ad1457;
+		color: #fff;
+		/*border-top: 1px solid #333;*/
+		margin:5px 0;
+		padding: 0px 20px;
+		display: block;
+		cursor: pointer;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+	.tab_drawer_heading h3{
+		color:#fff;
+		font-size:20px;
+	}
+	.d_active {
+		background-color: #222;
+		color: #fff;
+	}
+}

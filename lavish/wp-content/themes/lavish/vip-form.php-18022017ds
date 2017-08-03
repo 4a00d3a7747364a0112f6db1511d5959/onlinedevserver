@@ -1,0 +1,251 @@
+<?php
+/**
+ * Template Name: vipform Page
+ */
+get_header();
+?>
+<?php
+//if(isset($_POST['submit']) && $_POST['username'] != "") 
+   // {
+		
+	//	echo "here";
+        
+        //~ $username   =   sanitize_user( $_POST['username'] );
+        //~ $password   =   esc_attr( $_POST['password'] );
+        //~ $email      =   sanitize_email( $_POST['email'] );
+        //~ $first_name =   sanitize_text_field( $_POST['first_name'] );
+        //~ $last_name  =   sanitize_text_field( $_POST['last_name'] );
+        //~ $age  =   sanitize_text_field( $_POST['age'] );
+        //~ $nationality  =   sanitize_text_field( $_POST['nationality'] );
+        //~ $address  =   sanitize_text_field( $_POST['address'] );
+        //~ $city  =   sanitize_text_field( $_POST['city'] );
+        //~ $zipcode  =   sanitize_text_field( $_POST['zipcode'] );
+        //~ $phone  =   sanitize_text_field( $_POST['phone'] );
+        //~ $mob_num  =   sanitize_text_field( $_POST['mob_num'] );
+        //~ $time_call  =   $_POST['time_call'];
+        //~ $explain  =   sanitize_text_field( $_POST['explain'] );
+        //~ $hot_spot  =   sanitize_text_field( $_POST['hot_spot'] );
+        //~ $toys  =   sanitize_text_field( $_POST['toys'] );
+        //~ $gateway  =   sanitize_text_field( $_POST['gateway'] );
+        //~ $mem_pln  =   $_POST['member_plans'];
+		//~ $total_plans  =   $_POST['total_plan'];
+        
+     
+      // die;
+
+ 
+        // call @function complete_registration to create the user
+        // only when no WP_error is found
+        
+   // }
+
+
+
+?>
+
+<div class="container">
+		<div class="vip-form-box">  
+    <form method="post" action="http://onlinedevserver.biz/dev/lavish/vip-form/" >
+    <section id="vip-form" class="vip-form-div">
+      <div class="vip-form-box-left clearfix">
+       <li class="vip-form-box-field">
+        <div class="vip-label">
+         <label> First Name <span class="required">*</span> </label> </div>
+        <div class="vip-fields"> <input name="first_name" id="firstname" placeholder="" value="" type="text" required> </div>        
+       </li>
+       <li class="vip-form-box-field">
+        <div class="vip-label">
+         <label> Last Name <span class="required">*</span> </label> </div>
+        <div class="vip-fields"> <input placeholder="" name="last_name" id="lastname" value="" type="text" required> </div>
+       </li>
+       <li class="vip-form-box-field">
+        <div class="vip-label">
+         <label> Age <span class="required">*</span> </label> </div>
+        <div class="vip-fields"> <input name="age" id="age" placeholder="" value="" type="text" required> </div>
+       </li>
+       <li class="vip-form-box-field">
+        <div class="vip-label">
+         <label> Nationality <span class="required">*</span> </label> </div>
+        <div class="vip-fields"> <input placeholder="" id="nationality" name="nationality" value="" type="text" required> </div>
+       </li>
+       
+       <li class="vip-form-box-field">
+        <div class="vip-label">
+         <label> Address: <span class="required">*</span> </label> </div>
+        <div class="vip-fields"> <input placeholder="" id="address" name="address" value="" type="text" required> </div>
+       </li>
+       <li class="vip-form-box-field">
+        <div class="vip-label">
+         <label> City: </label> </div>
+        <div class="vip-fields"> <input placeholder="" id="city" name="city" value="" type="text" required> </div>
+       </li>
+       <li class="vip-form-box-field">
+        <div class="vip-label">
+         <label> Zip Code: </label> </div>
+        <div class="vip-fields"> <input name="zipcode" id="zip" placeholder="" value="" type="text" required> </div>
+       </li>
+       <li class="vip-form-box-field">
+        <div class="vip-label">
+         <label> Desired Username: <span class="required">*</span> </label> </div>
+        <div class="vip-fields"> <input placeholder="" id="username" name="username" value="" type="text" required> </div>
+       </li>
+	   <li class="vip-form-box-field">
+        <div class="vip-label">
+         <label> E-mail <span class="required">*</span> </label> </div>
+        <div class="vip-fields"> <input name="email" id="email" placeholder="" value="" type="email" required> </div>
+       </li>
+       <li class="vip-form-box-field">
+        <div class="vip-label">
+         <label> Confirm E-mail <span class="required">*</span> </label> </div>
+        <div class="vip-fields"> <input name="conemail" id="conemail" placeholder="" value="" type="email" required> </div>
+       </li>
+       <li class="vip-form-box-field">
+        <div class="vip-label">
+         <label> Password <span class="required">*</span> </label> </div>
+        <div class="vip-fields"> <input placeholder="" id="password" type="password" name="password" value="" required> </div>
+       </li>
+       <li class="vip-form-box-field">
+        <div class="vip-label">
+         <label> Confirm Password <span class="required">*</span> </label> </div>
+        <div class="vip-fields"> <input placeholder="" id="con_password" type="password" name="conpassword" value="" type="password" required> </div>
+       </li>
+       
+      </div> 
+      <div class="vip-form-box-right clearfix">
+       
+       <li class="vip-form-box-field">
+        <div class="vip-label">
+         <label> Your phone number </label> </div>
+        <div class="vip-fields"> <input placeholder="" id="phone" name="phone" value="" type="text" required> </div>
+       </li>
+       <li class="vip-form-box-field">
+        <div class="vip-label">
+         <label> Mobile phone number <span class="required">*</span> </label> </div>
+        <div class="vip-fields"> <input placeholder="" id="mob_php" name="mob_num" value="" type="text" required> </div>
+       </li>
+       <li class="vip-form-box-field">
+        <div class="vip-label">
+         <label> Best times to call: </label> </div>
+
+         <div class="vip-fields" id="time_call"> 
+           <select name="time_call" id="time_call">
+             <option name="morning" value="morning">morning</option>
+             <option name="afternoon" value="afternoon">afternoon</option>
+             <option name="evening" value="evening">evening </option>
+           </select> 
+        </div>
+		</li>
+       <li class="vip-form-box-field">
+        <div class="vip-label"> <label> If wish not be contacted </label> </div>
+        <div class="vip-fields">
+         <label> <input name="contacted_yes" value="" type="radio">Yes</label>
+         <label> <input name="contacted_no" value="" type="radio">No</label>
+        </div>
+       </li>
+       <li class="vip-form-box-field">
+        <div class="vip-label"> <label> Membership <span class="required">*</span></label> </div>
+        <div class="vip-fields"> 
+           <select name="total_plan" id="total_plans">
+             <option name="lavishpln" value="lavishpln" <?php if($pac_name == "lavishpln") echo "selected";?>>Lavish $150</option>
+             <option name="sliverpln" value="sliverpln" <?php if($pac_name == "sliverpln") echo "selected";?>>Silver $100k</option>
+             <option name="goldpln" value="goldpln" <?php if($pac_name == "goldpln") echo "selected";?>>Gold $250k</option>
+             <option name="platinumpln" value="platinumpln" <?php if($pac_name == "platinumpln") echo "selected";?>>Platinum $500k</option>
+             <option name="blackpln" value="blackpln" <?php if($pac_name == "blackpln") echo "selected";?>>Black $1mill</option>
+           </select> 
+        </div>
+       </li>
+       <li class="vip-form-box-field">
+        <div class="vip-label"> <label>How often do you plan on booking your companion?  <span class="required">*</span></label> </div>
+        <div class="vip-fields"> 
+           <select name="member_plans" id="member_plan">
+             <option name="dailypln" value="Daily">Daily</option>
+             <option name="weeklypln" value="weekly">weekly</option>
+             <option name="monthlypln" value="monthly">monthly</option>
+             <option name="otherpln" value="other">other</option>
+           </select> 
+        </div>
+       </li>
+       <li class="vip-form-box-field">
+        <div class="vip-label">
+         <label> If other; please explain </label> </div>
+        <div class="vip-fields"> <input placeholder="" name="explain" value="" type="text" required> </div>
+       </li>
+       <li class="vip-form-box-field">
+        <div class="vip-label">
+         <label> What are your favorite luxury hot spots? </label> </div>
+        <div class="vip-fields"> <input placeholder="" name="hot_spot" value="" type="text" required> </div>
+       </li>
+       <li class="vip-form-box-field">
+        <div class="vip-label">
+         <label> What are your favorite luxyry toys? </label> </div>
+        <div class="vip-fields"> <input placeholder="" name="toys" value="" type="text" required> </div>
+       </li>
+       <li class="vip-form-box-field">
+        <div class="vip-label">
+         <label> What would be your dream getaway? </label> </div>
+        <div class="vip-fields"> <input placeholder="" name="gateway" value="" type="text" required> </div>
+       </li>
+       <li class="vip-form-box-field">
+        <div class="vip-label"> <label> Would you like to be notified when we have new models? </label> </div>
+        <div class="vip-fields">
+         <label> <input value="Yes" type="radio">Yes</label>
+         <label> <input value="No" type="radio">No</label>
+        </div>
+       </li>
+       <li class="vip-form-box-field mutliSelect-box">
+        <div class="vip-label"> <label> Who would your favorite mates be?  </label> </div>
+        <div class="vip-fields"> 
+		   
+		   <dl class="dropdown"> 
+  
+			<dt>
+			<a href="javascript:void(0)">
+			  <span class="hida">Select</span>    
+			  <p class="multiSel"></p>  
+			</a>
+			</dt>
+		  
+			<dd>
+				<div class="mutliSelect">
+					<ul>
+						<li>
+						   <label><input type="checkbox" value="Yvonno" />Yvonno </label>
+						<li>
+							<label><input type="checkbox" value="Angelina" />Angelina</label>
+						<li>
+							<label><input type="checkbox" value="Angelina" />Angelina</label>
+						<li>
+							<label><input type="checkbox" value="Yvonno" />Yvonno</label>
+						<li>
+							<label><input type="checkbox" value="Angelina" />Angelina</label>
+						<li>
+						   <label> <input type="checkbox" value="Angelina" />Angelina</label>
+					</ul>
+				</div>
+			</dd>
+		</dl>
+		   
+		   
+        </div>
+       </li>
+      </div> 
+      <div class="vip-form-text-textarea clearfix">
+        <li class="vip-form-box-field-textarea">
+        <div class="vip-label"> <label> Why become a member? </label> </div>
+        <div class="vip-fields">
+         <textarea placeholder="" rows="3" cols="20"></textarea>
+        </div>
+       </li>
+      </div>
+      
+      <div class="vip-form-submit-btn clearfix">
+       <input type="submit" name="submit" value="Register"/>
+      </div> 
+    </form>
+   </div>
+ </div>
+</section>
+
+
+
+<?php get_footer();?>

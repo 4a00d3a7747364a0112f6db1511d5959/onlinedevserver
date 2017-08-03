@@ -1,0 +1,153 @@
+<?php
+/**
+ * Template Name: futureladiesfaq Page
+ */
+get_header('model');
+?>
+
+<section id="future-ladies-top" class="booking-about-div future-ladies-top">
+  <div class="container">
+    
+    <div class="modelprofile-about-box">
+      <ul>
+       <li><a href="#"> CASTING </a></li>
+       <li><a href="#"> ABOUT US  </a></li>
+       <li><a href="#"> the perfect lady </a></li>
+      </ul>
+      <div class="about-box-divider"> <span> </span> </div>
+    </div>    
+    <div class="booking-details-top">
+      <h3> Lavish Mate® </h3>
+      <h3> Prospective Future Companions F.A.Q </h3>
+      
+     <div class="booking-details-content">
+      <p> Our blue-chip clients are based worldwide, and you may be asked to travel nationally or internationally as the client requires.
+However, travel is always subject to your availability. We will administer all travel arrangements and provide you with your travel
+documentation. You will be responsible for ensuring you pack appropriately for the destination and events you may be attending </p>
+     
+     </div> 
+      
+    </div>
+    
+  </div>
+</section>
+
+
+
+
+<section id="lavish-free-guide" class="lavish-free-guide-div future-ladies-accordion">
+ <div class="lavish-free-guide-box">
+    <div class="future-ladies-accordion-top">
+      <h3> Lady F.A.Q </h3>
+    </div>
+    <div class="lavish-free-guide-details">
+     <ul class="accordion">
+      <li>
+            <div class="accordion-tab">
+              Booking Details
+            </div>
+            <div class="accordion-panel">
+             <div class="container">
+               <div class="accordion-pane-box">
+                 <p> When you're ready to make an appointment, please contact our friendly helpful booking agents, and inquire whether the model you have in mind is available. We will be delighted to discuss your needs and recommend the most suitable companion escort for you. We can also help you in deciding on the most appropriate restaurant or venue to bring your date for dinner. </p>
+               </div>
+             </div> 
+            </div> 
+        </li>
+      <li>
+            <div class="accordion-tab">
+              Booking your companion of choice
+            </div>
+            <div class="accordion-panel">
+             <div class="container">
+               <div class="accordion-pane-box">
+                 <p> Your companion can meet you at a pre-planned venue or public event, however we recommend meeting at your hotel room so you can make payment before the date starts. This is to ensure privacy and confidentiality and to get your date off to the best possible start. </p>
+                 <p> While we go out of our way to meet our clients’ needs there are rare occasions when a companion is not available. Our companions are autonomous people, not objects. In the event that your desired companion is not available for your preferred date, we request some flexibility, either in terms of the timing of the date or the companion in question. </p>
+               </div>
+             </div> 
+            </div> 
+        </li>
+      <li>
+            <div class="accordion-tab">
+              Your Obligations
+            </div>
+            <div class="accordion-panel">
+             <div class="container">
+               <div class="accordion-pane-box">
+                 <p> Please ensure you approach the agency and the companions as a gentleman. We are selective, and will have no hesitation to politely decline your business if you are not behaving as a man of honor. We reserve the right to refuse the business of any caller. Our agency exists exclusively to cater for the most refined and high-quality clientele only. Our elite female companions definitely have no need or desire to be ‘busy'; they prefer to exchange energies with just a select few tasteful, appreciative souls, for mutually enjoyable engagements. </p> 
+               </div>
+             </div> 
+            </div> 
+        </li>
+      <li>
+            <div class="accordion-tab">
+              Models Attire
+            </div>
+            <div class="accordion-panel">
+             <div class="container">
+               <div class="accordion-pane-box">
+                 <p> The Lavish Mate® ladies are always attired impeccably; attractive yet discreet. Presentation is a priority for the high class women with whom we work, and looking ‘obvious’ is never an option. If you have any preferences as to the type of attire you prefer, in terms of style, color etc., please feel free to let us know. Your elite companion will do her best to accommodate your every preference, within reason. </p>
+               </div>
+             </div> 
+            </div> 
+        </li>
+      <li>
+            <div class="accordion-tab">
+              Working with the best in the world
+            </div>
+            <div class="accordion-panel">
+             <div class="container">
+               <div class="accordion-pane-box">
+                 <p> As a global leader in the companion industry Lavish Mate® has a database of thousands of international clients. We have achieved this through our high-end service and high levels of discretion and confidentiality. We also believe that variety is the spice of life, and provide a diverse selection of companions for our clientele to choose from. We put as much emphasis on looks as we do on education, confidence and personality because these are the key ingredients for you to have a good time. Our intensive screening process ensures that our companions have the intelligence and beauty that discerning gentlemen look for in women. </p>
+                 <p> We are pleased to partner with you for exclusive and private dates to the theater and opera, visits to the spa, dinner dates, weekends away and extended vacations. Should you wish to book a travel companion Lavish Mate® will happily make the arrangements on your behalf. <p>
+                 <p> Wherever you choose to go, the experience will revolve around you and your needs. Our beautiful models will ensure you are always the center of attention. We aim to exceed our clients’ expectations every time, and considering how long some of our clients have been with us, this is a tall order! </p>
+                 <p> Our exclusive concierge service will take you to your desired location, whether in a chauffeured car or chartered jet or helicopter. Experience the world from a new level of luxury. Look through our selection of gorgeous companions and book your date now. </p>
+                 <p> For your convenience booking requests can be submitted by chat, email or telephone. Please note that the text booking service is reserved for existing clients only. We will do our best to assist with last minute bookings. </p>
+                 <p> <strong> You can send us your booking request via e-mail, chat and/or of course for telephone booking you can reach us 24/7; Text booking is for existing clients only. We will do our best to make your last minute booking possible! </strong> </p>
+               </div>
+             </div> 
+            </div> 
+        </li>
+    </ul>
+    </div>
+ </div>   
+</section>
+
+<section id="booking-copy-space" class="booking-copy-space-div">
+  <div class="container">
+   <div class="copy-space-box">
+     <img src="<?php echo esc_url( get_template_directory_uri() )?>/images/lavish mate-copyscape-2.png" alt="" />
+     <p> Life is short. Have some pleasure </p>
+     <p> Voted the world’s #1 elite escort agency with premium discretion </p>
+   </div>
+  </div>
+  
+  <div class="copy-right-booking-box">
+    <div class="about-box-divider">
+     <span> </span>
+    </div>
+   <div class="copy-text-accordion">
+    <ul class="accordion">
+    <li>
+    <div class="accordion-tab"> Copyright </div>
+    <div class="accordion-panel" style="display: none;">
+    <div class="container">
+    <div class="accordion-pane-box">
+    <p>All contents of our web sites (including but not limited to: Chihuahua head symbol, logo, texts, graphics, audio, video and layout) are exclusive copyright of Lavish Mate®. Our web pages or elements of our web pages are protected by copyright law and law of unfair competition and may not by copied, distributed or modified without our written consent. It is illegal and punishable by criminal law to copy, distribute or modify our copyrighted material without our prior consent. Lavish Mate® will pursue all legal remedies against infringements of our rights. Lavish Mate® is a registered trademark in the United States, Canada and numerous other countries. This is also proof of the recognized expertise of Lavish Mate® which has emerged as a modern and globally operating elite escort agency over the years. In case of violation of our registered trademark Lavish Mate® we will initiate civil litigation for damages and will seek criminal prosecution by local law enforcement authorities.</p>
+    </div>
+    </div>
+    </div>
+    </li>
+    </ul>
+   </div>
+    <div class="about-box-divider">
+     <span> </span>
+    </div>
+  </div>
+</section>
+
+
+<!--<script type="text/javascript" src="<?php echo esc_url( get_template_directory_uri() )?>/js/scripts.js" ></script>-->
+<?php
+get_footer();
+?>

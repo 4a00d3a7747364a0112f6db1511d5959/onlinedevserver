@@ -1,0 +1,276 @@
+<!doctype html>
+<html>
+<head>
+   <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+   <meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
+   <title>Lavish</title>
+    
+<link rel="stylesheet" href="css/normalize.css" type="text/css">
+<link rel="stylesheet" href="css/styles.css" type="text/css">
+<link rel="stylesheet" href="css/jquery.bxslider.css" type="text/css">
+<link rel="stylesheet" href="css/jquery_dropdown.css" type="text/css">
+
+</head>
+
+<body>
+<div class="top-nav">
+    <div class="wrapper">
+        <div class="top-left-nav"><img src="http://www.targetescorts.com/images/heart.png" alt="Join The Agency"> <a href="application-escort-agency.htm">APPLICATIONS / JOBS</a></div>
+        <div class="top-right-nav">
+            <ul>
+                <li><a href="escort-search.htm" id="show-filter-list"><span>Search</span></a></li>
+                <li><a class="mem-login" href="members.htm">MEMBERS LOGIN</a></li>
+                <li><a href="magazine/" target="_blank">MAGAZINE</a></li>
+                <li><a href="our-cities.htm" id="show-city-list">CITIES</a></li>
+                <li><a href="contact-escort-services.htm">CONTACT</a></li>
+                <li><a href="http://www.target-escort.de">DEUTSCH</a></li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<div class="city-menu">
+    <div class="city-wrap">
+                <ul>
+            <li class="c-title">Germany</li>
+                            <li><a href="berlin-escort.htm">Berlin</a></li>
+                            <li><a href="bochum-escort.htm">Bochum</a></li>
+                            <li><a href="bonn-escort.htm">Bonn</a></li>
+                            <li><a href="cologne-escort.htm">Cologne</a></li>
+                            <li><a href="dortmund-escort.htm">Dortmund</a></li>
+                            <li><a href="dresden-escort.htm">Dresden</a></li>
+                            <li><a href="dusseldorf-escort.htm">Dusseldorf</a></li>
+                            <li><a href="essen-escort.htm">Essen</a></li>
+                            <li><a href="frankfurt-escort.htm">Frankfurt</a></li>
+                            <li><a href="hamburg-escort.htm">Hamburg</a></li>
+                            <li><a href="hanover-escort.htm">Hanover</a></li>
+                            <li><a href="karlsruhe-escort.htm">Karlsruhe</a></li>
+                            <li><a href="leipzig-escort.htm">Leipzig</a></li>
+                            <li><a href="mainz-escort.htm">Mainz</a></li>
+                            <li><a href="mannheim-escort.htm">Mannheim</a></li>
+                            <li><a href="munich-escort.htm">Munich</a></li>
+                            <li><a href="nuremberg-escort.htm">Nuremberg</a></li>
+                            <li><a href="stuttgart-escort.htm">Stuttgart</a></li>
+                            <li><a href="wiesbaden-escort.htm">Wiesbaden</a></li>
+                    </ul>
+                <ul>
+            <li class="c-title">Austria</li>
+                            <li><a href="bregenz-escort.htm">Bregenz</a></li>
+                            <li><a href="graz-escort.htm">Graz</a></li>
+                            <li><a href="innsbruck-escort.htm">Innsbruck</a></li>
+                            <li><a href="kitzbuehel-escort.htm">Kitzbühel</a></li>
+                            <li><a href="klagenfurt-escort.htm">Klagenfurt</a></li>
+                            <li><a href="linz-escort.htm">Linz</a></li>
+                            <li><a href="salzburg-escort.htm">Salzburg</a></li>
+                            <li><a href="vienna-escort.htm">Vienna</a></li>
+                            <li><a href="villach-escort.htm">Villach</a></li>
+                            <li><a href="wels-escort.htm">Wels</a></li>
+                    </ul>
+                <ul>
+            <li class="c-title">Switzerland</li>
+                            <li><a href="basel-escort.htm">Basel</a></li>
+                            <li><a href="bern-escort.htm">Bern</a></li>
+                            <li><a href="chur-escort.htm">Chur</a></li>
+                            <li><a href="geneva-escort.htm">Geneva</a></li>
+                            <li><a href="lausanne-escort.htm">Lausanne</a></li>
+                            <li><a href="lucerne-escort.htm">Lucerne</a></li>
+                            <li><a href="st-gallen-escort.htm">St Gallen</a></li>
+                            <li><a href="st-moritz-escort.htm">St Moritz</a></li>
+                            <li><a href="winterthur-escort.htm">Winterthur</a></li>
+                            <li><a href="zurich-escort.htm">Zurich</a></li>
+                    </ul>
+                <ul>
+            <li class="c-title">Spain</li>
+                            <li><a href="barcelona-escort.htm">Barcelona</a></li>
+                            <li><a href="ibiza-escort.htm">Ibiza</a></li>
+                            <li><a href="madrid-escort.htm">Madrid</a></li>
+                            <li><a href="majorca-escort.htm">Majorca</a></li>
+                            <li><a href="marbella-escort.htm">Marbella</a></li>
+                            <li><a href="palma-escort.htm">Palma</a></li>
+                            <li><a href="seville-escort.htm">Seville</a></li>
+                            <li><a href="valencia-escort.htm">Valencia</a></li>
+                    </ul>
+                <ul>
+            <li class="c-title">Benelux</li>
+                            <li><a href="amsterdam-escort.htm">Amsterdam</a></li>
+                            <li><a href="brussels-escort.htm">Brussels</a></li>
+                            <li><a href="luxembourg-escort.htm">Luxembourg</a></li>
+                    </ul>
+                <ul>
+            <li><a href="javascript:;" id="close-city-menu">Close list</a></li>
+        </ul>
+    </div>
+</div>
+<div class="filter_menu">
+    <div class="filter_wrap">
+                    <div class="filter-title">Sensual preferences</div>
+            <ul>
+                                    <li><a href="sensual-preferences/bisexual-escorts.htm">Bisexual Escorts</a></li>
+                                    <li><a href="sensual-preferences/duo-escort-service.htm">Duo Escort Service </a></li>
+                                    <li><a href="sensual-preferences/escorts-couples.htm">Escort Service couples</a></li>
+                                    <li><a href="sensual-preferences/girlfriend-experience.htm">Girlfriend experience</a></li>
+                            </ul>
+                <div class="close-filter_menu"><a href="javascript:;" id="close-filter_menu">Close list</a></div>
+    </div>
+</div>
+<div class="second-nav">
+    <div class="wrapper">
+        <a href="http://www.targetescorts.com/"><img class="logo" src="http://www.targetescorts.com/images/logo.png" alt="Target Escorts – high-class escort service"></a>
+        <div class="main-nav">
+            <ul>
+                <li><a href="javascript:;" id="show-lady_menu">ESCORT LADIES</a></li>
+                <li><a href="rates-escort-ladies.htm">RATES & BOOKING</a></li>
+                <li><a href="news.htm">NEWS</a></li>
+                <li><a href="faq-escort-service.htm">FAQ</a></li>
+                <li><a href="application-escort-agency.htm">JOBS</a></li>
+            </ul>
+        </div>
+        <div id="mobile_nav"></div>
+    </div>
+</div>
+<div class="lady_menu">
+    <div class="lady_wrap">
+        <div class="all-ladies-link"><strong><a href="escort-services.htm#LadyList">All Ladies</a></strong></div>
+        <ul>
+                            <li><a href="aaliyah-escort-service.htm">Aaliyah</a></li>
+                            <li><a href="ladies/alice.htm">Alice</a></li>
+                            <li><a href="ladies/alina.htm">Alina</a></li>
+                            <li><a href="amelie-escort-service.htm">Amelie</a></li>
+                            <li><a href="anna-escort-service.htm">Anna</a></li>
+                            <li><a href="ladies/carolina-escort-service.htm">Carolina</a></li>
+                            <li><a href="cheryl-escort-service.htm">Cheryl</a></li>
+                            <li><a href="claudia-escort-service.htm">Claudia</a></li>
+                            <li><a href="ladies/emily.htm">Emily</a></li>
+                            <li><a href="evelyn-escort-service.htm">Evelyn</a></li>
+                            <li><a href="ladies/isabelle.htm">Isabelle</a></li>
+                            <li><a href="jasmin-escort-service.htm">Jasmin</a></li>
+                            <li><a href="julia-escort-service.htm">Julia</a></li>
+                            <li><a href="kiara-escort-service.htm">Kiara</a></li>
+                            <li><a href="ladies/laura.htm">Laura</a></li>
+                            <li><a href="lina-escort-service.htm">Lina</a></li>
+                            <li><a href="ladies/louise.htm">Louise</a></li>
+                            <li><a href="mandy-escort-service.htm">Mandy</a></li>
+                            <li><a href="mia-escort-service.htm">Mia</a></li>
+                            <li><a href="sandra-escort-service.htm">Sandra</a></li>
+                            <li><a href="sasha-escort-service.htm">Sasha</a></li>
+                            <li><a href="selina-escort-service.htm">Selina</a></li>
+                            <li><a href="sophie-escort-service.htm">Sophie</a></li>
+                            <li><a href="stella-escort-service.htm">Stella</a></li>
+                            <li><a href="victoria-escort-service.htm">Victoria</a></li>
+                            <li><a href="violett-escort-service.htm">Violett</a></li>
+                    </ul>
+        <div class="close-lady_menu"><a href="javascript:;" id="close-lady_menu">Close list</a></div>
+    </div>
+</div>
+<div class="index-slide">
+    <ul class="target-slider">
+            <li>
+                            <a href="http://www.targetescorts.com/ladies/alice.htm">
+                    <img src="http://www.targetescorts.com/ladyphotos/alice-top2-escort-model.jpg" alt="Brunette escort lady">
+                </a>
+                    </li>
+            <li>
+                            <a href="mandy-escort-service.htm">
+                    <img src="http://www.targetescorts.com/ladyphotos/mandy-top1-vip-escort.jpg" alt="Mandy - VIP escort model">
+                </a>
+                    </li>
+            <li>
+                            <a href="mia-escort-service.htm">
+                    <img src="http://www.targetescorts.com/ladyphotos/mia-top1-escort-model.jpg" alt="VIP escort Mia">
+                </a>
+                    </li>
+            <li>
+                            <a href="sophie-escort-service.htm">
+                    <img src="http://www.targetescorts.com/ladyphotos/sophie-top-1-escort-model.jpg" alt="Natural escort Sophie">
+                </a>
+                    </li>
+        </ul>
+    <div class="wrap-center-slide">
+        <div class="big-button-slide">
+                    <a href="escort-services.htm#LadyList">Meet Our Escort Ladies</a>
+                </div>
+    </div>
+</div>
+
+<div class="content1">
+    <div class="wrap-center">
+            <div class="box1">
+                            <h1>High-class escort service - Elite escort agency</h1>
+                        <div class="clear">&nbsp;</div>
+            <p>Since its founding in 2000, our elite escort agency sets new standards across Europe in relation to&nbsp;<a title="VIP escort service" href="escort-service.htm">VIP escort service</a> for the classy gentleman.</p>        </div>
+            <div class="box2">
+                            <h2>Always up-to-date: News about our exclusive escorts </h2>
+                        <div class="clear">&nbsp;</div>
+            <p>In order to find out what is going on in the sensual world of our top escort models check out our <a title="Latest news" href="news.htm">latest news</a>. Updates, photos, information and much more.</p>        </div>
+        </div>
+</div>
+<div class="city-section">
+    <div class="wrap-center">
+        <h2>Our High Class Escort Service is<br> available in the following cities</h2>
+        <p>Target Escorts<sup>&reg;</sup> is an exclusive escort agency that guarantees discretion and reliability.<br> Target Escorts<sup>&reg;</sup> stands for the highest level of service, fun and privacy.<br> Here, gentlemen may expect a premium VIP escort service.</p>
+        <div class="city-buttons">
+                        <a href="berlin-escort.htm">Berlin</a>
+                        <a href="cologne-escort.htm">Cologne</a>
+                        <a href="dubai.htm">Dubai</a>
+                        <a href="dusseldorf-escort.htm">Dusseldorf</a>
+                        <a href="frankfurt-escort.htm">Frankfurt</a>
+                        <a href="geneva-escort.htm">Geneva</a>
+                        <a href="hamburg-escort.htm">Hamburg</a>
+                        <a href="london.htm">London</a>
+                        <a href="marbella-escort.htm">Marbella</a>
+                        <a href="milan.htm">Milan</a>
+                        <a href="monaco.htm">Monaco</a>
+                        <a href="munich-escort.htm">Munich</a>
+                        <a href="paris.htm">Paris</a>
+                        <a href="rome.htm">Rome</a>
+                        <a href="saint_tropez.htm">Saint Tropez</a>
+                        <a href="salzburg-escort.htm">Salzburg</a>
+                        <a href="stuttgart-escort.htm">Stuttgart</a>
+                        <a href="vienna-escort.htm">Vienna</a>
+                        <a href="zurich-escort.htm">Zurich</a>
+                    </div>
+        <a class="red" id="show-city-list" href="javascript:;">View all cities</a>
+    </div>
+</div>
+
+<div class="content-last">
+    <div class="wrap-center mag">
+        <h4>Our Magazine with interesting facts</h4>
+                <div class="blog-box">
+            <div class="blog-thumb">
+                <a href="http://www.targetescorts.com/magazine/sensual-winter-magic-vip-escort-service-chamonix/" target="_blank">
+                    <img width="1000" height="703" src="http://www.targetescorts.com/magazine/wp-content/uploads/chamonix-escort-service.jpg" class="attachment-medium size-medium wp-post-image" alt="Erotic winter vacation in Chamonix with VIP escort service" srcset="http://www.targetescorts.com/magazine/wp-content/uploads/chamonix-escort-service.jpg 1000w, http://www.targetescorts.com/magazine/wp-content/uploads/chamonix-escort-service-768x540.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" />                </a>
+            </div>
+            <h3>Sensual winter magic with VIP escort service Chamonix</h3>
+            <p>Powerful. This is probably the first word that comes to your mind when you admire the highest mountain of the Alps together with your charming escort in...</p>
+            <p><a class="red" href="http://www.targetescorts.com/magazine/sensual-winter-magic-vip-escort-service-chamonix/" target="_blank">Read More</a></p>
+        </div>
+                <div class="blog-box">
+            <div class="blog-thumb">
+                <a href="http://www.targetescorts.com/magazine/four-hills-tournament-vip-escort-agency/" target="_blank">
+                    <img width="1000" height="600" src="http://www.targetescorts.com/magazine/wp-content/uploads/vierschanzentournee-escort-service.jpg" class="attachment-medium size-medium wp-post-image" alt="Elite escort agency &amp; the Four-Hills-Tournament" srcset="http://www.targetescorts.com/magazine/wp-content/uploads/vierschanzentournee-escort-service.jpg 1000w, http://www.targetescorts.com/magazine/wp-content/uploads/vierschanzentournee-escort-service-768x461.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" />                </a>
+            </div>
+            <h3>The Four-Hills-Tournament & our VIP escort agency</h3>
+            <p>A perfect combination for gentlemen who appreciate both the ski jumping as well as the company of gorgeous and stylish escort ladies. Our high-class escort...</p>
+            <p><a class="red" href="http://www.targetescorts.com/magazine/four-hills-tournament-vip-escort-agency/" target="_blank">Read More</a></p>
+        </div>
+                <div class="blog-box">
+            <div class="blog-thumb">
+                <a href="http://www.targetescorts.com/magazine/merry-christmas-happy-year/" target="_blank">
+                    <img width="587" height="311" src="http://www.targetescorts.com/magazine/wp-content/uploads/xmas-service-2016.jpg" class="attachment-medium size-medium wp-post-image" alt="Target Escorts wishes you a festive season!" />                </a>
+            </div>
+            <h3>Merry Christmas & Happy New Year!</h3>
+            <p>The Target Escorts team and all our lovely escort ladies wish you a (sensual) Christmas time! We hope you enjoy the good food, the time with friends and family,...</p>
+            <p><a class="red" href="http://www.targetescorts.com/magazine/merry-christmas-happy-year/" target="_blank">Read More</a></p>
+        </div>
+            </div>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
+<script src="js/jquery_dropdown.js" type="text/javascript"></script>
+<script src="js/javascripts.js" type="text/javascript"></script>
+<script src="js/jquery.easing.js" type="text/javascript"></script>
+<script src="js/jquery.bxslider.min.js" type="text/javascript"></script>
+
+</body>
+</html>

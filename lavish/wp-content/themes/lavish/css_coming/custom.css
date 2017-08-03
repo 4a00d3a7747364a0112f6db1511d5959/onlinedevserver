@@ -1,0 +1,41 @@
+/*
+Add your custom CSS below.
+*/
+/*# sourceMappingURL=custom.css.map */
+
+/*Fix Nav Transition*/
+.loader--loaded .nav-left,
+.loader--loaded .nav-right,
+.loader--loaded .nav-social {
+  -webkit-transition: all 0.5s ease-out 0.05s;
+  transition: all 0.5s ease-out 0.05s;
+}
+
+/*Hide Gallery Next/Prev Buttons*/
+.minigo .owl-theme .owl-controls .owl-buttons div {
+	display:none;
+}
+
+/*Customize Gallery and remove extra space*/
+.minigo .owl-item > div .hover {
+	margin-bottom: 10px;
+    line-height: 0;
+}
+
+/*Hide Tile Stroke for Pie Chart Style*/
+.minigo .clock-alt.flip-clock-wrapper ul li a div.up {
+	border: none;
+}
+
+/*All buttons get rounded corners*/
+.minigo .btn {
+	border-radius: 4px;
+}
+
+/*Edge Social Labels Fix*/
+.nav-social a::after {
+	opacity: 0;
+}
+.nav-social a:hover::after {
+	opacity:1;
+}
